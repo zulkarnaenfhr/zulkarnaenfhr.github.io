@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+/* font-family: 'Itim', cursive; */
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+/* font-family: "Cinzel", serif; */
+
+#getInTouch {
+    height: 100vh;
+    color: silver;
+}
+
+.getintouch-section1 {
+    padding-top: 150px;
+    text-align: center;
+}
+
+.getintouchjudul {
+    color: #19f9d8;
+    font-family: "Itim", cursive;
+    font-size: 80px;
+}
+
+.getintouchjudul-bawah {
+    font-family: "Cinzel", serif;
+    font-size: 20px;
+}
+
+.getintouch-section2 {
+    padding-top: 5rem;
+}
+
+.getintouch-section2 .bymail {
+    font-family: "Cinzel", serif;
+    font-size: 25px;
+}
+
+.getintouch-section2 .email {
+    margin-top: -1.5rem;
+}
+
+.getintouch-section2 .email a {
+    font-family: "Itim", cursive;
+    font-size: 56px;
+    padding-left: 2rem;
+    text-decoration: none;
+    color: silver;
+}
+
+.getintouch-section2 .email a:hover {
+    color: #19f9d8;
+}
+
+.getintouch-section3 {
+    padding-top: 60px;
+}
+
+.getintouch-section3 .socialmedia {
+    font-family: "Cinzel", serif;
+    font-size: 25px;
+}
+
+.getintouch-section3 ul {
+    margin-top: -1.5rem;
+    list-style: none;
+    display: flex;
+}
+
+.getintouch-section3 ul li a {
+    margin-right: 5rem;
+    text-decoration: none;
+    color: silver;
+    font-family: "Itim", cursive;
+    font-size: 56px;
+}
+
+.getintouch-section3 ul li a:hover {
+    color: #19f9d8;
+}
+
+/* time to responsive  */
+@media only screen and (max-width: 1400px) {
+    .getintouch-section1 {
+        padding-top: 50px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 992px) {
+    #getInTouch {
+        height: 500px;
+    }
+    .getintouchjudul {
+        font-size: 50px;
+    }
+    .getintouchjudul-bawah {
+        font-size: 15px;
+    }
+    .getintouch-section2 .bymail {
+        font-size: 17px;
+    }
+    .getintouch-section2 .email {
+        margin-top: -1rem;
+    }
+    .getintouch-section2 .email a {
+        font-size: 28px;
+    }
+    .getintouch-section3 {
+        padding-top: 10px;
+    }
+    .getintouch-section3 .socialmedia {
+        font-size: 17px;
+    }
+    .getintouch-section3 ul {
+        margin-top: -1rem;
+    }
+    .getintouch-section3 ul li a {
+        margin-right: 5rem;
+        font-size: 28px;
+    }
+}
+@media only screen and (max-width: 770px) {
+    #getInTouch {
+        height: 490px;
+    }
+    .getintouch-section3 ul li a {
+        margin-right: 2rem;
+        font-size: 28px;
+    }
+    .getintouch-section2 {
+        margin-top: -50px;
+    }
+}
+@media only screen and (max-width: 586px) {
+    .getintouchjudul {
+        font-size: 30px;
+    }
+    .getintouchjudul-bawah {
+        font-size: 11px;
+    }
+    .getintouch-section2 .bymail {
+        font-size: 13px;
+    }
+    .getintouch-section2 .email {
+        margin-top: -1rem;
+    }
+    .getintouch-section2 .email a {
+        font-size: 18px;
+    }
+    .getintouch-section3 {
+        padding-top: 10px;
+    }
+    .getintouch-section3 .socialmedia {
+        font-size: 13px;
+    }
+    .getintouch-section3 ul {
+        margin-top: -1rem;
+    }
+    .getintouch-section3 ul li a {
+        margin-right: 2rem;
+        font-size: 18px;
+    }
+    .getintouch-section2 {
+        padding-top: 12px;
+    }
+}
+@media only screen and (max-width: 392px) {
+    #getInTouch {
+        height: 360px;
+    }
+    .getintouchjudul {
+        font-size: 27px;
+    }
+    .getintouchjudul-bawah {
+        font-size: 10px;
+    }
+    .getintouch-section2 .bymail {
+        font-size: 13px;
+    }
+    .getintouch-section2 .email {
+        margin-top: -1rem;
+    }
+    .getintouch-section2 .email a {
+        font-size: 18px;
+    }
+    .getintouch-section3 {
+        padding-top: 10px;
+    }
+    .getintouch-section3 .socialmedia {
+        font-size: 13px;
+    }
+    .getintouch-section3 ul {
+        margin-top: -1rem;
+    }
+    .getintouch-section3 ul li a {
+        margin-right: 1rem;
+        font-size: 18px;
+    }
+    .getintouch-section2 {
+        padding-top: 12px;
+    }
+    .getintouch-section2 {
+        padding-top: 0px;
+    }
+}
+/* end of responsive  */

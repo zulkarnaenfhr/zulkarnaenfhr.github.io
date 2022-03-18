@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Jaldi&display=swap");
+/* font-family: 'Jaldi', sans-serif;  */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+
+.experience {
+    padding-top: 4rem;
+    width: 100vw;
+    height: 650px;
+    color: white;
+    font-family: "Jaldi", sans-serif;
+}
+
+.experienceContent {
+    display: flex;
+}
+
+.position {
+    color: #ccd6f6;
+    font-size: 28px;
+}
+
+.name {
+    color: skyblue;
+    font-size: 28px;
+    margin-left: 0.7rem;
+}
+
+.duration {
+    margin-top: -1.3rem;
+    color: silver;
+    font-size: 18px;
+    align-items: center;
+}
+
+.description {
+    margin-top: -0.5rem;
+    color: #fefaf6;
+    width: 80%;
+    font-size: 18px;
+}
+
+.sectionLeftExperience ul li {
+    list-style: none;
+    margin-left: -2rem;
+}
+.buttonbawah {
+    margin-top: -1rem;
+}
+.experienceButton {
+    text-align: center;
+    width: 15rem;
+    height: 2.5rem;
+    background: rgb(13, 20, 47);
+    color: silver;
+    margin-bottom: 1rem;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+#organizationExperience {
+    padding-top: 2rem;
+}
+
+.sectionRightExperience {
+    height: 100px;
+    margin-left: 6rem;
+}
+
+.littleDessertSidoarjo-website {
+    color: #fefaf6;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+}
+
+.littleDessertSidoarjo-website:hover {
+    color: #dddad7;
+}
+
+/* time to responsive  */
+@media only screen and (max-width: 1400px) {
+}
+@media only screen and (max-width: 1200px) {
+    #experienceSection {
+        height: 750px;
+    }
+}
+@media only screen and (max-width: 995px) {
+    #organizationExperience {
+        margin-top: 3rem;
+    }
+    .experience {
+        height: 800px;
+    }
+    .experienceButton {
+        font-size: 15px;
+        width: 150%;
+    }
+    .buttonbawah {
+        margin-top: -1rem;
+    }
+    .sectionRightExperience {
+        margin-left: 5rem;
+    }
+    .sectionRightExperienceworking {
+        margin-left: 7rem;
+    }
+    .position {
+        font-size: 23px;
+    }
+    .name {
+        font-size: 17px;
+    }
+    .duration {
+        font-size: 17px;
+    }
+    .description {
+        width: 100%;
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #organizationExperience {
+        margin-top: 0rem;
+    }
+    .experience {
+        height: 800px;
+    }
+    .experienceContent {
+        display: block;
+    }
+    .experienceButton {
+        width: 100%;
+    }
+    .buttonbawah {
+        margin-top: -1rem;
+    }
+    .sectionRightExperience {
+        margin-left: 0;
+        margin-top: -1.5rem;
+    }
+    .position {
+        font-size: 23px;
+    }
+    .name {
+        font-size: 17px;
+    }
+    .duration {
+        font-size: 17px;
+    }
+    .description {
+        width: 100%;
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 586px) {
+    #organizationExperience {
+        margin-top: 0rem;
+    }
+    .experience {
+        height: 800px;
+    }
+    .experienceContent {
+        display: block;
+    }
+    .experienceButton {
+        width: 100%;
+    }
+    .buttonbawah {
+        margin-top: -1.7rem;
+    }
+    .sectionRightExperience {
+        margin-left: 0;
+        margin-top: -1.5rem;
+    }
+    .position {
+        font-size: 21px;
+    }
+    .name {
+        font-size: 15px;
+    }
+    .duration {
+        font-size: 15px;
+    }
+    .description {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 392px) {
+    .experience {
+        height: 850px;
+    }
+    .sectionTitle {
+        font-size: 34px;
+        font-weight: 500;
+    }
+    .experienceContent {
+        display: block;
+    }
+    .experienceButton {
+        width: 100%;
+    }
+    .buttonbawah {
+        margin-top: -1rem;
+    }
+    .sectionRightExperience {
+        margin-left: 0;
+        margin-top: -1.5rem;
+    }
+    .position {
+        font-size: 21px;
+    }
+    .name {
+        font-size: 15px;
+    }
+    .duration {
+        font-size: 15px;
+    }
+    .description {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+/* end of responsive  */

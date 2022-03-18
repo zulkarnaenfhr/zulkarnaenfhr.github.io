@@ -1,0 +1,41 @@
+/* css navbar section */
+
+.navbarfahri {
+    position: fixed;
+    top: 5%;
+    right: 2.5%;
+    z-index: 10;
+}
+.navbarfahri .ulmenu {
+    list-style: none;
+    margin-left: -1.5em;
+    text-align: right;
+}
+.navbarfahri .ulmenu li a {
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: 800;
+    text-decoration: none;
+    color: skyblue;
+    font-family: "Amiri", serif;
+    font-style: italic;
+}
+.ullogo {
+    font-size: 2rem;
+}
+
+.navbarfahri .ulmenu li a:hover {
+    color: rgb(92, 138, 156);
+}
+
+/* end of css navbar section */
+
+/* time to responsive  */
+
+@media screen and (max-width: 900px) {
+    .navbarfahri {
+        display: none;
+    }
+}
+
+/* end of  responsive  */

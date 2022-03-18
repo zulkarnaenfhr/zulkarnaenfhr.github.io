@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap");
+/* font-family: 'Azeret Mono', monospace; */
+
+#digitalSignature {
+    height: 40px;
+    background: rgb(18, 19, 19);
+}
+
+.digitalSignature-write {
+    font-family: "Azeret Mono", monospace;
+    font-size: 13px;
+    color: #19f9d8;
+    text-align: center;
+}
+
+/* time to responsive  */
+
+@media screen and (max-width: 900px) {
+    #digitalSignature {
+        display: none;
+    }
+}
+
+/* end of  responsive  */
