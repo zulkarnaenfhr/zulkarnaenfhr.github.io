@@ -98,6 +98,7 @@
     }
     .getintouch-section2 .bymail {
         font-size: 17px;
+        margin-top: -2rem;
     }
     .getintouch-section2 .email {
         margin-top: -1rem;
@@ -140,6 +141,7 @@
     }
     .getintouch-section2 .bymail {
         font-size: 13px;
+        margin-top: 5rem;
     }
     .getintouch-section2 .email {
         margin-top: -1rem;
@@ -166,7 +168,7 @@
 }
 @media only screen and (max-width: 392px) {
     #getInTouch {
-        height: 360px;
+        height: 380px;
     }
     .getintouchjudul {
         font-size: 27px;

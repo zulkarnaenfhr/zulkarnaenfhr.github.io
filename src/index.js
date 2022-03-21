@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 import Zulkarnaenfhr from "./Portofolio-Website-Fahri/Zulkarnaenfhr";
+import Changediv from "./Portofolio-Website-Fahri/Container/ChangeDiv";
 
 ReactDOM.render(
     <React.StrictMode>

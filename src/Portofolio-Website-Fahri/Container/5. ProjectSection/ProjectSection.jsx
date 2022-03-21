@@ -11,7 +11,7 @@ class Projectsection extends Component {
                             / Project{" "}
                         </h1>
                         <div className="projectSection-AI">
-                            <h1 className="judulSection" data-aos="fade-up" data-aos-offset="100">
+                            <h1 style={{ color: "#87CEEB" }} className="judulSection" data-aos="fade-up" data-aos-offset="100">
                                 / Artificial Intelligent Project
                             </h1>
                             <div className="barispertama row" data-aos="fade-up" data-aos-offset="300">
@@ -90,7 +90,7 @@ class Projectsection extends Component {
                             </div>
                         </div>
                         <div className="projectSection-website">
-                            <h1 className="judulSection judulSectionWebsiteProject" data-aos="fade-up" data-aos-offset="100">
+                            <h1 style={{ color: "#87CEEB" }} className="judulSection judulSectionWebsiteProject" data-aos="fade-up" data-aos-offset="100">
                                 / Website Project
                             </h1>
                             <div className="row" data-aos="fade-up" data-aos-offset="300">

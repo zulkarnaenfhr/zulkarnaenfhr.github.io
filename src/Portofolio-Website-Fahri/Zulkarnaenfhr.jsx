@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Background.css";
+import "./Style.css";
 import Loader from "./Loader";
 import Navbar from "./Container/1. Navbar/Navbar";
 import Aboutme from "./Container/3. AboutMeSection/AboutMe";

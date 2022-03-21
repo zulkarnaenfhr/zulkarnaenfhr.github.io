@@ -8,6 +8,7 @@ class Experiencesection extends Component {
         this.state = {
             statusWorking: "cateringBundaMia",
             statusOrganization: "UPNVeteranJawaTimur",
+            innerWidth: 0,
         };
         this.handleWorkingChange = this.handleWorkingChange.bind(this);
         this.handleOrganizationChange = this.handleOrganizationChange.bind(this);
@@ -24,6 +25,12 @@ class Experiencesection extends Component {
             statusOrganization: e.target.name,
         });
     };
+
+    componentDidMount() {
+        this.setState({
+            innerWidth: window.innerWidth,
+        });
+    }
 
     render() {
         return (
@@ -65,8 +72,9 @@ class Experiencesection extends Component {
                                             </li>
                                         </ul>
                                     </div>
-                                    {this.state.statusWorking === "cateringBundaMia" ? (
-                                        <div id="experience-sectionright" className=" col-7 sectionRightExperience sectionRightExperienceworking">
+
+                                    <div id="experience-sectionright" className={this.state.innerWidth > 1000 ? "col-7 sectionRightExperience sectionRightExperienceworking" : "sectionRightExperience sectionRightExperienceworking"}>
+                                        <div className={this.state.statusWorking === "cateringBundaMia" ? "load-show-workingExperience" : "load-hide-workingExperience"}>
                                             <div className="firstExperience">
                                                 <div style={{ display: "flex", alignItems: "center" }}>
                                                     <p id="positionOffice" className="position">
@@ -84,8 +92,7 @@ class Experiencesection extends Component {
                                                 </p>
                                             </div>
                                         </div>
-                                    ) : (
-                                        <div id="experience-sectionright" className=" col-7 sectionRightExperience sectionRightExperienceworking">
+                                        <div className={this.state.statusWorking === "littleDessertSidoarjo" ? "load-show-workingExperience" : "load-hide-workingExperience"}>
                                             <div className="firstExperience">
                                                 <div style={{ display: "flex", alignItems: "center" }}>
                                                     <p id="positionOffice" className="position">
@@ -106,7 +113,7 @@ class Experiencesection extends Component {
                                                 </p>
                                             </div>
                                         </div>
-                                    )}
+                                    </div>
                                 </div>
                             </div>
                             <div id="organizationExperience" data-aos="fade-up" data-aos-offset="100">
@@ -149,8 +156,8 @@ class Experiencesection extends Component {
                                             </li>
                                         </ul>
                                     </div>
-                                    {this.state.statusOrganization === "UPNVeteranJawaTimur" ? (
-                                        <div id="experience-sectionright2" className=" col-7 sectionRightExperience">
+                                    <div id="experience-sectionright2" className={this.state.innerWidth > 1000 ? "col-7 sectionRightExperience" : "sectionRightExperience"}>
+                                        <div className={this.state.statusOrganization === "UPNVeteranJawaTimur" ? "load-show-workingExperience" : "load-hide-workingExperience"}>
                                             <div className="firstExperience">
                                                 <div style={{ display: "flex", alignItems: "center" }}>
                                                     <p style={{ display: "none" }}>pembatas biar ga ngaco</p>
@@ -169,8 +176,7 @@ class Experiencesection extends Component {
                                                 </p>
                                             </div>
                                         </div>
-                                    ) : this.state.statusOrganization === "SMAN1Surabaya" ? (
-                                        <div id="experience-sectionright2" className=" col-7 sectionRightExperience">
+                                        <div className={this.state.statusOrganization === "SMAN1Surabaya" ? "load-show-workingExperience" : "load-hide-workingExperience"}>
                                             <div className="firstExperience">
                                                 <div style={{ display: "flex", alignItems: "center" }}>
                                                     <p style={{ display: "none" }}>pembatas biar ga ngaco</p>
@@ -206,8 +212,7 @@ class Experiencesection extends Component {
                                                 </p>
                                             </div>
                                         </div>
-                                    ) : (
-                                        <div id="experience-sectionright2" className=" col-7 sectionRightExperience">
+                                        <div className={this.state.statusOrganization === "SMPN6Sidoarjo" ? "load-show-workingExperience" : "load-hide-workingExperience"}>
                                             <div className="firstExperience">
                                                 <div style={{ display: "flex", alignItems: "center" }}>
                                                     <p style={{ display: "none" }}>pembatas biar ga ngaco</p>
@@ -226,7 +231,7 @@ class Experiencesection extends Component {
                                                 </p>
                                             </div>
                                         </div>
-                                    )}
+                                    </div>
                                 </div>
                             </div>
                         </div>
