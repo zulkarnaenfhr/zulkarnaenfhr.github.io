@@ -5,7 +5,7 @@ class Navbar extends Component {
     render() {
         return (
             <section>
-                <div data-aos="fade-left" data-aos-offset="100" id="fixedSideNavbar" className="navbarfahri">
+                <div data-aos="fade-left" data-aos-offset="100" id="fixedSideNavbar" data-aos-delay="2500" className="navbarfahri">
                     <div>
                         <ul className="ulmenu">
                             <li>
