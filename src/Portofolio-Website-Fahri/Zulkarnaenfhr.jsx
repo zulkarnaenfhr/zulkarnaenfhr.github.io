@@ -56,7 +56,6 @@ class Zulkarnaenfhr extends Component {
                 <Homesection />
                 <Aboutme />
                 <Experiencesection />
-                <Aboutme />
                 <Projectsection />
                 <Getintouch />
                 <Signiaturesection />
