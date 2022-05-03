@@ -44,7 +44,7 @@ class Zulkarnaenfhr extends Component {
     };
 
     render() {
-        return (
+        return (window.onload = () => {
             <div onMouseMove={this.handleMouseMoveforEye} className="starsbackground">
                 {/* <!-- html for background section  --> */}
                 <section id="background">
@@ -61,8 +61,8 @@ class Zulkarnaenfhr extends Component {
                 <Projectsection />
                 <Getintouch />
                 <Signiaturesection />
-            </div>
-        );
+            </div>;
+        });
     }
 }
 
