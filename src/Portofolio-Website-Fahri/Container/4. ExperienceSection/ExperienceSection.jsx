@@ -44,7 +44,7 @@ class Experiencesection extends Component {
                         </div>
                         <div className="">
                             <div className="workingExperience" data-aos="fade-up" data-aos-offset="100">
-                                <h4 className="whatExperience">/ Working Experience</h4>
+                                <h4>/ Working Experience</h4>
                                 <div className="experienceContent">
                                     <div className="sectionLeftExperience">
                                         <ul>
@@ -52,7 +52,7 @@ class Experiencesection extends Component {
                                                 <button
                                                     name="telkomIndonesia"
                                                     onClick={this.handleWorkingChange}
-                                                    id="buttonCateringBundaMia"
+                                                    id="buttonTelkomIndonesia"
                                                     style={this.state.statusWorking === "telkomIndonesia" ? { color: "#19f9d8" } : { color: "" }}
                                                     className="experienceButton"
                                                 >
@@ -137,7 +137,7 @@ class Experiencesection extends Component {
                                                 </p>
                                                 <p id="descriptionOffice" className="description">
                                                     Design and Developed landing page website for{" "}
-                                                    <a className="littleDessertSidoarjo-website" href="https://zulkarnaenfhr.github.io/little-dessert.github.io/">
+                                                    <a aria-label="littleDesserSidoarjoWebsite" className="littleDessertSidoarjo-website" href="https://zulkarnaenfhr.github.io/little-dessert.github.io/">
                                                         Little Dessert Sidoarjo
                                                     </a>{" "}
                                                 </p>
@@ -147,7 +147,7 @@ class Experiencesection extends Component {
                                 </div>
                             </div>
                             <div id="organizationExperience" data-aos="fade-up" data-aos-offset="100">
-                                <h4 className="whatExperience">/ Organization Experience</h4>
+                                <h4>/ Organization Experience</h4>
                                 <div className="experienceContent">
                                     <div className="sectionLeftExperience">
                                         <ul>

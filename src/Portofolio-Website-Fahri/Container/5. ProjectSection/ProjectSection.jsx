@@ -27,10 +27,10 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a href="https://github.com/zulkarnaenfhr/Abusive-Indonesian-Tweet-Using-Convolutional-Neural-Networks-Method  ">
+                                                <a aria-label="githubCNNAlgo" href="https://github.com/zulkarnaenfhr/Abusive-Indonesian-Tweet-Using-Convolutional-Neural-Networks-Method  ">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a href="https://colab.research.google.com/drive/1x1Io429fR7-a5QjX0-J9oSroOPCpzoLs?usp=sharing">
+                                                <a aria-label="colabCNNAlgo" href="https://colab.research.google.com/drive/1x1Io429fR7-a5QjX0-J9oSroOPCpzoLs?usp=sharing">
                                                     <span>
                                                         <i className="fab fa-python"></i>
                                                     </span>
@@ -51,10 +51,10 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a href="https://github.com/zulkarnaenfhr/Abusive-Indonesian-Tweet-Classification-using-Long-Short-Term-Memory-Method">
+                                                <a aria-label="githubLSTMAlgo" href="https://github.com/zulkarnaenfhr/Abusive-Indonesian-Tweet-Classification-using-Long-Short-Term-Memory-Method">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a href="https://colab.research.google.com/drive/1-8XYX22Ztd_1fxwUKD0QjtP9L5Y-5lDX?usp=sharing">
+                                                <a aria-label="colabLSTMAlgo" href="https://colab.research.google.com/drive/1-8XYX22Ztd_1fxwUKD0QjtP9L5Y-5lDX?usp=sharing">
                                                     <span>
                                                         <i className="fab fa-python"></i>
                                                     </span>
@@ -75,10 +75,10 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a href="">
+                                                <a aria-label="githubHandWritten" href="https://github.com/zulkarnaenfhr/CNN-Handwritten-Digit-Classification">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a href="https://colab.research.google.com/drive/1YwlumUVZhalSm3YKW7gbhlw09tBG4jLS?usp=sharing ">
+                                                <a aria-label="colabHandWritten" href="https://colab.research.google.com/drive/1YwlumUVZhalSm3YKW7gbhlw09tBG4jLS?usp=sharing ">
                                                     <span>
                                                         <i className="fab fa-python"></i>
                                                     </span>
@@ -111,10 +111,10 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a href="https://github.com/zulkarnaenfhr/little-dessert.github.io">
+                                                <a aria-label="githubLittleDessert" href="https://github.com/zulkarnaenfhr/little-dessert.github.io">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a href="https://zulkarnaenfhr.github.io/little-dessert.github.io/">
+                                                <a aria-label="websiteLittleDessert" href="https://zulkarnaenfhr.github.io/little-dessert.github.io/">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>
@@ -136,10 +136,10 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a href="https://github.com/zulkarnaenfhr/Countdown-Timer">
+                                                <a aria-label="githubCountdownTimer" href="https://github.com/zulkarnaenfhr/Countdown-Timer">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a href="https://zulkarnaenfhr.github.io/Countdown-Timer/">
+                                                <a aria-label="websiteCountdownTimer" href="https://zulkarnaenfhr.github.io/Countdown-Timer/">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>
@@ -161,10 +161,10 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a href="https://github.com/zulkarnaenfhr/Password-Generator.github.io">
+                                                <a aria-label="githubPasswordGenerator" href="https://github.com/zulkarnaenfhr/Password-Generator.github.io">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a href="https://zulkarnaenfhr.github.io/Password-Generator.github.io/">
+                                                <a aria-label="websitePasswordGenerator" href="https://zulkarnaenfhr.github.io/Password-Generator.github.io/">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>
@@ -192,7 +192,7 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a href="https://github.com/zulkarnaenfhr/GratioClass">
+                                                <a aria-label="githubGratioClass" href="https://github.com/zulkarnaenfhr/GratioClass">
                                                     <i className="fab fa-github"></i>
                                                 </a>
                                             </div>
@@ -213,10 +213,10 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a href="https://github.com/ElecticCode/Cek-Bed-Rs-Indonesia">
+                                                <a aria-label="githubCekBedRS" href="https://github.com/ElecticCode/Cek-Bed-Rs-Indonesia">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a href="https://cek-bed-rs-indonesia.herokuapp.com/">
+                                                <a aria-label="websiteCekBedRS" href="https://cek-bed-rs-indonesia.herokuapp.com/">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>
@@ -239,10 +239,10 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a href="https://github.com/zulkarnaenfhr/Indodax-API-x-Telegram-Website">
+                                                <a aria-label="githubCryptocurrencyMonitor" href="https://github.com/zulkarnaenfhr/Indodax-API-x-Telegram-Website">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a href="https://indodax-monitoring-website.herokuapp.com/">
+                                                <a aria-label="websiteCryptocurrencyMonitor" href="https://indodax-monitoring-website.herokuapp.com/">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>
@@ -269,7 +269,7 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a href="https://github.com/zulkarnaenfhr/spacecapt_university">
+                                                <a aria-label="githubSpaceCaptUniversity" href="https://github.com/zulkarnaenfhr/spacecapt_university">
                                                     <i className="fab fa-github"></i>
                                                 </a>
                                             </div>
@@ -289,10 +289,10 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a href="https://github.com/zulkarnaenfhr/spacecapt_university">
+                                                <a aria-label="githubSpaceCaptTect" href="https://github.com/zulkarnaenfhr/spacecapt_university">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a href="https://spacecapt-university.000webhostapp.com/index.php">
+                                                <a aria-label="websiteSpaceCaptTech" href="https://spacecapt-university.000webhostapp.com/index.php">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>
@@ -314,10 +314,10 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a href="https://github.com/zulkarnaenfhr/Indodax-API-x-Telegram-Website">
+                                                <a aria-label="githubCovidMapping" href="https://github.com/zulkarnaenfhr/Indodax-API-x-Telegram-Website">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a href="https://indodax-monitoring-website.herokuapp.com/">
+                                                <a aria-label="websiteCovidMapping" href="https://indodax-monitoring-website.herokuapp.com/">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>

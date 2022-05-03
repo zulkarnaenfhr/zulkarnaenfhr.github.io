@@ -10,19 +10,29 @@ class Navbar extends Component {
                     <div>
                         <ul className="ulmenu">
                             <li>
-                                <a href="#homeSection">/ Home</a>
+                                <a aria-label="navbarHomeSection" href="#homeSection">
+                                    / Home
+                                </a>
                             </li>
                             <li>
-                                <a href="#aboutMeSection">/ About Me</a>
+                                <a aria-label="navbarAboutMeSection" href="#aboutMeSection">
+                                    / About Me
+                                </a>
                             </li>
                             <li>
-                                <a href="#experienceSection">/ Experience</a>
+                                <a aria-label="navbarExperienceSection" href="#experienceSection">
+                                    / Experience
+                                </a>
                             </li>
                             <li>
-                                <a href="#projectSection">/ Project</a>
+                                <a aria-label="navbarProjectSection" href="#projectSection">
+                                    / Project
+                                </a>
                             </li>
                             <li>
-                                <a href="#getInTouch">/ Get In Touch</a>
+                                <a aria-label="navbarGetInTouch" href="#getInTouch">
+                                    / Get In Touch
+                                </a>
                             </li>
                             <li>
                                 <Link to="/files/CV_Fahri Izzuddin Zulkarnaen_Magang Merdeka_ATS Friendly.pdf" target="_blank" download="CV_Fahri Website Developer">
