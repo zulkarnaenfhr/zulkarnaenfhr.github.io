@@ -23,7 +23,7 @@ class Projectsection extends Component {
                                                 <p> Abusive Tweet Classification using Convolutional Neural Network. The value of accuracy, precision, recall and f1-score are 0.8946 or 89.46%</p>
                                                 <p>
                                                     <span style={{ color: "#19f9d8" }}>python</span>, using <span style={{ color: "#19f9d8" }}>tensorflow</span>, <span style={{ color: "#19f9d8" }}>pandas</span>,{" "}
-                                                    <span style={{ color: "#19f9d8" }}>pySastrawi</span>,<span style={{ color: "#19f9d8" }}>re</span> library
+                                                    <span style={{ color: "#19f9d8" }}>pySastrawi</span>,<span style={{ color: "#19f9d8" }}> re</span> library
                                                 </p>
                                             </div>
                                             <div className="project-link">
@@ -47,7 +47,7 @@ class Projectsection extends Component {
                                                 <p>Abusive Tweet Classification using Long Short Term Memory. The value of accuracy, precision, recall and f1-score are 0.8814 or 88.14%</p>
                                                 <p>
                                                     <span style={{ color: "#19f9d8" }}>python</span>, using <span style={{ color: "#19f9d8" }}>tensorflow</span>, <span style={{ color: "#19f9d8" }}>pandas</span>,{" "}
-                                                    <span style={{ color: "#19f9d8" }}>pySastrawi</span>,<span style={{ color: "#19f9d8" }}>re</span> library
+                                                    <span style={{ color: "#19f9d8" }}>pySastrawi</span>,<span style={{ color: "#19f9d8" }}> re</span> library
                                                 </p>
                                             </div>
                                             <div className="project-link">
@@ -70,7 +70,7 @@ class Projectsection extends Component {
                                                 <h2>Hand Written Digit Classification using CNN Algorithm</h2>
                                                 <p>Lorem ipsum dolor sit amet, consectetur rcu sit amet elit sodales, nec volutpat velit bibendum.</p>
                                                 <p>
-                                                    <span style={{ color: "#19f9d8" }}>python</span>, using <span style={{ color: "#19f9d8" }}>tensorflow</span>,<span style={{ color: "#19f9d8" }}>Pandas</span>,
+                                                    <span style={{ color: "#19f9d8" }}>python</span>, using <span style={{ color: "#19f9d8" }}>tensorflow</span>,<span style={{ color: "#19f9d8" }}> Pandas</span>,
                                                     <span style={{ color: "#19f9d8" }}> numpy</span> library
                                                 </p>
                                             </div>
@@ -105,8 +105,8 @@ class Projectsection extends Component {
                                                     Make a simple landing page website for <i>Little Dessert Sidoarjo</i>
                                                 </p>
                                                 <p>
-                                                    <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}>CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>, using{" "}
-                                                    <span style={{ color: "skyblue" }}> Bootstrap</span>,<span style={{ color: "skyblue" }}>jquery</span>,<span style={{ color: "skyblue" }}> Aos-library</span>
+                                                    <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>, using{" "}
+                                                    <span style={{ color: "skyblue" }}> Bootstrap</span>,<span style={{ color: "skyblue" }}> jQuery</span>,<span style={{ color: "skyblue" }}> Aos-library </span>
                                                     Framework
                                                 </p>
                                             </div>
@@ -130,8 +130,8 @@ class Projectsection extends Component {
                                                 <h2>Countdown Timer to 2022</h2>
                                                 <p>Make a programming website to Countdown the time for 2022</p>
                                                 <p>
-                                                    <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}>CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>, using{" "}
-                                                    <span style={{ color: "skyblue" }}>jquery</span>
+                                                    <span style={{ color: "skyblue" }}>Html</span>, <span style={{ color: "skyblue" }}>CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>, using{" "}
+                                                    <span style={{ color: "skyblue" }}>jQuery </span>
                                                     Framework for animation
                                                 </p>
                                             </div>
@@ -155,8 +155,8 @@ class Projectsection extends Component {
                                                 <h2>Password Generator Website</h2>
                                                 <p>Website to generate passwords with the required password length and conditions</p>
                                                 <p>
-                                                    <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}>CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>, using{" "}
-                                                    <span style={{ color: "skyblue" }}>jquery</span>
+                                                    <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>, using{" "}
+                                                    <span style={{ color: "skyblue" }}>jQuery </span>
                                                     Framework for animation
                                                 </p>
                                             </div>
@@ -185,9 +185,9 @@ class Projectsection extends Component {
                                                     <i>Gratio Class Website</i>
                                                 </p>
                                                 <p>
-                                                    <span style={{ color: "skyblue" }}>React Js</span>,<span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}>CSS</span>,
-                                                    <span style={{ color: "skyblue" }}> JavaScript</span>, using <span style={{ color: "skyblue" }}> Bootstrap</span>,<span style={{ color: "skyblue" }}>jquery</span>,
-                                                    <span style={{ color: "skyblue" }}> Aos-library</span>
+                                                    <span style={{ color: "skyblue" }}>React Js</span>,<span style={{ color: "skyblue" }}> Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,
+                                                    <span style={{ color: "skyblue" }}> JavaScript</span>, using <span style={{ color: "skyblue" }}> Bootstrap</span>,<span style={{ color: "skyblue" }}> jQuery</span>,
+                                                    <span style={{ color: "skyblue" }}> Aos-library </span>
                                                     Framework
                                                 </p>
                                             </div>
@@ -206,9 +206,9 @@ class Projectsection extends Component {
                                                 <h2>Cek Bed Rumah Sakit Indonesia</h2>
                                                 <p>Create a website for public to check the availability of hospital beds in indonesia, it can be categorize by covid or non covid patient.</p>
                                                 <p>
-                                                    <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}>CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>,
-                                                    <span style={{ color: "skyblue" }}>PHP</span>, using <span style={{ color: "skyblue" }}>jquery</span>,<span style={{ color: "skyblue" }}>Ajax</span>,
-                                                    <span style={{ color: "skyblue" }}>Bootstrap</span>
+                                                    <span style={{ color: "skyblue" }}>Html </span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>,
+                                                    <span style={{ color: "skyblue" }}> PHP</span>, using <span style={{ color: "skyblue" }}> jQuery</span>,<span style={{ color: "skyblue" }}> Ajax</span>,
+                                                    <span style={{ color: "skyblue" }}> Bootstrap </span>
                                                     Framework{" "}
                                                 </p>
                                             </div>
@@ -232,9 +232,9 @@ class Projectsection extends Component {
                                                 <h2>Cryptocurrency Market Monitor</h2>
                                                 <p>Create a website to monitor the cryptocurrency market using indodax api. there are features for users what assets are recommend to be buy and recommended to be sell.</p>
                                                 <p>
-                                                    <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}>CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>,
-                                                    <span style={{ color: "skyblue" }}>PHP</span>, using
-                                                    <span style={{ color: "skyblue" }}>jquery</span>,<span style={{ color: "skyblue" }}>Ajax</span>,<span style={{ color: "skyblue" }}>Bootstrap</span>
+                                                    <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>,
+                                                    <span style={{ color: "skyblue" }}> PHP</span>, using
+                                                    <span style={{ color: "skyblue" }}> jQuery</span>,<span style={{ color: "skyblue" }}> Ajax</span>,<span style={{ color: "skyblue" }}> Bootstrap </span>
                                                     Framework
                                                 </p>
                                             </div>

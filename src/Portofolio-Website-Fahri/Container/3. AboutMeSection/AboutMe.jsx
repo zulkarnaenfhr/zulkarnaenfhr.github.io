@@ -34,7 +34,7 @@ class Aboutme extends Component {
                                     </div>
                                     <div className="paragraf paragraf2" data-aos="fade-up" data-aos-delay="100">
                                         I am passionate about building excellent software that improves the lives of those around me. so, I'm doing deeper learning about
-                                        <b className="boldAboutMe">Front End Developer</b>. I’m doing in-depth learning about how to create and animate 3D computer graphics to display in a web browser. I'm also Well-organised person,
+                                        <b className="boldAboutMe"> Front End Developer</b>. I’m doing in-depth learning about how to create and animate 3D computer graphics to display in a web browser. I'm also Well-organised person,
                                         problem solver, independent employee with high attention to detail. In my free time, i am also doing learning about <b className="boldAboutMe">Artificial Intelligence and Computer Vision</b>.
                                     </div>
 

@@ -3,7 +3,7 @@
 
 #digitalSignature {
     height: 40px;
-    background: rgb(18, 19, 19);
+    background: transparent;
 }
 
 .digitalSignature-write {
