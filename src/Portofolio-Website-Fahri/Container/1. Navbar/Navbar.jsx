@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
     render() {
@@ -22,6 +23,11 @@ class Navbar extends Component {
                             </li>
                             <li>
                                 <a href="#getInTouch">/ Get In Touch</a>
+                            </li>
+                            <li>
+                                <Link to="/files/CV_Fahri Izzuddin Zulkarnaen_Magang Merdeka_ATS Friendly.pdf" target="_blank" download="CV_Fahri Website Developer">
+                                    <p className="navbarDownloadCV">/ Download CV</p>
+                                </Link>
                             </li>
                         </ul>
                     </div>

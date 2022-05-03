@@ -6,7 +6,7 @@ class Experiencesection extends Component {
         super(props);
 
         this.state = {
-            statusWorking: "cateringBundaMia",
+            statusWorking: "telkomIndonesia",
             statusOrganization: "UPNVeteranJawaTimur",
             innerWidth: 0,
         };
@@ -50,6 +50,17 @@ class Experiencesection extends Component {
                                         <ul>
                                             <li>
                                                 <button
+                                                    name="telkomIndonesia"
+                                                    onClick={this.handleWorkingChange}
+                                                    id="buttonCateringBundaMia"
+                                                    style={this.state.statusWorking === "telkomIndonesia" ? { color: "#19f9d8" } : { color: "" }}
+                                                    className="experienceButton"
+                                                >
+                                                    Telkom Indonesia
+                                                </button>
+                                            </li>
+                                            <li className="buttonbawah">
+                                                <button
                                                     name="cateringBundaMia"
                                                     onClick={this.handleWorkingChange}
                                                     id="buttonCateringBundaMia"
@@ -74,6 +85,25 @@ class Experiencesection extends Component {
                                     </div>
 
                                     <div id="experience-sectionright" className={this.state.innerWidth > 1000 ? "col-7 sectionRightExperience sectionRightExperienceworking" : "sectionRightExperience sectionRightExperienceworking"}>
+                                        <div className={this.state.statusWorking === "telkomIndonesia" ? "load-show-workingExperience" : "load-hide-workingExperience"}>
+                                            <div className="firstExperience">
+                                                <div style={{ display: "flex", alignItems: "center" }}>
+                                                    <p id="positionOffice" className="position">
+                                                        Developer @
+                                                        <span id="nameOffice" className="name">
+                                                            Telkom Indonesia
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <p id="durationOffice" className="duration">
+                                                    February 2022 - now
+                                                </p>
+                                                <p id="descriptionOffice" className="description">
+                                                    Create products that are visible to users, with special emphasis on user interface design, and also Turn well-researched product designs enjoyable app experiences that integrate well with
+                                                    our backend APIs and also work consistently across multiple devices.
+                                                </p>
+                                            </div>
+                                        </div>
                                         <div className={this.state.statusWorking === "cateringBundaMia" ? "load-show-workingExperience" : "load-hide-workingExperience"}>
                                             <div className="firstExperience">
                                                 <div style={{ display: "flex", alignItems: "center" }}>
@@ -103,7 +133,7 @@ class Experiencesection extends Component {
                                                     </p>
                                                 </div>
                                                 <p id="durationOffice" className="duration">
-                                                    September 2021 - now
+                                                    September 2021 - January 2022
                                                 </p>
                                                 <p id="descriptionOffice" className="description">
                                                     Design and Developed landing page website for{" "}

@@ -19,6 +19,7 @@
     color: skyblue;
     font-family: "Amiri", serif;
     font-style: italic;
+    transition: all 0.3s ease-in-out;
 }
 .ullogo {
     font-size: 2rem;
@@ -26,6 +27,15 @@
 
 .navbarfahri .ulmenu li a:hover {
     color: rgb(92, 138, 156);
+}
+
+.navbarfahri .ulmenu li .navbarDownloadCV {
+    transition: all 0.3s ease-in-out;
+    color: #19f9d8;
+}
+
+.navbarfahri .ulmenu li .navbarDownloadCV:hover {
+    color: #38bfaa;
 }
 
 /* end of css navbar section */

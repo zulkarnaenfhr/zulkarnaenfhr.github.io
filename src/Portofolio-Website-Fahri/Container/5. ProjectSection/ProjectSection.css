@@ -22,6 +22,7 @@
     display: block;
     transition: 0.25s ease;
     border-radius: 30px;
+    transition: all 0.4s ease-in-out;
 }
 .cardfahri-container .cardfahri:hover {
     transform: translate(-5px, -5px);
@@ -62,6 +63,7 @@
     font-size: 1.6rem;
     padding-right: 1rem;
     color: white;
+    transition: all 0.3s ease-in-out;
 }
 .project-link a:hover {
     color: #19f9d8;

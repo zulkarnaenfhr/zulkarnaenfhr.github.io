@@ -3,10 +3,13 @@ import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 import Zulkarnaenfhr from "./Portofolio-Website-Fahri/Zulkarnaenfhr";
 import Changediv from "./Portofolio-Website-Fahri/Container/ChangeDiv";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
     <React.StrictMode>
-        <Zulkarnaenfhr />
+        <BrowserRouter>
+            <Zulkarnaenfhr />
+        </BrowserRouter>
     </React.StrictMode>,
     document.getElementById("root")
 );

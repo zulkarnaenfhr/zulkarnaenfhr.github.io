@@ -5,7 +5,7 @@
 /* font-family: "Cinzel", serif; */
 
 #getInTouch {
-    height: 100vh;
+    min-height: 100vh;
     color: silver;
 }
 
@@ -44,6 +44,7 @@
     padding-left: 2rem;
     text-decoration: none;
     color: silver;
+    transition: all 0.4s ease-in-out;
 }
 
 .getintouch-section2 .email a:hover {
@@ -71,6 +72,7 @@
     color: silver;
     font-family: "Itim", cursive;
     font-size: 56px;
+    transition: all 0.4s ease-in-out;
 }
 
 .getintouch-section3 ul li a:hover {
