@@ -15,7 +15,7 @@ class Zulkarnaenfhr extends Component {
         super(props);
 
         this.state = {
-            first: "",
+            load: false,
         };
         this.handleMouseMoveforEye = this.handleMouseMoveforEye.bind(this);
     }
@@ -43,26 +43,37 @@ class Zulkarnaenfhr extends Component {
         });
     };
 
-    render() {
-        return (window.onload = () => {
-            <div onMouseMove={this.handleMouseMoveforEye} className="starsbackground">
-                {/* <!-- html for background section  --> */}
-                <section id="background">
-                    <div id="stars"></div>
-                    <div id="stars2"></div>
-                    <div id="stars3"></div>
-                </section>
-                {/* <!-- end of html for background section  --> */}
-                <Loader />
-                <Navbar />
-                <Homesection />
-                <Aboutme />
-                <Experiencesection />
-                <Projectsection />
-                <Getintouch />
-                <Signiaturesection />
-            </div>;
+    componentDidMount() {
+        this.setState({
+            load: true,
         });
+    }
+    render() {
+        return (
+            <div>
+                {this.state.load ? (
+                    <div onMouseMove={this.handleMouseMoveforEye} className="starsbackground">
+                        {/* <!-- html for background section  --> */}
+                        <section id="background">
+                            <div id="stars"></div>
+                            <div id="stars2"></div>
+                            <div id="stars3"></div>
+                        </section>
+                        {/* <!-- end of html for background section  --> */}
+                        <Loader />
+                        <Navbar />
+                        <Homesection />
+                        <Aboutme />
+                        <Experiencesection />
+                        <Projectsection />
+                        <Getintouch />
+                        <Signiaturesection />
+                    </div>
+                ) : (
+                    <div>load</div>
+                )}
+            </div>
+        );
     }
 }
 
