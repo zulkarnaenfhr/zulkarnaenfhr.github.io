@@ -19,7 +19,7 @@ class Loader extends Component {
             this.setState({
                 statusShow: false,
             });
-        }, 2000);
+        }, 2800);
     }
 
     render() {

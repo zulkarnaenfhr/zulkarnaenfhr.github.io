@@ -19,6 +19,7 @@ class Zulkarnaenfhr extends Component {
         };
         this.handleMouseMoveforEye = this.handleMouseMoveforEye.bind(this);
     }
+
     handleMouseMoveforEye = () => {
         const container = document.querySelector(".starsbackground");
         container.addEventListener("mousemove", (e) => {
@@ -41,6 +42,7 @@ class Zulkarnaenfhr extends Component {
             });
         });
     };
+
     render() {
         return (
             <div onMouseMove={this.handleMouseMoveforEye} className="starsbackground">
