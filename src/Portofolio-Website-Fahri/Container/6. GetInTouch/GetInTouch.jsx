@@ -38,7 +38,7 @@ class Getintouch extends Component {
                                     </a>
                                 </li>
                                 <li>
-                                    <a aria-label="linkToLinkedIn" href="https://www.linkedin.com/in/Zulkarnaenfhr">
+                                    <a aria-label="linkToLinkedIn" href="https://www.linkedin.com/in/fahrizulkarnaen">
                                         Linked In
                                     </a>
                                 </li>
