@@ -35,7 +35,7 @@ class Navbar extends Component {
                                 </a>
                             </li>
                             <li>
-                                <Link to="/files/CV_Fahri Izzuddin Zulkarnaen_Magang Merdeka_ATS Friendly.pdf" target="_blank" download="CV_Fahri Website Developer">
+                                <Link to="/files/CV_Fahri Izzuddin Zulkarnaen_Website Developer.pdf" target="_blank" download="CV_Fahri izzuddin Zulkarnaen_Website Developer">
                                     <p className="navbarDownloadCV">/ Download CV</p>
                                 </Link>
                             </li>
