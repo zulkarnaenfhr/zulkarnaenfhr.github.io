@@ -291,13 +291,8 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a aria-label="githubSpaceCaptTect" href="https://github.com/zulkarnaenfhr/spacecapt_university">
+                                                <a aria-label="githubSpaceCaptTect" href="https://github.com/zulkarnaenfhr/SpaceCapt_Tech">
                                                     <i className="fab fa-github"></i>
-                                                </a>
-                                                <a aria-label="websiteSpaceCaptTech" href="https://spacecapt-university.000webhostapp.com/index.php">
-                                                    <span>
-                                                        <i className="fab fa-chrome"></i>
-                                                    </span>
                                                 </a>
                                             </div>
                                         </div>
