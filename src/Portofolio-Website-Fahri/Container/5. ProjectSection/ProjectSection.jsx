@@ -99,22 +99,19 @@ class Projectsection extends Component {
                                     <div className="cardfahri-container">
                                         <div className="cardfahri">
                                             <div className="cardfahri--display">
-                                                <h2>Little Dessert Landing Page Website</h2>
+                                                <h2>Indonesian Covid Mapping</h2>
+                                                <p>a website that can monitor and mapping covid cases in each province, monitor daily indonesia growth cases and also covid-19 indonesia news update</p>
                                                 <p>
-                                                    {" "}
-                                                    Make a landing page website for <i>Little Dessert Sidoarjo</i>
-                                                </p>
-                                                <p>
-                                                    <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>, using{" "}
-                                                    <span style={{ color: "skyblue" }}> Bootstrap</span>,<span style={{ color: "skyblue" }}> jQuery</span>,<span style={{ color: "skyblue" }}> Aos-library </span>
-                                                    Framework
+                                                    <span style={{ color: "skyblue" }}>React Js</span>,<span style={{ color: "skyblue" }}> HTML</span>,<span style={{ color: "skyblue" }}> CSS</span>,
+                                                    <span style={{ color: "skyblue" }}> Javascript</span>, using
+                                                    <span style={{ color: "skyblue" }}> Indonesian government Covid-19 API</span>
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a aria-label="githubLittleDessert" href="https://github.com/zulkarnaenfhr/little-dessert.github.io">
+                                                <a aria-label="githubCovidMapping" href="https://github.com/zulkarnaenfhr/indonesia-covid-mapping-react">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a aria-label="websiteLittleDessert" href="https://zulkarnaenfhr.github.io/little-dessert.github.io/">
+                                                <a aria-label="websiteCovidMapping" href="https://indonesia-covid-mapping-react.vercel.app/">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>
@@ -127,8 +124,8 @@ class Projectsection extends Component {
                                     <div className="cardfahri-container">
                                         <div className="cardfahri">
                                             <div className="cardfahri--display">
-                                                <h2>Countdown Timer to 2022</h2>
-                                                <p>Make a programming website to Countdown the time for 2022</p>
+                                                <h2>Big Sight Company Profile Website</h2>
+                                                <p>Make a company profile website on Big Sight products as one of the activities following in kampus merdeka 2022 as a developer in PT Telkom Indonesia</p>
                                                 <p>
                                                     <span style={{ color: "skyblue" }}>Html</span>, <span style={{ color: "skyblue" }}>CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>, using{" "}
                                                     <span style={{ color: "skyblue" }}>jQuery </span>
@@ -136,10 +133,7 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a aria-label="githubCountdownTimer" href="https://github.com/zulkarnaenfhr/Countdown-Timer">
-                                                    <i className="fab fa-github"></i>
-                                                </a>
-                                                <a aria-label="websiteCountdownTimer" href="https://zulkarnaenfhr.github.io/Countdown-Timer/">
+                                                <a aria-label="websiteCountdownTimer" href="https://bigsight-fe-bigsight-dev.apps-okd-1-maas.playcourt.id/en">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>
@@ -152,19 +146,20 @@ class Projectsection extends Component {
                                     <div className="cardfahri-container">
                                         <div className="cardfahri">
                                             <div className="cardfahri--display">
-                                                <h2>Password Generator Website</h2>
-                                                <p>Website to generate passwords with the required password length and conditions</p>
+                                                <h2>Cek Bed Rumah Sakit Indonesia</h2>
+                                                <p>Create a website for public to check the availability of hospital beds in indonesia, it can be categorize by covid or non covid patient</p>
                                                 <p>
-                                                    <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>, using{" "}
-                                                    <span style={{ color: "skyblue" }}>jQuery </span>
-                                                    Framework for animation
+                                                    <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>,
+                                                    <span style={{ color: "skyblue" }}> PHP</span>, using <span style={{ color: "skyblue" }}> jQuery</span>,<span style={{ color: "skyblue" }}> Ajax</span>,
+                                                    <span style={{ color: "skyblue" }}> Bootstrap </span>
+                                                    Framework{" "}
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a aria-label="githubPasswordGenerator" href="https://github.com/zulkarnaenfhr/Password-Generator.github.io">
+                                                <a aria-label="githubCekBedRS" href="https://github.com/ElecticCode/Cek-Bed-Rs-Indonesia">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a aria-label="websitePasswordGenerator" href="https://zulkarnaenfhr.github.io/Password-Generator.github.io/">
+                                                <a aria-label="websiteCekBedRS" href="https://cek-bed-rs-indonesia.herokuapp.com/">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>
@@ -195,6 +190,11 @@ class Projectsection extends Component {
                                                 <a aria-label="githubGratioClass" href="https://github.com/zulkarnaenfhr/GratioClass">
                                                     <i className="fab fa-github"></i>
                                                 </a>
+                                                <a aria-label="websiteCekBedRS" href="https://gratio-class.vercel.app/">
+                                                    <span>
+                                                        <i className="fab fa-chrome"></i>
+                                                    </span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -203,20 +203,22 @@ class Projectsection extends Component {
                                     <div className="cardfahri-container">
                                         <div className="cardfahri">
                                             <div className="cardfahri--display">
-                                                <h2>Cek Bed Rumah Sakit Indonesia</h2>
-                                                <p>Create a website for public to check the availability of hospital beds in indonesia, it can be categorize by covid or non covid patient</p>
+                                                <h2>Little Dessert Landing Page Website</h2>
                                                 <p>
-                                                    <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>,
-                                                    <span style={{ color: "skyblue" }}> PHP</span>, using <span style={{ color: "skyblue" }}> jQuery</span>,<span style={{ color: "skyblue" }}> Ajax</span>,
-                                                    <span style={{ color: "skyblue" }}> Bootstrap </span>
-                                                    Framework{" "}
+                                                    {" "}
+                                                    Make a landing page website for <i>Little Dessert Sidoarjo</i>
+                                                </p>
+                                                <p>
+                                                    <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>, using{" "}
+                                                    <span style={{ color: "skyblue" }}> Bootstrap</span>,<span style={{ color: "skyblue" }}> jQuery</span>,<span style={{ color: "skyblue" }}> Aos-library </span>
+                                                    Framework
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a aria-label="githubCekBedRS" href="https://github.com/ElecticCode/Cek-Bed-Rs-Indonesia">
+                                                <a aria-label="githubLittleDessert" href="https://github.com/zulkarnaenfhr/little-dessert.github.io">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a aria-label="websiteCekBedRS" href="https://cek-bed-rs-indonesia.herokuapp.com/">
+                                                <a aria-label="websiteLittleDessert" href="https://zulkarnaenfhr.github.io/little-dessert.github.io/">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>
@@ -305,19 +307,19 @@ class Projectsection extends Component {
                                     <div className="cardfahri-container">
                                         <div className="cardfahri">
                                             <div className="cardfahri--display">
-                                                <h2>Indonesian Covid Mapping</h2>
-                                                <p>a website that can monitor and mapping covid cases in each province, monitor daily indonesia growth cases and also covid-19 indonesia news update</p>
+                                                <h2>Password Generator Website</h2>
+                                                <p>Website to generate passwords with the required password length and conditions</p>
                                                 <p>
-                                                    <span style={{ color: "skyblue" }}>React Js</span>,<span style={{ color: "skyblue" }}> HTML</span>,<span style={{ color: "skyblue" }}> CSS</span>,
-                                                    <span style={{ color: "skyblue" }}> Javascript</span>, using
-                                                    <span style={{ color: "skyblue" }}> Indonesian government Covid-19 API</span>
+                                                    <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>, using{" "}
+                                                    <span style={{ color: "skyblue" }}>jQuery </span>
+                                                    Framework for animation
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a aria-label="githubCovidMapping" href="https://github.com/zulkarnaenfhr/Indodax-API-x-Telegram-Website">
+                                                <a aria-label="githubPasswordGenerator" href="https://github.com/zulkarnaenfhr/Password-Generator.github.io">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a aria-label="websiteCovidMapping" href="https://indodax-monitoring-website.herokuapp.com/">
+                                                <a aria-label="websitePasswordGenerator" href="https://zulkarnaenfhr.github.io/Password-Generator.github.io/">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>

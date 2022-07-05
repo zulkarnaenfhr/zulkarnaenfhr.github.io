@@ -25,7 +25,7 @@ class Aboutme extends Component {
                         <div className="col-10 aboutMeContent" data-aos="fade-up">
                             <div className="row">
                                 <div id="aboutMeLeft" className={this.state.innerWidth > 768 ? "col-3 aboutMeContentLeft" : "aboutMeContentLeft"} data-aos="fade-up" data-aos-delay="50">
-                                    <img src="https://i.ibb.co/bF7zcK4/fahri.jpg" className="imgMe" alt="" />
+                                    <img src="https://i.ibb.co/Wn5LmXB/Whats-App-Image-2022-03-22-at-8-23-20-PM.jpg" className="imgMe" alt="" />
                                 </div>
                                 <div id="aboutMeRight" className={this.state.innerWidth > 768 ? "col-9 aboutMeDescription" : "aboutMeDescription"}>
                                     <div className="paragraf paragraf1" data-aos="fade-up" data-aos-delay="100">

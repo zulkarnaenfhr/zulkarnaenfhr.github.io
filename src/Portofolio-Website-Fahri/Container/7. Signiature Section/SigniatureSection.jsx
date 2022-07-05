@@ -7,7 +7,7 @@ class Signiaturesection extends Component {
             <section id="digitalSignature">
                 <div className="container-fluid digitalSignature-content">
                     <div className="container">
-                        <p className="digitalSignature-write">Design and Develop by Fahri Zulkarnaen @Covid2021</p>
+                        <p className="digitalSignature-write">Design and Develop by Fahri Zulkarnaen @Covid2022</p>
                     </div>
                 </div>
             </section>

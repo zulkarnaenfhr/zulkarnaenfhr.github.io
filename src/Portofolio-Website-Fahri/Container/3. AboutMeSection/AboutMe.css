@@ -17,14 +17,11 @@
     color: #c0c0c0;
 }
 
-.aboutMeContentLeft {
-    display: flex;
-    align-items: center;
-}
-
 .imgMe {
     width: 100%;
     height: auto;
+    position: relative;
+    z-index: 4;
 }
 
 .boldAboutMe {
