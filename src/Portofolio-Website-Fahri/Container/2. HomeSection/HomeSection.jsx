@@ -21,7 +21,7 @@ class Homesection extends Component {
                     <div className="container hai-content">
                         <div className="nama">
                             {this.state.windowWidth > 768 ? (
-                                <h1 className="penulisanNama" data-aos-delay="2500" data-aos="fade-up" data-aos-offset="100">
+                                <h1 className="penulisanNama" data-aos-delay="2500" data-aos="fade-up">
                                     Hi,{" "}
                                     <span id="fahri" style={{ color: "cadetblue" }}>
                                         Your <span className="zulkarnaen">SpaceCapt</span>{" "}
@@ -29,7 +29,7 @@ class Homesection extends Component {
                                     Here :)
                                 </h1>
                             ) : (
-                                <h1 className="penulisanNama" data-aos-delay="2500" data-aos="fade-up" data-aos-offset="100">
+                                <h1 className="penulisanNama" data-aos-delay="2500" data-aos="fade-up">
                                     Hi,{" "}
                                     <span id="fahri" style={{ color: "cadetblue" }}>
                                         Fahri <span className="zulkarnaen">SpaceCapt</span>{" "}
@@ -38,7 +38,7 @@ class Homesection extends Component {
                                 </h1>
                             )}
 
-                            <div data-aos-delay="2500" data-aos="fade-up" data-aos-offset="100" style={{ display: "flex", marginLeft: "1rem" }}>
+                            <div data-aos-delay="2500" data-aos="fade-up" style={{ display: "flex", marginLeft: "1rem" }}>
                                 {/* <div className="eye"></div>
                                 <div className="eye2"></div> */}
                                 <div className="eye eye-left">
@@ -49,10 +49,10 @@ class Homesection extends Component {
                                 </div>
                             </div>
                         </div>
-                        <h1 className="bawahNama" data-aos-delay="2750" data-aos="fade-up" data-aos-offset="100">
+                        <h1 className="bawahNama" data-aos-delay="2750" data-aos="fade-up">
                             I Create stuff that all i love, <span style={{ color: "#19f9d8" }}>sometimes!</span>
                         </h1>
-                        <h2 id="bawahnya" className="whoAmI" data-aos-delay="3000" data-aos="fade-up" data-aos-offset="100">
+                        <h2 id="bawahnya" className="whoAmI" data-aos-delay="3000" data-aos="fade-up">
                             I am undergraduate student that have profound interest in Front End Developer, Machine Learning Engineer, Computer Vision and everything in beetweens.{" "}
                         </h2>
                     </div>

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./Background.css";
 import "./Style.css";
-import Loader from "./Loader";
 import Navbar from "./Container/1. Navbar/Navbar";
 import Aboutme from "./Container/3. AboutMeSection/AboutMe";
 import Homesection from "./Container/2. HomeSection/HomeSection";
@@ -9,13 +8,14 @@ import Experiencesection from "./Container/4. ExperienceSection/ExperienceSectio
 import Projectsection from "./Container/5. ProjectSection/ProjectSection";
 import Getintouch from "./Container/6. GetInTouch/GetInTouch";
 import Signiaturesection from "./Container/7. Signiature Section/SigniatureSection";
+import { AnimatePresence, motion } from "framer-motion";
 
 class Zulkarnaenfhr extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            load: false,
+            load: true,
         };
         this.handleMouseMoveforEye = this.handleMouseMoveforEye.bind(this);
     }
@@ -44,33 +44,80 @@ class Zulkarnaenfhr extends Component {
     };
 
     componentDidMount() {
-        this.setState({
-            load: true,
-        });
+        setTimeout(() => {
+            this.setState({
+                load: false,
+            });
+        }, 5000);
     }
+
     render() {
         return (
             <div>
                 {this.state.load ? (
-                    <div onMouseMove={this.handleMouseMoveforEye} className="starsbackground">
-                        {/* <!-- html for background section  --> */}
-                        <section id="background">
-                            <div id="stars"></div>
-                            <div id="stars2"></div>
-                            <div id="stars3"></div>
-                        </section>
-                        {/* <!-- end of html for background section  --> */}
-                        <Loader />
-                        <Navbar />
-                        <Homesection />
-                        <Aboutme />
-                        <Experiencesection />
-                        <Projectsection />
-                        <Getintouch />
-                        <Signiaturesection />
-                    </div>
+                    <AnimatePresence>
+                        <motion.div
+                            key="loading-page"
+                            initial="pageInitial"
+                            animate="pageAnimate"
+                            variants={{
+                                pageInitial: {
+                                    opacity: 0,
+                                    // transition: { duration: 1 },
+                                },
+                                pageAnimate: {
+                                    opacity: 1,
+                                    transition: {
+                                        duration: 1.5,
+                                    },
+                                },
+                            }}
+                            exit="pageInitial"
+                            className="loading-page"
+                        >
+                            <div id="loadPage">
+                                <div className="loadPage-content-container">
+                                    <h1 className="loadPage-text">SpaceCapt Technology Industry</h1>
+                                </div>
+                            </div>
+                        </motion.div>
+                    </AnimatePresence>
                 ) : (
-                    <div>load</div>
+                    <AnimatePresence>
+                        <motion.div
+                            key={"landingPage"}
+                            initial="pageInitial"
+                            animate="pageAnimate"
+                            variants={{
+                                pageInitial: {
+                                    opacity: 0,
+                                    transition: { duration: 1.5 },
+                                },
+                                pageAnimate: {
+                                    opacity: 1,
+                                },
+                            }}
+                            exit="pageInitial"
+                            className="landingPage"
+                        >
+                            <div onMouseMove={this.handleMouseMoveforEye} className="starsbackground">
+                                {/* <!-- html for background section  --> */}
+                                <section id="background">
+                                    <div id="stars"></div>
+                                    <div id="stars2"></div>
+                                    <div id="stars3"></div>
+                                </section>
+                                {/* <!-- end of html for background section  --> */}
+                                <Navbar />
+                                <Homesection />
+                                <Aboutme />
+                                <Experiencesection />
+                                <Projectsection />
+                                <Getintouch />
+                                <Signiaturesection />
+                            </div>
+                        </motion.div>
+                    </AnimatePresence>
                 )}
             </div>
         );
