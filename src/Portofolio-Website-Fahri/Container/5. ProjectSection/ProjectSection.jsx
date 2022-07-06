@@ -27,10 +27,10 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a aria-label="githubCNNAlgo" href="https://github.com/zulkarnaenfhr/Abusive-Indonesian-Tweet-Using-Convolutional-Neural-Networks-Method  ">
+                                                <a aria-label="githubCNNAlgo" href="https://github.com/zulkarnaenfhr/Abusive-Indonesian-Tweet-Using-Convolutional-Neural-Networks-Method" target="_blank">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a aria-label="colabCNNAlgo" href="https://colab.research.google.com/drive/1x1Io429fR7-a5QjX0-J9oSroOPCpzoLs?usp=sharing">
+                                                <a aria-label="colabCNNAlgo" href="https://colab.research.google.com/drive/1x1Io429fR7-a5QjX0-J9oSroOPCpzoLs?usp=sharing" target="_blank">
                                                     <span>
                                                         <i className="fab fa-python"></i>
                                                     </span>
@@ -51,10 +51,10 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a aria-label="githubLSTMAlgo" href="https://github.com/zulkarnaenfhr/Abusive-Indonesian-Tweet-Classification-using-Long-Short-Term-Memory-Method">
+                                                <a aria-label="githubLSTMAlgo" href="https://github.com/zulkarnaenfhr/Abusive-Indonesian-Tweet-Classification-using-Long-Short-Term-Memory-Method" target="_blank">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a aria-label="colabLSTMAlgo" href="https://colab.research.google.com/drive/1-8XYX22Ztd_1fxwUKD0QjtP9L5Y-5lDX?usp=sharing">
+                                                <a aria-label="colabLSTMAlgo" href="https://colab.research.google.com/drive/1-8XYX22Ztd_1fxwUKD0QjtP9L5Y-5lDX?usp=sharing" target="_blank">
                                                     <span>
                                                         <i className="fab fa-python"></i>
                                                     </span>
@@ -75,10 +75,10 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a aria-label="githubHandWritten" href="https://github.com/zulkarnaenfhr/CNN-Handwritten-Digit-Classification">
+                                                <a aria-label="githubHandWritten" href="https://github.com/zulkarnaenfhr/CNN-Handwritten-Digit-Classification" target="_blank">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a aria-label="colabHandWritten" href="https://colab.research.google.com/drive/1YwlumUVZhalSm3YKW7gbhlw09tBG4jLS?usp=sharing ">
+                                                <a aria-label="colabHandWritten" href="https://colab.research.google.com/drive/1YwlumUVZhalSm3YKW7gbhlw09tBG4jLS?usp=sharing" target="_blank">
                                                     <span>
                                                         <i className="fab fa-python"></i>
                                                     </span>
@@ -108,10 +108,10 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a aria-label="githubCovidMapping" href="https://github.com/zulkarnaenfhr/indonesia-covid-mapping-react">
+                                                <a aria-label="githubCovidMapping" href="https://github.com/zulkarnaenfhr/indonesia-covid-mapping-react" target="_blank">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a aria-label="websiteCovidMapping" href="https://indonesia-covid-mapping-react.vercel.app/">
+                                                <a aria-label="websiteCovidMapping" href="https://indonesia-covid-mapping-react.vercel.app/" target="_blank">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>
@@ -133,7 +133,7 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a aria-label="websiteCountdownTimer" href="https://bigsight-fe-bigsight-dev.apps-okd-1-maas.playcourt.id/en">
+                                                <a aria-label="websiteCountdownTimer" href="https://bigsight-fe-bigsight-dev.apps-okd-1-maas.playcourt.id/en" target="_blank">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>
@@ -156,10 +156,10 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a aria-label="githubCekBedRS" href="https://github.com/ElecticCode/Cek-Bed-Rs-Indonesia">
+                                                <a aria-label="githubCekBedRS" href="https://github.com/ElecticCode/Cek-Bed-Rs-Indonesia" target="_blank">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a aria-label="websiteCekBedRS" href="https://cek-bed-rs-indonesia.herokuapp.com/">
+                                                <a aria-label="websiteCekBedRS" href="https://cek-bed-rs-indonesia.herokuapp.com/" target="_blank">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>
@@ -187,10 +187,10 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a aria-label="githubGratioClass" href="https://github.com/zulkarnaenfhr/GratioClass">
+                                                <a aria-label="githubGratioClass" href="https://github.com/zulkarnaenfhr/GratioClass" target="_blank">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a aria-label="websiteCekBedRS" href="https://gratio-class.vercel.app/">
+                                                <a aria-label="websiteCekBedRS" href="https://gratio-class.vercel.app/" target="_blank">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>
@@ -215,10 +215,10 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a aria-label="githubLittleDessert" href="https://github.com/zulkarnaenfhr/little-dessert.github.io">
+                                                <a aria-label="githubLittleDessert" href="https://github.com/zulkarnaenfhr/little-dessert.github.io" target="_blank">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a aria-label="websiteLittleDessert" href="https://zulkarnaenfhr.github.io/little-dessert.github.io/">
+                                                <a aria-label="websiteLittleDessert" href="https://zulkarnaenfhr.github.io/little-dessert.github.io/" target="_blank">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>
@@ -241,10 +241,10 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a aria-label="githubCryptocurrencyMonitor" href="https://github.com/zulkarnaenfhr/Indodax-API-x-Telegram-Website">
+                                                <a aria-label="githubCryptocurrencyMonitor" href="https://github.com/zulkarnaenfhr/Indodax-API-x-Telegram-Website" target="_blank">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a aria-label="websiteCryptocurrencyMonitor" href="https://indodax-monitoring-website.herokuapp.com/">
+                                                <a aria-label="websiteCryptocurrencyMonitor" href="https://indodax-monitoring-website.herokuapp.com/" target="_blank">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>
@@ -271,7 +271,7 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a aria-label="githubSpaceCaptUniversity" href="https://github.com/zulkarnaenfhr/spacecapt_university">
+                                                <a aria-label="githubSpaceCaptUniversity" href="https://github.com/zulkarnaenfhr/spacecapt_university" target="_blank">
                                                     <i className="fab fa-github"></i>
                                                 </a>
                                             </div>
@@ -291,7 +291,7 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a aria-label="githubSpaceCaptTect" href="https://github.com/zulkarnaenfhr/SpaceCapt_Tech">
+                                                <a aria-label="githubSpaceCaptTect" href="https://github.com/zulkarnaenfhr/SpaceCapt_Tech" target="_blank">
                                                     <i className="fab fa-github"></i>
                                                 </a>
                                             </div>
@@ -311,10 +311,10 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a aria-label="githubPasswordGenerator" href="https://github.com/zulkarnaenfhr/Password-Generator.github.io">
+                                                <a aria-label="githubPasswordGenerator" href="https://github.com/zulkarnaenfhr/Password-Generator.github.io" target="_blank">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a aria-label="websitePasswordGenerator" href="https://zulkarnaenfhr.github.io/Password-Generator.github.io/">
+                                                <a aria-label="websitePasswordGenerator" href="https://zulkarnaenfhr.github.io/Password-Generator.github.io/" target="_blank">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>
