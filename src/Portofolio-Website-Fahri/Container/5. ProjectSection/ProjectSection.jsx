@@ -133,7 +133,7 @@ class Projectsection extends Component {
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a aria-label="websiteCountdownTimer" href="https://bigsight-fe-bigsight-dev.apps-okd-1-maas.playcourt.id/en" target="_blank">
+                                                <a aria-label="websiteCountdownTimer" href="https://bigsight.id/en" target="_blank">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>
