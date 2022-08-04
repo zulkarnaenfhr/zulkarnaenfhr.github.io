@@ -127,9 +127,10 @@ class Projectsection extends Component {
                                                 <h2>Big Sight Company Profile Website</h2>
                                                 <p>Make a company profile website on Big Sight products as one of the activities following in kampus merdeka 2022 as a developer in PT Telkom Indonesia</p>
                                                 <p>
-                                                    <span style={{ color: "skyblue" }}>Html</span>, <span style={{ color: "skyblue" }}>CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>, using{" "}
-                                                    <span style={{ color: "skyblue" }}>jQuery </span>
-                                                    Framework for animation
+                                                    <span style={{ color: "skyblue" }}>Next.Js</span>, <span style={{ color: "skyblue" }}>CSS</span>,<span style={{ color: "skyblue" }}> Node.Js</span>, using{" "}
+                                                    <span style={{ color: "skyblue" }}>Bootstrap</span>, <span style={{ color: "skyblue" }}>Aos-Library</span>, <span style={{ color: "skyblue" }}>Axios</span>,{" "}
+                                                    <span style={{ color: "skyblue" }}>Sequelize </span>
+                                                    and many more
                                                 </p>
                                             </div>
                                             <div className="project-link">
