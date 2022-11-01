@@ -43,17 +43,17 @@ class Aboutme extends Component {
                                         <div className="row techlist-content" style={{ marginLeft: "-1.5rem" }}>
                                             <div className="col-6 technologylist">
                                                 <ul>
-                                                    <li>C, C#, C++</li>
                                                     <li>Python</li>
                                                     <li>HTML</li>
                                                     <li>CSS</li>
+                                                    <li>JavaScript Es6</li>
                                                 </ul>
                                             </div>
                                             <div className="col-6 technologylist">
                                                 <ul>
-                                                    <li>Bootstrap 5</li>
-                                                    <li>JavaScript Es6</li>
+                                                    <li>Next Js</li>
                                                     <li>React Js</li>
+                                                    <li>Node Js</li>
                                                     <li>MySql Database</li>
                                                 </ul>
                                             </div>

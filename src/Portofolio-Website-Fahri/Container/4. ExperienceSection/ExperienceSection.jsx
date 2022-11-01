@@ -61,6 +61,17 @@ class Experiencesection extends Component {
                                             </li>
                                             <li className="buttonbawah">
                                                 <button
+                                                    name="bhinneka"
+                                                    onClick={this.handleWorkingChange}
+                                                    id="buttonBhinneka"
+                                                    style={this.state.statusWorking === "bhinneka" ? { color: "#19f9d8" } : { color: "" }}
+                                                    className="experienceButton"
+                                                >
+                                                    Bhinneka
+                                                </button>
+                                            </li>
+                                            <li className="buttonbawah">
+                                                <button
                                                     name="cateringBundaMia"
                                                     onClick={this.handleWorkingChange}
                                                     id="buttonCateringBundaMia"
@@ -101,6 +112,24 @@ class Experiencesection extends Component {
                                                 <p id="descriptionOffice" className="description">
                                                     Create products that are visible to users, with special emphasis on user interface design, and also Turn well-researched product designs enjoyable app experiences that integrate well with
                                                     our backend APIs and also work consistently across multiple devices.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className={this.state.statusWorking === "bhinneka" ? "load-show-workingExperience" : "load-hide-workingExperience"}>
+                                            <div className="firstExperience">
+                                                <div style={{ display: "flex", alignItems: "center" }}>
+                                                    <p id="positionOffice" className="position">
+                                                        Software Developer @
+                                                        <span id="nameOffice" className="name">
+                                                            Bhinneka
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <p id="durationOffice" className="duration">
+                                                    Agustus 2022 - now
+                                                </p>
+                                                <p id="descriptionOffice" className="description">
+                                                    Creating a website that can record all employee activities both in the form of OKR and KPI and several features that support it
                                                 </p>
                                             </div>
                                         </div>
