@@ -30,7 +30,7 @@ class Aboutme extends Component {
                                 <div id="aboutMeRight" className={this.state.innerWidth > 768 ? "col-9 aboutMeDescription" : "aboutMeDescription"}>
                                     <div className="paragraf paragraf1" data-aos="fade-up" data-aos-delay="100">
                                         Hiiii, my name is <b className="boldAboutMe">Fahri Izzuddin Zulkarnaen</b>. I am currently studying Informatics Engineering at <b className="boldAboutMe">UPN Veteran Jawa Timur</b> , with a focus in
-                                        Front End Developer and Artificial Intelligence Engineer. I've also worked for <b className="boldAboutMe">Bunda Mia Catering</b> as a Front End Developer.
+                                        Front End Developer and Artificial Intelligence Engineer. I've also worked for <b className="boldAboutMe">Telkom Indonesia</b> as a Front End Developer.
                                     </div>
                                     <div className="paragraf paragraf2" data-aos="fade-up" data-aos-delay="100">
                                         I am passionate about building excellent software that improves the lives of those around me. so, I'm doing deeper learning about

@@ -144,7 +144,7 @@ class Experiencesection extends Component {
                                                     </p>
                                                 </div>
                                                 <p id="durationOffice" className="duration">
-                                                    May 2018 - now
+                                                    May 2018 - January 2022
                                                 </p>
                                                 <p id="descriptionOffice" className="description">
                                                     Planning, executing, monitoring, controlling, and closing out all incoming order for Catering Bunda Mia Sidoarjo.
