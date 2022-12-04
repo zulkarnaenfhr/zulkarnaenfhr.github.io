@@ -21,7 +21,7 @@ class Getintouch extends Component {
                             </p>
                             <div className="email">
                                 <p data-aos="fade-up">
-                                    <a aria-label="linkToMail" href="mailto:someone@yoursite.com">
+                                    <a aria-label="linkToMail" href="mailto:fahrizulkarnaen1@gmail.com">
                                         fahrizulkarnaen1@gmail.com
                                     </a>
                                 </p>
