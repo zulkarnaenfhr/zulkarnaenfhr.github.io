@@ -99,19 +99,31 @@ class Projectsection extends Component {
                                     <div className="cardfahri-container">
                                         <div className="cardfahri">
                                             <div className="cardfahri--display">
-                                                <h2>Indonesian Covid Mapping</h2>
-                                                <p>a website that can monitor and mapping covid cases in each province, monitor daily indonesia growth cases and also covid-19 indonesia news update</p>
+                                                <h2
+                                                    style={{
+                                                        height: "62px",
+                                                        display: "flex",
+                                                        alignItems: "center",
+                                                    }}
+                                                >
+                                                    Cakelana Company Profile
+                                                </h2>
+                                                <p
+                                                    style={{
+                                                        height: "114.5px",
+                                                    }}
+                                                >
+                                                    Make a company profile website for Cakelana that a startup software house
+                                                </p>
                                                 <p>
-                                                    <span style={{ color: "skyblue" }}>React Js</span>,<span style={{ color: "skyblue" }}> HTML</span>,<span style={{ color: "skyblue" }}> CSS</span>,
-                                                    <span style={{ color: "skyblue" }}> Javascript</span>, using
-                                                    <span style={{ color: "skyblue" }}> Indonesian government Covid-19 API</span>
+                                                    <span style={{ color: "skyblue" }}>Next.Js</span>, <span style={{ color: "skyblue" }}>CSS</span>,<span style={{ color: "skyblue" }}> Node.Js</span>, using{" "}
+                                                    <span style={{ color: "skyblue" }}>Bootstrap</span>, <span style={{ color: "skyblue" }}>Aos-Library</span>, <span style={{ color: "skyblue" }}>Axios</span>,{" "}
+                                                    <span style={{ color: "skyblue" }}>Sequelize </span>
+                                                    and many more
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a aria-label="githubCovidMapping" href="https://github.com/zulkarnaenfhr/indonesia-covid-mapping-react" target="_blank">
-                                                    <i className="fab fa-github"></i>
-                                                </a>
-                                                <a aria-label="websiteCovidMapping" href="https://indonesia-covid-mapping-react.vercel.app/" target="_blank">
+                                                <a aria-label="websiteCovidMapping" href="https://cakelana.vercel.app/" target="_blank">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>
@@ -124,8 +136,22 @@ class Projectsection extends Component {
                                     <div className="cardfahri-container">
                                         <div className="cardfahri">
                                             <div className="cardfahri--display">
-                                                <h2>Big Sight Company Profile Website</h2>
-                                                <p>Make a company profile website on Big Sight products as one of the activities following in kampus merdeka 2022 as a developer in PT Telkom Indonesia</p>
+                                                <h2
+                                                    style={{
+                                                        height: "62px",
+                                                        display: "flex",
+                                                        alignItems: "center",
+                                                    }}
+                                                >
+                                                    Big Sight Company Profile Website
+                                                </h2>
+                                                <p
+                                                    style={{
+                                                        height: "114.5px",
+                                                    }}
+                                                >
+                                                    Make a company profile website on Big Sight products as one of the activities following as a developer in PT Telkom Indonesia
+                                                </p>
                                                 <p>
                                                     <span style={{ color: "skyblue" }}>Next.Js</span>, <span style={{ color: "skyblue" }}>CSS</span>,<span style={{ color: "skyblue" }}> Node.Js</span>, using{" "}
                                                     <span style={{ color: "skyblue" }}>Bootstrap</span>, <span style={{ color: "skyblue" }}>Aos-Library</span>, <span style={{ color: "skyblue" }}>Axios</span>,{" "}
@@ -147,8 +173,62 @@ class Projectsection extends Component {
                                     <div className="cardfahri-container">
                                         <div className="cardfahri">
                                             <div className="cardfahri--display">
-                                                <h2>Cek Bed Rumah Sakit Indonesia</h2>
-                                                <p>Create a website for public to check the availability of hospital beds in indonesia, it can be categorize by covid or non covid patient</p>
+                                                <h2
+                                                    style={{
+                                                        height: "62px",
+                                                        display: "flex",
+                                                        alignItems: "center",
+                                                    }}
+                                                >
+                                                    Indonesian Covid Mapping
+                                                </h2>
+                                                <p
+                                                    style={{
+                                                        height: "114.5px",
+                                                    }}
+                                                >
+                                                    a website that can monitor and mapping covid cases in each province, monitor daily indonesia growth cases and also covid-19 indonesia news update
+                                                </p>
+                                                <p>
+                                                    <span style={{ color: "skyblue" }}>React Js</span>,<span style={{ color: "skyblue" }}> HTML</span>,<span style={{ color: "skyblue" }}> CSS</span>,
+                                                    <span style={{ color: "skyblue" }}> Javascript</span>, using
+                                                    <span style={{ color: "skyblue" }}> Indonesian government Covid-19 API</span>
+                                                </p>
+                                            </div>
+                                            <div className="project-link">
+                                                <a aria-label="githubCovidMapping" href="https://github.com/zulkarnaenfhr/indonesia-covid-mapping-react" target="_blank">
+                                                    <i className="fab fa-github"></i>
+                                                </a>
+                                                <a aria-label="websiteCovidMapping" href="https://indonesia-covid-mapping-react.vercel.app/" target="_blank">
+                                                    <span>
+                                                        <i className="fab fa-chrome"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* <!-- baris kedua  --> */}
+                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-right" data-aos-offset="300">
+                                    <div className="cardfahri-container">
+                                        <div className="cardfahri">
+                                            <div className="cardfahri--display">
+                                                <h2
+                                                    style={{
+                                                        height: "62px",
+                                                        display: "flex",
+                                                        alignItems: "center",
+                                                    }}
+                                                >
+                                                    Cek Bed Rumah Sakit Indonesia
+                                                </h2>
+                                                <p
+                                                    style={{
+                                                        height: "114.5px",
+                                                    }}
+                                                >
+                                                    Create a website for public to check the availability of hospital beds in indonesia, it can be categorize by covid or non covid patient
+                                                </p>
                                                 <p>
                                                     <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>,
                                                     <span style={{ color: "skyblue" }}> PHP</span>, using <span style={{ color: "skyblue" }}> jQuery</span>,<span style={{ color: "skyblue" }}> Ajax</span>,
@@ -169,43 +249,24 @@ class Projectsection extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <!-- baris kedua  --> */}
-                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-right" data-aos-offset="300">
-                                    <div className="cardfahri-container">
-                                        <div className="cardfahri">
-                                            <div className="cardfahri--display">
-                                                <h2>Gratio Class</h2>
-                                                <p>
-                                                    {" "}
-                                                    Conduct training on the implement of React JS props and component into
-                                                    <i> Gratio Class Website</i>
-                                                </p>
-                                                <p>
-                                                    <span style={{ color: "skyblue" }}>React Js</span>,<span style={{ color: "skyblue" }}> Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,
-                                                    <span style={{ color: "skyblue" }}> JavaScript</span>, using <span style={{ color: "skyblue" }}> Bootstrap</span>,<span style={{ color: "skyblue" }}> jQuery</span>,
-                                                    <span style={{ color: "skyblue" }}> Aos-library </span>
-                                                    Framework
-                                                </p>
-                                            </div>
-                                            <div className="project-link">
-                                                <a aria-label="githubGratioClass" href="https://github.com/zulkarnaenfhr/GratioClass" target="_blank">
-                                                    <i className="fab fa-github"></i>
-                                                </a>
-                                                <a aria-label="websiteCekBedRS" href="https://gratio-class.vercel.app/" target="_blank">
-                                                    <span>
-                                                        <i className="fab fa-chrome"></i>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up" data-aos-offset="300">
                                     <div className="cardfahri-container">
                                         <div className="cardfahri">
                                             <div className="cardfahri--display">
-                                                <h2>Little Dessert Landing Page Website</h2>
-                                                <p>
+                                                <h2
+                                                    style={{
+                                                        height: "62px",
+                                                        display: "flex",
+                                                        alignItems: "center",
+                                                    }}
+                                                >
+                                                    Little Dessert Landing Page Website
+                                                </h2>
+                                                <p
+                                                    style={{
+                                                        height: "114.5px",
+                                                    }}
+                                                >
                                                     {" "}
                                                     Make a landing page website for <i>Little Dessert Sidoarjo</i>
                                                 </p>
@@ -232,20 +293,36 @@ class Projectsection extends Component {
                                     <div className="cardfahri-container">
                                         <div className="cardfahri">
                                             <div className="cardfahri--display">
-                                                <h2>Cryptocurrency Market Monitor</h2>
-                                                <p>Create a website to monitor the cryptocurrency market using indodax api. there are features for users what assets are recommend to be buy and recommended to be sell</p>
+                                                <h2
+                                                    style={{
+                                                        height: "62px",
+                                                        display: "flex",
+                                                        alignItems: "center",
+                                                    }}
+                                                >
+                                                    Gratio Class
+                                                </h2>
+                                                <p
+                                                    style={{
+                                                        height: "114.5px",
+                                                    }}
+                                                >
+                                                    {" "}
+                                                    Conduct training on the implement of React JS props and component into
+                                                    <i> Gratio Class Website</i>
+                                                </p>
                                                 <p>
-                                                    <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>,
-                                                    <span style={{ color: "skyblue" }}> PHP</span>, using
-                                                    <span style={{ color: "skyblue" }}> jQuery</span>,<span style={{ color: "skyblue" }}> Ajax</span>,<span style={{ color: "skyblue" }}> Bootstrap </span>
+                                                    <span style={{ color: "skyblue" }}>React Js</span>,<span style={{ color: "skyblue" }}> Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,
+                                                    <span style={{ color: "skyblue" }}> JavaScript</span>, using <span style={{ color: "skyblue" }}> Bootstrap</span>,<span style={{ color: "skyblue" }}> jQuery</span>,
+                                                    <span style={{ color: "skyblue" }}> Aos-library </span>
                                                     Framework
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a aria-label="githubCryptocurrencyMonitor" href="https://github.com/zulkarnaenfhr/Indodax-API-x-Telegram-Website" target="_blank">
+                                                <a aria-label="githubGratioClass" href="https://github.com/zulkarnaenfhr/GratioClass" target="_blank">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a aria-label="websiteCryptocurrencyMonitor" href="https://indodax-monitoring-website.herokuapp.com/" target="_blank">
+                                                <a aria-label="websiteCekBedRS" href="https://gratio-class.vercel.app/" target="_blank">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>
@@ -259,8 +336,20 @@ class Projectsection extends Component {
                                     <div className="cardfahri-container">
                                         <div className="cardfahri">
                                             <div className="cardfahri--display">
-                                                <h2>SpaceCapt University</h2>
-                                                <p>
+                                                <h2
+                                                    style={{
+                                                        height: "62px",
+                                                        display: "flex",
+                                                        alignItems: "center",
+                                                    }}
+                                                >
+                                                    SpaceCapt University
+                                                </h2>
+                                                <p
+                                                    style={{
+                                                        height: "114.5px",
+                                                    }}
+                                                >
                                                     {" "}
                                                     Make a website that implement CRUD operations using php native for
                                                     <i> SpaceCapt University</i>
@@ -283,8 +372,22 @@ class Projectsection extends Component {
                                     <div className="cardfahri-container">
                                         <div className="cardfahri">
                                             <div className="cardfahri--display">
-                                                <h2>SpaceCapt Tech Industry</h2>
-                                                <p>Make a Rest API CRUD Operations and implement it on a SpaceCapt Tech Website</p>
+                                                <h2
+                                                    style={{
+                                                        height: "62px",
+                                                        display: "flex",
+                                                        alignItems: "center",
+                                                    }}
+                                                >
+                                                    SpaceCapt Tech Industry
+                                                </h2>
+                                                <p
+                                                    style={{
+                                                        height: "114.5px",
+                                                    }}
+                                                >
+                                                    Make a Rest API CRUD Operations and implement it on a SpaceCapt Tech Website
+                                                </p>
                                                 <p>
                                                     <span style={{ color: "skyblue" }}>PHP</span>,<span style={{ color: "skyblue" }}> Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,
                                                     <span style={{ color: "skyblue" }}> JavaScript</span>, using <span style={{ color: "skyblue" }}> Bootstrap </span>
@@ -303,19 +406,34 @@ class Projectsection extends Component {
                                     <div className="cardfahri-container">
                                         <div className="cardfahri">
                                             <div className="cardfahri--display">
-                                                <h2>Password Generator Website</h2>
-                                                <p>Website to generate passwords with the required password length and conditions</p>
+                                                <h2
+                                                    style={{
+                                                        height: "62px",
+                                                        display: "flex",
+                                                        alignItems: "center",
+                                                    }}
+                                                >
+                                                    Cryptocurrency Market Monitor
+                                                </h2>
+                                                <p
+                                                    style={{
+                                                        height: "114.5px",
+                                                    }}
+                                                >
+                                                    Create a website to monitor the cryptocurrency market using indodax api. there are features for users what assets are recommend to be buy and recommended to be sell
+                                                </p>
                                                 <p>
-                                                    <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>, using{" "}
-                                                    <span style={{ color: "skyblue" }}>jQuery </span>
-                                                    Framework for animation
+                                                    <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>,
+                                                    <span style={{ color: "skyblue" }}> PHP</span>, using
+                                                    <span style={{ color: "skyblue" }}> jQuery</span>,<span style={{ color: "skyblue" }}> Ajax</span>,<span style={{ color: "skyblue" }}> Bootstrap </span>
+                                                    Framework
                                                 </p>
                                             </div>
                                             <div className="project-link">
-                                                <a aria-label="githubPasswordGenerator" href="https://github.com/zulkarnaenfhr/Password-Generator.github.io" target="_blank">
+                                                <a aria-label="githubCryptocurrencyMonitor" href="https://github.com/zulkarnaenfhr/Indodax-API-x-Telegram-Website" target="_blank">
                                                     <i className="fab fa-github"></i>
                                                 </a>
-                                                <a aria-label="websitePasswordGenerator" href="https://zulkarnaenfhr.github.io/Password-Generator.github.io/" target="_blank">
+                                                <a aria-label="websiteCryptocurrencyMonitor" href="https://indodax-monitoring-website.herokuapp.com/" target="_blank">
                                                     <span>
                                                         <i className="fab fa-chrome"></i>
                                                     </span>
