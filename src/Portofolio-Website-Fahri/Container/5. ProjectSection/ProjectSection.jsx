@@ -220,6 +220,42 @@ class Projectsection extends Component {
                                                         alignItems: "center",
                                                     }}
                                                 >
+                                                    Photography portfolio
+                                                </h2>
+                                                <p
+                                                    style={{
+                                                        height: "114.5px",
+                                                    }}
+                                                >
+                                                    {" "}
+                                                    Create a website that can be used as a portfolio for photographers
+                                                </p>
+                                                <p>
+                                                    <span style={{ color: "skyblue" }}>Next.Js</span>, <span style={{ color: "skyblue" }}>CSS</span>, using <span style={{ color: "skyblue" }}>Bootstrap</span>,{" "}
+                                                    <span style={{ color: "skyblue" }}>Aos-Library</span>, <span style={{ color: "skyblue" }}>GSAP TweenMax</span> and many more
+                                                </p>
+                                            </div>
+                                            <div className="project-link">
+                                                <a aria-label="websiteCekBedRS" href="https://prabudizulkarnaen.vercel.app/" target="_blank">
+                                                    <span>
+                                                        <i className="fab fa-chrome"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up" data-aos-offset="300">
+                                    <div className="cardfahri-container">
+                                        <div className="cardfahri">
+                                            <div className="cardfahri--display">
+                                                <h2
+                                                    style={{
+                                                        height: "62px",
+                                                        display: "flex",
+                                                        alignItems: "center",
+                                                    }}
+                                                >
                                                     Cek Bed Rumah Sakit Indonesia
                                                 </h2>
                                                 <p
@@ -249,7 +285,7 @@ class Projectsection extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up" data-aos-offset="300">
+                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-left" data-aos-offset="300">
                                     <div className="cardfahri-container">
                                         <div className="cardfahri">
                                             <div className="cardfahri--display">
@@ -289,7 +325,8 @@ class Projectsection extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-left" data-aos-offset="300">
+                                {/* <!-- baris ketiga  --> */}
+                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-right" data-aos-offset="300">
                                     <div className="cardfahri-container">
                                         <div className="cardfahri">
                                             <div className="cardfahri--display">
@@ -331,8 +368,7 @@ class Projectsection extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <!-- baris ketiga  --> */}
-                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-right" data-aos-offset="300">
+                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up" data-aos-offset="300">
                                     <div className="cardfahri-container">
                                         <div className="cardfahri">
                                             <div className="cardfahri--display">
@@ -368,7 +404,7 @@ class Projectsection extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up" data-aos-offset="300">
+                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-left" data-aos-offset="300">
                                     <div className="cardfahri-container">
                                         <div className="cardfahri">
                                             <div className="cardfahri--display">
@@ -397,46 +433,6 @@ class Projectsection extends Component {
                                             <div className="project-link">
                                                 <a aria-label="githubSpaceCaptTect" href="https://github.com/zulkarnaenfhr/SpaceCapt_Tech" target="_blank">
                                                     <i className="fab fa-github"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-left" data-aos-offset="300">
-                                    <div className="cardfahri-container">
-                                        <div className="cardfahri">
-                                            <div className="cardfahri--display">
-                                                <h2
-                                                    style={{
-                                                        height: "62px",
-                                                        display: "flex",
-                                                        alignItems: "center",
-                                                    }}
-                                                >
-                                                    Cryptocurrency Market Monitor
-                                                </h2>
-                                                <p
-                                                    style={{
-                                                        height: "114.5px",
-                                                    }}
-                                                >
-                                                    Create a website to monitor the cryptocurrency market using indodax api. there are features for users what assets are recommend to be buy and recommended to be sell
-                                                </p>
-                                                <p>
-                                                    <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>,
-                                                    <span style={{ color: "skyblue" }}> PHP</span>, using
-                                                    <span style={{ color: "skyblue" }}> jQuery</span>,<span style={{ color: "skyblue" }}> Ajax</span>,<span style={{ color: "skyblue" }}> Bootstrap </span>
-                                                    Framework
-                                                </p>
-                                            </div>
-                                            <div className="project-link">
-                                                <a aria-label="githubCryptocurrencyMonitor" href="https://github.com/zulkarnaenfhr/Indodax-API-x-Telegram-Website" target="_blank">
-                                                    <i className="fab fa-github"></i>
-                                                </a>
-                                                <a aria-label="websiteCryptocurrencyMonitor" href="https://indodax-monitoring-website.herokuapp.com/" target="_blank">
-                                                    <span>
-                                                        <i className="fab fa-chrome"></i>
-                                                    </span>
                                                 </a>
                                             </div>
                                         </div>
