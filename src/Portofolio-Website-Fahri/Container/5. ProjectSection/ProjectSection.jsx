@@ -220,7 +220,7 @@ class Projectsection extends Component {
                                                         alignItems: "center",
                                                     }}
                                                 >
-                                                    Photography portfolio
+                                                    Photography Portfolio
                                                 </h2>
                                                 <p
                                                     style={{
