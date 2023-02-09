@@ -21,7 +21,7 @@ class Getintouch extends Component {
                             </p>
                             <div className="email">
                                 <p data-aos="fade-up">
-                                    <a aria-label="linkToMail" href="mailto:fahrizulkarnaen1@gmail.com">
+                                    <a target="_blank" aria-label="linkToMail" href="mailto:fahrizulkarnaen1@gmail.com">
                                         fahrizulkarnaen1@gmail.com
                                     </a>
                                 </p>
@@ -33,17 +33,17 @@ class Getintouch extends Component {
                             </p>
                             <ul data-aos="fade-up">
                                 <li>
-                                    <a aria-label="linkToInstagram" href="https://www.instagram.com/zulkarnaenfhr/">
+                                    <a target="_blank" aria-label="linkToInstagram" href="https://www.instagram.com/zulkarnaenfhr/">
                                         Instagram
                                     </a>
                                 </li>
                                 <li>
-                                    <a aria-label="linkToLinkedIn" href="https://www.linkedin.com/in/fahrizulkarnaen">
+                                    <a target="_blank" aria-label="linkToLinkedIn" href="https://www.linkedin.com/in/fahrizulkarnaen">
                                         Linked In
                                     </a>
                                 </li>
                                 <li>
-                                    <a aria-label="linkToGithub" href="https://github.com/zulkarnaenfhr">
+                                    <a target="_blank" aria-label="linkToGithub" href="https://github.com/zulkarnaenfhr">
                                         Github
                                     </a>
                                 </li>
