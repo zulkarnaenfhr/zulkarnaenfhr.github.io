@@ -53,7 +53,7 @@ class Zulkarnaenfhr extends Component {
 
     render() {
         return (
-            <div>
+            <div id="all-parents-content">
                 {this.state.load ? (
                     <AnimatePresence>
                         <motion.div

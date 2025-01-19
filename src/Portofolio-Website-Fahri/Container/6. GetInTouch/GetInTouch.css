@@ -135,6 +135,10 @@
     }
 }
 @media only screen and (max-width: 586px) {
+    #getInTouch {
+        display: flex;
+        align-items: center;
+    }
     .getintouchjudul {
         font-size: 30px;
     }

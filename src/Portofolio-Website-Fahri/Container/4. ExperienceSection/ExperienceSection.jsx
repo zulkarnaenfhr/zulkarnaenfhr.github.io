@@ -6,7 +6,7 @@ class Experiencesection extends Component {
       super(props);
 
       this.state = {
-         statusWorking: "telkomIndonesia",
+         statusWorking: "bankCentralAsia",
          statusOrganization: "UPNVeteranJawaTimur",
          innerWidth: 0,
       };
@@ -50,13 +50,24 @@ class Experiencesection extends Component {
                               <ul>
                                  <li>
                                     <button
+                                       name="bankCentralAsia"
+                                       onClick={this.handleWorkingChange}
+                                       id="buttonBankCentralAsia"
+                                       style={this.state.statusWorking === "bankCentralAsia" ? { color: "#19f9d8" } : { color: "" }}
+                                       className="experienceButton"
+                                    >
+                                       PT Bank Central Asia
+                                    </button>
+                                 </li>
+                                 <li className="buttonbawah">
+                                    <button
                                        name="telkomIndonesia"
                                        onClick={this.handleWorkingChange}
                                        id="buttonTelkomIndonesia"
                                        style={this.state.statusWorking === "telkomIndonesia" ? { color: "#19f9d8" } : { color: "" }}
                                        className="experienceButton"
                                     >
-                                       Telkom Indonesia
+                                       PT Telkom Indonesia
                                     </button>
                                  </li>
                                  <li className="buttonbawah">
@@ -90,6 +101,25 @@ class Experiencesection extends Component {
                            </div>
 
                            <div id="experience-sectionright" className={this.state.innerWidth > 1000 ? "col-7 sectionRightExperience sectionRightExperienceworking" : "sectionRightExperience sectionRightExperienceworking"}>
+                              <div className={this.state.statusWorking === "bankCentralAsia" ? "load-show-workingExperience" : "load-hide-workingExperience"}>
+                                 <div className="firstExperience">
+                                    <div style={{ display: "flex", alignItems: "center" }}>
+                                       <p id="positionOffice" className="position">
+                                          IT Specialist @
+                                          <span id="nameOffice" className="name">
+                                             PT Bank Central Asia
+                                          </span>
+                                       </p>
+                                    </div>
+                                    <p id="durationOffice" className="duration">
+                                       August 2023 - now
+                                    </p>
+                                    <p id="descriptionOffice" className="description">
+                                       Developed an Apply Credit Card Online Application for BCA customers, enabling them to apply for credit cards directly and seamlessly. Currently, this feature is accessible through the myBCA
+                                       application, enhancing user experience and streamlining the application process.
+                                    </p>
+                                 </div>
+                              </div>
                               <div className={this.state.statusWorking === "telkomIndonesia" ? "load-show-workingExperience" : "load-hide-workingExperience"}>
                                  <div className="firstExperience">
                                     <div style={{ display: "flex", alignItems: "center" }}>
@@ -101,7 +131,7 @@ class Experiencesection extends Component {
                                        </p>
                                     </div>
                                     <p id="durationOffice" className="duration">
-                                       February 2022 - now
+                                       February 2022 - March 2023
                                     </p>
                                     <p id="descriptionOffice" className="description">
                                        Create products that are visible to users, with special emphasis on user interface design, and also Turn well-researched product designs enjoyable app experiences that integrate well with our backend
@@ -225,7 +255,7 @@ class Experiencesection extends Component {
                                        December 2020 - December 2022
                                     </p>
                                     <p id="descriptionorganization" className="description">
-                                       responsible for creating harmonious relationships between internal and external parties and also responsible for creating interesting Instagram content.
+                                       Responsible for creating harmonious relationships between internal and external parties and also responsible for creating interesting Instagram content.
                                     </p>
                                  </div>
                               </div>
@@ -280,7 +310,7 @@ class Experiencesection extends Component {
                                        September 2013 - August 2014{" "}
                                     </p>
                                     <p id="descriptionorganization" className="description">
-                                       accommodate all school community activities regarding matters related to artistic activities{" "}
+                                       Accommodate all school community activities regarding matters related to artistic activities{" "}
                                     </p>
                                  </div>
                               </div>

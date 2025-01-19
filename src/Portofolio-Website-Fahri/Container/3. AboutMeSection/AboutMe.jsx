@@ -23,19 +23,22 @@ class Aboutme extends Component {
                      / About me
                   </h1>
                   <div className="col-10 aboutMeContent" data-aos="fade-up">
-                     <div className="row">
+                     <div>
                         <div id="aboutMeLeft" className={this.state.innerWidth > 768 ? "col-3 aboutMeContentLeft" : "aboutMeContentLeft"} data-aos="fade-up" data-aos-delay="50">
                            <img src="https://i.ibb.co/Wn5LmXB/Whats-App-Image-2022-03-22-at-8-23-20-PM.jpg" className="imgMe" alt="" />
                         </div>
                         <div id="aboutMeRight" className={this.state.innerWidth > 768 ? "col-9 aboutMeDescription" : "aboutMeDescription"}>
                            <div className="paragraf paragraf1" data-aos="fade-up" data-aos-delay="100">
-                              Hiiii, my name is <b className="boldAboutMe">Fahri Izzuddin Zulkarnaen</b>. I am currently studying Informatics Engineering at <b className="boldAboutMe">UPN Veteran Jawa Timur</b> , with a focus in Front End
-                              Developer and Artificial Intelligence Engineer. I've also worked for <b className="boldAboutMe">Telkom Indonesia</b> as a Front End Developer.
+                              Hiiii, my name is <b className="boldAboutMe">Fahri Izzuddin Zulkarnaen</b>. I graduated from Informatics Engineering at <b className="boldAboutMe">UPN Veteran Jawa Timur</b> with a GPA of 3.90, specializing in
+                              Fullstack Development and Artificial Intelligence Engineering. I have also worked as an IT Specialist at <b className="boldAboutMe">PT Bank Central Indonesia</b>.
                            </div>
                            <div className="paragraf paragraf2" data-aos="fade-up" data-aos-delay="100">
-                              I am passionate about building excellent software that improves the lives of those around me. so, I'm doing deeper learning about
-                              <b className="boldAboutMe"> Front End Developer</b>. I’m doing in-depth learning about how to create and animate 3D computer graphics to display in a web browser. I'm also Well-organised person, problem solver,
-                              independent employee with high attention to detail. In my free time, i am also doing learning about <b className="boldAboutMe">Artificial Intelligence and Computer Vision</b>.
+                              I am passionate about building excellent software that improves the lives of those around me. I am diving deeper into
+                              <b className="boldAboutMe"> Front-End Development</b>. focusing on creating and animating 3D computer graphics for web browsers. I'm also Well-organised person, problem solver, independent employee with high
+                              attention to detail.
+                           </div>
+                           <div className="paragraf paragraf2" data-aos="fade-up" data-aos-delay="100">
+                              In my free time, I continue to learn and explore advancements in <b className="boldAboutMe">Artificial Intelligence</b> .
                            </div>
 
                            <div data-aos="fade-up" data-aos-delay="300" data-aos-offset="100">
@@ -44,17 +47,17 @@ class Aboutme extends Component {
                                  <div className="col-6 technologylist">
                                     <ul>
                                        <li>Python</li>
-                                       <li>HTML</li>
-                                       <li>Java</li>
-                                       <li>JavaScript Es6</li>
+                                       <li>Java Spring Boot</li>
+                                       <li>Java Spring Batch</li>
+                                       <li>Angular Js</li>
                                     </ul>
                                  </div>
                                  <div className="col-6 technologylist">
                                     <ul>
-                                       <li>Next Js</li>
-                                       <li>React Js</li>
+                                       <li>Next and React Js</li>
                                        <li>Node Js</li>
-                                       <li>MySql Database</li>
+                                       <li>SQL Databases</li>
+                                       <li>NoSQL Databases</li>
                                     </ul>
                                  </div>
                               </div>

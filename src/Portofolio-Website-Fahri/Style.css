@@ -1,48 +1,52 @@
 .sectionTitle {
-    color: #19f9d8;
+   color: #19f9d8;
+}
+
+#all-parents-content {
+   overflow: hidden;
 }
 
 /* css style for loading page  */
 #loadPage {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    background-color: black;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   background-color: black;
 }
 
 .loadPage-content-container {
-    text-align: center;
+   text-align: center;
 }
 
 @keyframes loadText {
-    0% {
-        opacity: 0.08;
-        /*         font-size: 10px; */
-        /* 				font-weight: 400; */
-        filter: blur(5px);
-        letter-spacing: 3px;
-    }
-    100% {
-        /*         opacity: 1; */
-        /*         font-size: 12px; */
-        /* 				font-weight:600; */
-        /* 				filter: blur(0); */
-    }
+   0% {
+      opacity: 0.08;
+      /*         font-size: 10px; */
+      /* 				font-weight: 400; */
+      filter: blur(5px);
+      letter-spacing: 3px;
+   }
+   100% {
+      /*         opacity: 1; */
+      /*         font-size: 12px; */
+      /* 				font-weight:600; */
+      /* 				filter: blur(0); */
+   }
 }
 
 .loadPage-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin: auto;
-    animation: loadText 1s 10 0s ease-in-out;
-    animation-direction: alternate;
-    text-shadow: 0 0 1px white;
-    color: white;
-    font-family: "Fredericka the Great", cursive;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   margin: auto;
+   animation: loadText 1s 10 0s ease-in-out;
+   animation-direction: alternate;
+   text-shadow: 0 0 1px white;
+   color: white;
+   font-family: "Fredericka the Great", cursive;
 }
 /* end of css style for loading page  */
