@@ -45,7 +45,7 @@ class Homesection extends Component {
                                     <div className="eye-inner"></div>
                                 </div>
                                 <div className="eye eye2 eye-right">
-                                    <div className="eye-inner"></div>
+                                    <div className="eye-inner"></div>   
                                 </div>
                             </div>
                         </div>
@@ -53,7 +53,7 @@ class Homesection extends Component {
                             I Create stuff that all i love, <span style={{ color: "#19f9d8" }}>sometimes!</span>
                         </h1>
                         <h2 id="bawahnya" className="whoAmI" data-aos-delay="3000" data-aos="fade-up">
-                            I am undergraduate student that have profound interest in Front End Developer, Machine Learning Engineer, Computer Vision and everything in beetweens.{" "}
+                            I am a graduate with a profound interest in Fullstack Development, having previously explored Machine Learning, Computer Vision, and everything in between.{" "}
                         </h2>
                     </div>
                 </div>
