@@ -34,11 +34,11 @@
 }
 
 .experience {
-    padding-top: 4rem;
+    padding-top: 50px;
     width: 100vw;
-    height: 650px;
     color: white;
     font-family: "Jaldi", sans-serif;
+    height: fit-content !important;
 }
 
 .experienceContent {
@@ -53,18 +53,18 @@
 .name {
     color: skyblue;
     font-size: 28px;
-    margin-left: 0.7rem;
+    margin-left: 10px;
 }
 
 .duration {
-    margin-top: -1.3rem;
+    margin-top: -15px;
     color: silver;
     font-size: 18px;
     align-items: center;
 }
 
 .description {
-    margin-top: -0.5rem;
+    margin-top: -5px;
     color: #fefaf6;
     width: 80%;
     font-size: 18px;
@@ -72,18 +72,18 @@
 
 .sectionLeftExperience ul li {
     list-style: none;
-    margin-left: -2rem;
+    margin-left: -30px;
 }
 .buttonbawah {
-    margin-top: -1rem;
+    margin-top: -15px;
 }
 .experienceButton {
     text-align: center;
-    width: 15rem;
-    height: 2.5rem;
+    width: 250px;
+    height: 40px;
     background: rgb(13, 20, 47);
     color: silver;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
     background-color: Transparent;
     background-repeat: no-repeat;
     border: none;
@@ -95,12 +95,12 @@
 }
 
 #organizationExperience {
-    padding-top: 2rem;
+    padding-top: 30px;
 }
 
 .sectionRightExperience {
     height: 100px;
-    margin-left: 6rem;
+    margin-left: 50px;
 }
 
 .littleDessertSidoarjo-website {
@@ -115,32 +115,24 @@
 }
 
 /* time to responsive  */
-@media only screen and (max-width: 1400px) {
-}
 @media only screen and (max-width: 1200px) {
-    #experienceSection {
-        height: 750px;
+    #organizationExperience {
+        margin-top: 30px;
     }
 }
 @media only screen and (max-width: 995px) {
     #organizationExperience {
-        margin-top: 3rem;
-    }
-    .experience {
-        height: 800px;
+        margin-top: 30px;
     }
     .experienceButton {
         font-size: 15px;
         width: 150%;
     }
     .buttonbawah {
-        margin-top: -1rem;
+        margin-top: -10px;
     }
     .sectionRightExperience {
-        margin-left: 5rem;
-    }
-    .sectionRightExperienceworking {
-        margin-left: 7rem;
+        margin-left: 50px;
     }
     .position {
         font-size: 23px;
@@ -158,10 +150,7 @@
 }
 @media only screen and (max-width: 768px) {
     #organizationExperience {
-        margin-top: 0rem;
-    }
-    .experience {
-        height: 800px;
+        margin-top: 30px;
     }
     .experienceContent {
         display: block;
@@ -170,11 +159,11 @@
         width: 100%;
     }
     .buttonbawah {
-        margin-top: -1rem;
+        margin-top: -10px;
     }
     .sectionRightExperience {
-        margin-left: 0;
-        margin-top: -1.5rem;
+        margin-left: 0px;
+        margin-top: -20px;
     }
     .position {
         font-size: 23px;
@@ -192,10 +181,7 @@
 }
 @media only screen and (max-width: 586px) {
     #organizationExperience {
-        margin-top: 8px;
-    }
-    .experience {
-        height: 800px;
+        margin-top: 30px;
     }
     .experienceContent {
         display: block;
@@ -204,11 +190,11 @@
         width: 100%;
     }
     .buttonbawah {
-        margin-top: -1.7rem;
+        margin-top: -17px;
     }
     .sectionRightExperience {
         margin-left: 0;
-        margin-top: -1.5rem;
+        margin-top: -20px;
     }
     .position {
         font-size: 21px;
@@ -225,9 +211,6 @@
     }
 }
 @media only screen and (max-width: 392px) {
-    .experience {
-        height: 850px;
-    }
     .sectionTitle {
         font-size: 34px;
         font-weight: 500;
@@ -239,11 +222,11 @@
         width: 100%;
     }
     .buttonbawah {
-        margin-top: -1rem;
+        margin-top: -10px;
     }
     .sectionRightExperience {
         margin-left: 0;
-        margin-top: -1.5rem;
+        margin-top: -20px;
     }
     .position {
         font-size: 21px;

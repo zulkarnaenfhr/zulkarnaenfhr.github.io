@@ -277,23 +277,6 @@ class Experiencesection extends Component {
                                        Responsible to arrange and prepare all the duties related to internal and external activities. also creating policy for extracurricular activities{" "}
                                     </p>
                                  </div>
-                                 <div className="secondExperience">
-                                    <div style={{ display: "flex", alignItems: "center" }}>
-                                       <p style={{ display: "none" }}>pembatas biar ga ngaco</p>
-                                       <p id="positionorganization" className="position">
-                                          Head of Art and Sport Division @
-                                          <span id="nameorganization" className="name">
-                                             OSIS SMAN 1 Surabaya
-                                          </span>
-                                       </p>
-                                    </div>
-                                    <p id="durationorganization" className="duration">
-                                       September 2016 - August 2017{" "}
-                                    </p>
-                                    <p id="descriptionorganization" className="description">
-                                       Arranging the schedule between extracurricular so that it does not conflict with each other and has responsibility for the competition activities carried out by the extracurricular{" "}
-                                    </p>
-                                 </div>
                               </div>
                               <div className={this.state.statusOrganization === "SMPN6Sidoarjo" ? "load-show-workingExperience" : "load-hide-workingExperience"}>
                                  <div className="firstExperience">

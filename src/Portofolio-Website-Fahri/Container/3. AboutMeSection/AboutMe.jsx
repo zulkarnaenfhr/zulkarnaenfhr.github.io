@@ -24,10 +24,8 @@ class Aboutme extends Component {
                   </h1>
                   <div className="col-10 aboutMeContent" data-aos="fade-up">
                      <div>
-                        <div id="aboutMeLeft" className={this.state.innerWidth > 768 ? "col-3 aboutMeContentLeft" : "aboutMeContentLeft"} data-aos="fade-up" data-aos-delay="50">
-                           <img src="https://i.ibb.co/Wn5LmXB/Whats-App-Image-2022-03-22-at-8-23-20-PM.jpg" className="imgMe" alt="" />
-                        </div>
-                        <div id="aboutMeRight" className={this.state.innerWidth > 768 ? "col-9 aboutMeDescription" : "aboutMeDescription"}>
+                        <div id="aboutMeLeft" className={this.state.innerWidth > 992 ? "col-3 aboutMeContentLeft" : "aboutMeContentLeft"} data-aos="fade-up" data-aos-delay="50"></div>
+                        <div id="aboutMeRight" className={this.state.innerWidth > 992 ? "col-9 aboutMeDescription" : "aboutMeDescription"}>
                            <div className="paragraf paragraf1" data-aos="fade-up" data-aos-delay="100">
                               Hiiii, my name is <b className="boldAboutMe">Fahri Izzuddin Zulkarnaen</b>. I graduated from Informatics Engineering at <b className="boldAboutMe">UPN Veteran Jawa Timur</b> with a GPA of 3.90, specializing in
                               Fullstack Development and Artificial Intelligence Engineering. I have also worked as an IT Specialist at <b className="boldAboutMe">PT Bank Central Indonesia</b>.

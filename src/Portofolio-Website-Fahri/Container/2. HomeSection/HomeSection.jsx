@@ -38,7 +38,7 @@ class Homesection extends Component {
                                 </h1>
                             )}
 
-                            <div data-aos-delay="2500" data-aos="fade-up" style={{ display: "flex", marginLeft: "1rem" }}>
+                            <div data-aos-delay="2500" data-aos="fade-up" className="eye-container" >
                                 {/* <div className="eye"></div>
                                 <div className="eye2"></div> */}
                                 <div className="eye eye-left">

@@ -7,6 +7,9 @@
 #getInTouch {
     min-height: 100vh;
     color: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .getintouch-section1 {
@@ -26,7 +29,7 @@
 }
 
 .getintouch-section2 {
-    padding-top: 5rem;
+    padding-top: 50px;
 }
 
 .getintouch-section2 .bymail {
@@ -35,13 +38,13 @@
 }
 
 .getintouch-section2 .email {
-    margin-top: -1.5rem;
+    margin-top: -20px;
 }
 
 .getintouch-section2 .email a {
     font-family: "Itim", cursive;
     font-size: 56px;
-    padding-left: 2rem;
+    padding-left: 25px;
     text-decoration: none;
     color: silver;
     transition: all 0.4s ease-in-out;
@@ -61,13 +64,13 @@
 }
 
 .getintouch-section3 ul {
-    margin-top: -1.5rem;
+    margin-top: -20px;
     list-style: none;
     display: flex;
 }
 
 .getintouch-section3 ul li a {
-    margin-right: 5rem;
+    margin-right: 50px;
     text-decoration: none;
     color: silver;
     font-family: "Itim", cursive;
@@ -100,10 +103,10 @@
     }
     .getintouch-section2 .bymail {
         font-size: 17px;
-        margin-top: -2rem;
+        margin-top: -20px;
     }
     .getintouch-section2 .email {
-        margin-top: -1rem;
+        margin-top: -10px;
     }
     .getintouch-section2 .email a {
         font-size: 28px;
@@ -115,10 +118,10 @@
         font-size: 17px;
     }
     .getintouch-section3 ul {
-        margin-top: -1rem;
+        margin-top: -10px;
     }
     .getintouch-section3 ul li a {
-        margin-right: 5rem;
+        margin-right: 50px;
         font-size: 28px;
     }
 }
@@ -127,7 +130,7 @@
         height: 490px;
     }
     .getintouch-section3 ul li a {
-        margin-right: 2rem;
+        margin-right: 20px;
         font-size: 28px;
     }
     .getintouch-section2 {
@@ -147,10 +150,10 @@
     }
     .getintouch-section2 .bymail {
         font-size: 13px;
-        margin-top: 5rem;
+        margin-top: 40px;
     }
     .getintouch-section2 .email {
-        margin-top: -1rem;
+        margin-top: -10px;
     }
     .getintouch-section2 .email a {
         font-size: 18px;
@@ -162,10 +165,10 @@
         font-size: 13px;
     }
     .getintouch-section3 ul {
-        margin-top: -1rem;
+        margin-top: -10px;
     }
     .getintouch-section3 ul li a {
-        margin-right: 2rem;
+        margin-right: 20px;
         font-size: 18px;
     }
     .getintouch-section2 {
@@ -186,7 +189,7 @@
         font-size: 13px;
     }
     .getintouch-section2 .email {
-        margin-top: -1rem;
+        margin-top: -10px;
     }
     .getintouch-section2 .email a {
         font-size: 18px;
@@ -198,10 +201,10 @@
         font-size: 13px;
     }
     .getintouch-section3 ul {
-        margin-top: -1rem;
+        margin-top: -10px;
     }
     .getintouch-section3 ul li a {
-        margin-right: 1rem;
+        margin-right: 10px;
         font-size: 18px;
     }
     .getintouch-section2 {

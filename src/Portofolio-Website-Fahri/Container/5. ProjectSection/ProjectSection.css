@@ -1,5 +1,5 @@
 #projectSection {
-    padding-top: 4rem;
+    padding-top: 50px;
 }
 
 /* css for cardfahris  */
@@ -60,8 +60,8 @@
     bottom: 5%;
 }
 .project-link a {
-    font-size: 1.6rem;
-    padding-right: 1rem;
+    font-size: 23px;
+    padding-right: 15px;
     color: white;
     transition: all 0.3s ease-in-out;
 }
@@ -77,19 +77,14 @@
         display: block;
     }
 }
-@media only screen and (max-width: 992px) {
-    #projectSection {
-        margin-top: -4rem;
-    }
-}
 @media only screen and (max-width: 762px) {
     #projectSection {
-        margin-top: 3rem;
+        margin-top: 40px;
     }
 }
 @media only screen and (max-width: 586px) {
     #projectSection {
-        margin-top: 2rem;
+        margin-top: 30px;
     }
     .sectionTitle {
         font-size: 34px;
@@ -102,7 +97,7 @@
 @media only screen and (max-width: 392px) {
     .cardfahri-container {
         margin: 0px;
-        margin-top: 1rem;
+        margin-top: 10px;
     }
     .cardfahri-container .cardfahri {
         height: 400px;
@@ -112,7 +107,7 @@
         font-size: 21px;
     }
     .judulSectionWebsiteProject {
-        margin-top: 1.4rem;
+        margin-top: 15px;
     }
 }
 /* end of responsive  */

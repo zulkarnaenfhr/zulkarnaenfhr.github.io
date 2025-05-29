@@ -15,7 +15,6 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 2rem;
 }
 .nama {
     display: flex;
@@ -31,6 +30,12 @@
     font-size: 75px;
     color: #fefaf6;
 }
+
+.eye-container {
+    display: flex;
+    margin-left: 15px;
+}
+
 @keyframes typing {
     from {
         width: 0;
@@ -69,7 +74,7 @@
     height: 30px;
     width: 30px;
     background: skyblue;
-    margin-left: 1em;
+    margin-left: 15px;
 }
 .eye2:after {
     /*pupil*/

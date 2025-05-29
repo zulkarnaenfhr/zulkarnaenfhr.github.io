@@ -5,7 +5,7 @@
 /* font-family: 'Amiri', serif; */
 
 .aboutMe {
-    padding-top: 4rem;
+    padding-top: 30px;
 }
 
 .paragraf {
@@ -13,7 +13,7 @@
 }
 
 .aboutMeContent {
-    margin-top: 2rem;
+    margin-top: 30px;
     color: #c0c0c0;
 }
 
@@ -35,10 +35,10 @@
 }
 
 .paragraf2 {
-    margin-top: 1em;
+    margin-top: 20px;
 }
 .technology {
-    margin-top: 1em;
+    margin-top: 20px;
 }
 
 .technologylist ul li {
@@ -48,7 +48,7 @@
 .technologylist ul li:before {
     content: "▶";
     font-size: 15px;
-    margin-right: 1rem;
+    margin-right: 20px;
     color: #19f9d8;
 }
 
@@ -78,7 +78,6 @@
     }
     .paragraf {
         font-size: 20px;
-        width: 156%;
         text-align: justify;
     }
     .technology {
@@ -96,7 +95,6 @@
         color: #c0c0c0;
     }
     .paragraf {
-        width: 155%;
         text-align: justify;
     }
     .technology {
@@ -106,7 +104,7 @@
         width: 130%;
     }
     .technologylist ul li:before {
-        margin-right: 0.5rem;
+        margin-right: 10px;
     }
 }
 @media only screen and (max-width: 586px) {
@@ -118,7 +116,6 @@
     }
     .paragraf {
         font-size: 17px;
-        width: 120%;
         text-align: justify;
     }
     .technology {
@@ -136,7 +133,6 @@
         color: #c0c0c0;
     }
     .paragraf {
-        width: 120%;
         text-align: justify;
     }
     .technology {
@@ -150,7 +146,7 @@
         font-weight: 500;
     }
     .aboutMeContent {
-        margin-top: -0.05rem;
+        margin-top: -5px;
     }
 }
 /* end of responsive  */
