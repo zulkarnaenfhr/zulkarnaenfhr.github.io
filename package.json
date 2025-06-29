@@ -18,8 +18,7 @@
       "web-vitals": "^2.1.4"
    },
    "scripts": {
-      "predeploy": "npm run build",
-      "deploy": "gh-pages -d build -r https://github.com/zulkarnaenfhr/zulkarnaenfhr.github.io.git",
+      "deploy": "gh-pages -d build && gzipper compress build -r https://github.com/zulkarnaenfhr/zulkarnaenfhr.github.io.git",
       "start": "react-scripts start",
       "build": "react-scripts build && gzipper compress build",
       "test": "react-scripts test",
