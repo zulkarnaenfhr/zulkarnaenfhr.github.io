@@ -246,26 +246,27 @@ class Projectsection extends Component {
                                           alignItems: "center",
                                        }}
                                     >
-                                       Cek Bed Rumah Sakit Indonesia
+                                       Little Dessert Landing Page Website
                                     </h2>
                                     <p
                                        style={{
                                           height: "114.5px",
                                        }}
                                     >
-                                       Create a website for public to check the availability of hospital beds in indonesia, it can be categorize by covid or non covid patient
+                                       {" "}
+                                       Make a landing page website for <i>Little Dessert Sidoarjo</i>
                                     </p>
                                     <p>
-                                       <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>,<span style={{ color: "skyblue" }}> PHP</span>, using{" "}
-                                       <span style={{ color: "skyblue" }}> jQuery</span>,<span style={{ color: "skyblue" }}> Ajax</span>,<span style={{ color: "skyblue" }}> Bootstrap </span>
-                                       Framework{" "}
+                                       <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>, using{" "}
+                                       <span style={{ color: "skyblue" }}> Bootstrap</span>,<span style={{ color: "skyblue" }}> jQuery</span>,<span style={{ color: "skyblue" }}> Aos-library </span>
+                                       Framework
                                     </p>
                                  </div>
                                  <div className="project-link">
-                                    <a aria-label="githubCekBedRS" href="https://github.com/ElecticCode/Cek-Bed-Rs-Indonesia" target="_blank">
+                                    <a aria-label="githubLittleDessert" href="https://github.com/zulkarnaenfhr/little-dessert.github.io" target="_blank">
                                        <i className="fab fa-github"></i>
                                     </a>
-                                    <a aria-label="websiteCekBedRS" href="https://cek-bed-rs-indonesia.herokuapp.com/" target="_blank">
+                                    <a aria-label="websiteLittleDessert" href="https://zulkarnaenfhr.github.io/little-dessert.github.io/" target="_blank">
                                        <span>
                                           <i className="fab fa-chrome"></i>
                                        </span>
@@ -275,7 +276,7 @@ class Projectsection extends Component {
                            </div>
                         </div>
                         {/* <!-- baris ketiga  --> */}
-                        <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-right" data-aos-offset="300">
+                        {/* <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-right" data-aos-offset="300">
                            <div className="cardfahri-container">
                               <div className="cardfahri">
                                  <div className="cardfahri--display">
@@ -356,7 +357,7 @@ class Projectsection extends Component {
                               </div>
                            </div>
                         </div>
-                        {/* <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-left" data-aos-offset="300">
+                        <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-left" data-aos-offset="300">
                            <div className="cardfahri-container">
                               <div className="cardfahri">
                                  <div className="cardfahri--display">
@@ -367,7 +368,7 @@ class Projectsection extends Component {
                                           alignItems: "center",
                                        }}
                                     >
-                                       Little Dessert Landing Page Website
+                                       Gratio Class
                                     </h2>
                                     <p
                                        style={{
@@ -375,19 +376,20 @@ class Projectsection extends Component {
                                        }}
                                     >
                                        {" "}
-                                       Make a landing page website for <i>Little Dessert Sidoarjo</i>
+                                       Conduct training on the implement of React JS props and component into
+                                       <i> Gratio Class Website</i>
                                     </p>
                                     <p>
-                                       <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>, using{" "}
-                                       <span style={{ color: "skyblue" }}> Bootstrap</span>,<span style={{ color: "skyblue" }}> jQuery</span>,<span style={{ color: "skyblue" }}> Aos-library </span>
+                                       <span style={{ color: "skyblue" }}>React Js</span>,<span style={{ color: "skyblue" }}> Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>,
+                                       using <span style={{ color: "skyblue" }}> Bootstrap</span>,<span style={{ color: "skyblue" }}> jQuery</span>,<span style={{ color: "skyblue" }}> Aos-library </span>
                                        Framework
                                     </p>
                                  </div>
                                  <div className="project-link">
-                                    <a aria-label="githubLittleDessert" href="https://github.com/zulkarnaenfhr/little-dessert.github.io" target="_blank">
+                                    <a aria-label="githubGratioClass" href="https://github.com/zulkarnaenfhr/GratioClass" target="_blank">
                                        <i className="fab fa-github"></i>
                                     </a>
-                                    <a aria-label="websiteLittleDessert" href="https://zulkarnaenfhr.github.io/little-dessert.github.io/" target="_blank">
+                                    <a aria-label="websiteCekBedRS" href="https://gratio-class.vercel.app/" target="_blank">
                                        <span>
                                           <i className="fab fa-chrome"></i>
                                        </span>
