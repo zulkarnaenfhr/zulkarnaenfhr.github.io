@@ -15,6 +15,7 @@
    align-items: center;
    position: absolute;
    background-color: black;
+   padding: 20px !important;
 }
 
 .loadPage-content-container {
