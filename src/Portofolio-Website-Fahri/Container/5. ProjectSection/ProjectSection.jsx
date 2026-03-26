@@ -65,7 +65,7 @@ class Projectsection extends Component {
                                     </h2>
                                     <p
                                        style={{
-                                          height: "114.5px",
+                                          height: "90px",
                                        }}
                                     >
                                        Make a company profile website for Cakelana that a startup software house
@@ -102,7 +102,7 @@ class Projectsection extends Component {
                                     </h2>
                                     <p
                                        style={{
-                                          height: "114.5px",
+                                          height: "90px",
                                        }}
                                     >
                                        Make a company profile website on Big Sight products as one of the activities following as a developer in PT Telkom Indonesia
@@ -139,7 +139,7 @@ class Projectsection extends Component {
                                     </h2>
                                     <p
                                        style={{
-                                          height: "114.5px",
+                                          height: "90px",
                                        }}
                                     >
                                        {" "}
@@ -409,6 +409,22 @@ class Projectsection extends Component {
                            <div className="cardfahri-container">
                               <div className="cardfahri">
                                  <div className="cardfahri--display">
+                                    <h2>Sentiment Analysis of Presidential and Vice Presidential Candidates</h2>
+                                    <p>
+                                       The study categorized sentiments into four emotional classes (happy, love, sad, and angry). achieving an F1-score of 0.9510.
+                                    </p>
+                                    <p>
+                                       <span style={{ color: "#19f9d8" }}>python</span>, using <span style={{ color: "#19f9d8" }}>tensorflow</span>, <span style={{ color: "#19f9d8" }}>keras</span>,{" "}
+                                       <span style={{ color: "#19f9d8" }}>fasttext</span>,<span style={{ color: "#19f9d8" }}> re</span> library
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up" data-aos-offset="300">
+                           <div className="cardfahri-container">
+                              <div className="cardfahri">
+                                 <div className="cardfahri--display">
                                     <h2>Abusive Indonesian Tweet Classification using CNN Algorithm</h2>
                                     <p> Abusive Tweet Classification using Convolutional Neural Network. The value of accuracy, precision, recall and f1-score are 0.8946 or 89.46%</p>
                                     <p>
@@ -429,7 +445,7 @@ class Projectsection extends Component {
                               </div>
                            </div>
                         </div>
-                        <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up" data-aos-offset="300">
+                        <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-left" data-aos-offset="300">
                            <div className="cardfahri-container">
                               <div className="cardfahri">
                                  <div className="cardfahri--display">
@@ -445,30 +461,6 @@ class Projectsection extends Component {
                                        <i className="fab fa-github"></i>
                                     </a>
                                     <a aria-label="colabLSTMAlgo" href="https://colab.research.google.com/drive/1-8XYX22Ztd_1fxwUKD0QjtP9L5Y-5lDX?usp=sharing" target="_blank">
-                                       <span>
-                                          <i className="fab fa-python"></i>
-                                       </span>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-left" data-aos-offset="300">
-                           <div className="cardfahri-container">
-                              <div className="cardfahri">
-                                 <div className="cardfahri--display">
-                                    <h2>Hand Written Digit Classification using CNN Algorithm</h2>
-                                    <p>Create an artificial intelligence that can classify a hand written digit in the form of an image</p>
-                                    <p>
-                                       <span style={{ color: "#19f9d8" }}>python</span>, using <span style={{ color: "#19f9d8" }}>tensorflow</span>,<span style={{ color: "#19f9d8" }}> Pandas</span>,
-                                       <span style={{ color: "#19f9d8" }}> numpy</span> library
-                                    </p>
-                                 </div>
-                                 <div className="project-link">
-                                    <a aria-label="githubHandWritten" href="https://github.com/zulkarnaenfhr/CNN-Handwritten-Digit-Classification" target="_blank">
-                                       <i className="fab fa-github"></i>
-                                    </a>
-                                    <a aria-label="colabHandWritten" href="https://colab.research.google.com/drive/1YwlumUVZhalSm3YKW7gbhlw09tBG4jLS?usp=sharing" target="_blank">
                                        <span>
                                           <i className="fab fa-python"></i>
                                        </span>

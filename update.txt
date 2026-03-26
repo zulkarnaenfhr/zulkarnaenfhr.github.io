@@ -1,4 +1,4 @@
 git add .
-git commit -m "update file cv"
+git commit -m "update list of project"
 git push
 npm run deploy
