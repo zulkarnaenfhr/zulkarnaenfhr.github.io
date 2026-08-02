@@ -1,4 +1,4 @@
 git add .
-git commit -m "update about me section"
+git commit -m "upgrade to angular 19"
 git push
 npm run deploy

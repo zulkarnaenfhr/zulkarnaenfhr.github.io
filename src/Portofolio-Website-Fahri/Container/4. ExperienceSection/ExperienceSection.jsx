@@ -75,7 +75,7 @@ class Experiencesection extends Component {
                                        Bhinneka
                                     </button>
                                  </li>
-                                 <li className="buttonbawah">
+                                 {/* <li className="buttonbawah">
                                     <button
                                        name="cateringBundaMia"
                                        onClick={this.handleWorkingChange}
@@ -85,7 +85,7 @@ class Experiencesection extends Component {
                                     >
                                        Catering Bunda Mia
                                     </button>
-                                 </li>
+                                 </li> */}
                                  <li className="buttonbawah">
                                     <button
                                        name="littleDessertSidoarjo"
@@ -157,7 +157,7 @@ class Experiencesection extends Component {
                                     </p>
                                  </div>
                               </div>
-                              <div className={this.state.statusWorking === "cateringBundaMia" ? "load-show-workingExperience" : "load-hide-workingExperience"}>
+                              {/* <div className={this.state.statusWorking === "cateringBundaMia" ? "load-show-workingExperience" : "load-hide-workingExperience"}>
                                  <div className="firstExperience">
                                     <div style={{ display: "flex", alignItems: "center" }}>
                                        <p id="positionOffice" className="position">
@@ -174,7 +174,7 @@ class Experiencesection extends Component {
                                        Planning, executing, monitoring, controlling, and closing out all incoming order for Catering Bunda Mia Sidoarjo.
                                     </p>
                                  </div>
-                              </div>
+                              </div> */}
                               <div className={this.state.statusWorking === "littleDessertSidoarjo" ? "load-show-workingExperience" : "load-hide-workingExperience"}>
                                  <div className="firstExperience">
                                     <div style={{ display: "flex", alignItems: "center" }}>
