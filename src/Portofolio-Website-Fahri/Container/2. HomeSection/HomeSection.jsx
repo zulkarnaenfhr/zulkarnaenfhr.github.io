@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './HomeSection.css';
+import SpaceScene from './SpaceScene';
 
 class Homesection extends Component {
 	constructor(props) {
@@ -17,6 +18,7 @@ class Homesection extends Component {
 	render() {
 		return (
 			<section id="homeSection">
+				<SpaceScene />
 				<div className="container-fluid hai">
 					<div className="container hai-content">
 						<div className="nama">

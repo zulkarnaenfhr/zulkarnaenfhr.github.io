@@ -9,6 +9,37 @@
    min-height: 100vh;
    display: flex;
    align-items: center;
+   position: relative;
+   z-index: 1;
+}
+
+#homeSection {
+   position: relative;
+   overflow: hidden;
+}
+
+.space-scene {
+   position: absolute;
+   top: 8%;
+   right: 0;
+   width: 100%;
+   height: 84%;
+   z-index: 0;
+   pointer-events: none;
+   opacity: 0.68;
+}
+
+.space-scene::after {
+   content: '';
+   position: absolute;
+   inset: 0;
+   background: transparent;
+}
+
+.space-scene canvas {
+   display: block;
+   width: 100%;
+   height: 100%;
 }
 .nama {
    display: flex;
@@ -177,6 +208,14 @@
    }
 }
 @media only screen and (max-width: 765px) {
+   .space-scene {
+      top: 12%;
+      right: 0;
+      width: 100%;
+      height: 60%;
+      opacity: 0.42;
+   }
+
    .zulkarnaen {
       display: none;
    }
