@@ -68,14 +68,14 @@ class Homesection extends Component {
 							className="bawahNama"
 							data-aos-delay="2750"
 							data-aos="fade-up">
-							I Create stuff that all i love, <span style={{ color: '#19f9d8' }}>sometimes!</span>
+							I build purposeful digital experiences for a changing world.
 						</h1>
 						<h2
 							id="bawahnya"
 							className="whoAmI"
 							data-aos-delay="3000"
 							data-aos="fade-up">
-							Fullstack Software Developer with 5 years of experience building scalable web applications. Skilled in problem-solving, detail-oriented, and able to work independently or in teams to deliver high-quality solutions.
+							I’m a confident, thoughtful Fullstack Software Developer who turns complex ideas into reliable, scalable products. I care about strong engineering, clear design, and creating technology that is ready for what comes next.
 						</h2>
 					</div>
 				</div>
