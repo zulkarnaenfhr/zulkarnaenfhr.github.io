@@ -17,29 +17,6 @@
    overflow: hidden;
 }
 
-.space-scene {
-   position: absolute;
-   top: 8%;
-   right: 0;
-   width: 100%;
-   height: 84%;
-   z-index: 0;
-   pointer-events: none;
-   opacity: 0.68;
-}
-
-.space-scene::after {
-   content: '';
-   position: absolute;
-   inset: 0;
-   background: transparent;
-}
-
-.space-scene canvas {
-   display: block;
-   width: 100%;
-   height: 100%;
-}
 .nama {
    display: flex;
    align-items: center;
@@ -205,15 +182,7 @@
    }
 }
 @media only screen and (max-width: 765px) {
-   .space-scene {
-      top: 12%;
-      right: 0;
-      width: 100%;
-      height: 60%;
-      opacity: 0.42;
-   }
-
-   .zulkarnaen {
+      .zulkarnaen {
       display: none;
    }
    .penulisanNama {
@@ -395,13 +364,9 @@
    box-shadow: 0 0 14px #19f9d8;
 }
 
-.space-scene {
-   opacity: 0.82;
-}
-
 @media only screen and (max-width: 765px) {
    #homeSection::before {
-      background: linear-gradient(90deg, rgba(5, 14, 28, 0.94), rgba(5, 14, 28, 0.64));
+      background: linear-gradient(90deg, rgba(5, 14, 28, 0.62), rgba(5, 14, 28, 0.25));
    }
 
    .hai-content {

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './HomeSection.css';
-import SpaceScene from './SpaceScene';
 import { LanguageContext } from '../../LanguageContext';
 
 class Homesection extends Component {
@@ -21,7 +20,6 @@ class Homesection extends Component {
 		const { t } = this.context;
 		return (
 			<section id="homeSection">
-				<SpaceScene />
 				<div className="container-fluid hai">
 					<div className="container hai-content">
 						<div className="mission-label" data-aos="fade-up" data-aos-delay="1800">{t.homeEyebrow}</div>

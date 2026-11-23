@@ -9,6 +9,7 @@ import Projectsection from "./Container/5. ProjectSection/ProjectSection";
 import Getintouch from "./Container/6. GetInTouch/GetInTouch";
 import Signiaturesection from "./Container/7. Signiature Section/SigniatureSection";
 import { AnimatePresence, motion } from "framer-motion";
+import AlienInvasionBackground from "./Container/AlienInvasionBackground";
 
 class Zulkarnaenfhr extends Component {
    constructor(props) {
@@ -181,6 +182,7 @@ class Zulkarnaenfhr extends Component {
                               <div style={starStyle3}></div>
                            </section>
                            {/* <!-- end of html for background section  --> */}
+                           <AlienInvasionBackground />
                            <Navbar />
                            <Homesection />
                            <Aboutme />

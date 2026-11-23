@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./ExperienceSection.css";
-import SpaceObject from "../SpaceObject";
 import { LanguageContext } from "../../LanguageContext";
 
 const workingExperience = [
@@ -115,7 +114,6 @@ class Experiencesection extends Component {
       const { t } = this.context;
       return (
          <section id="experienceSection" className="page-section">
-            <SpaceObject variant="experience" />
             <div className="section-container">
                <h1 className="sectionTitle" data-aos="fade-up" data-aos-offset="100">
                   / {t.experience}

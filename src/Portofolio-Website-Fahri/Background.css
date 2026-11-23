@@ -355,7 +355,7 @@ body {
       linear-gradient(180deg, transparent 0 78%, rgba(25, 249, 216, 0.04) 92%, transparent 100%);
 }
 
-.starsbackground > *:not(#background) {
+.starsbackground > *:not(#background):not(#alienBackdrop) {
    position: relative;
    z-index: 2;
 }
@@ -389,62 +389,24 @@ body {
    overflow: hidden;
 }
 
-.space-object {
-   position: absolute;
+/* fixed 3D alien invasion scene behind every section */
+#alienBackdrop {
+   position: fixed;
+   inset: 0;
    z-index: 1;
-   width: 190px;
-   height: 190px;
    pointer-events: none;
-   opacity: 0.72;
+   transition: opacity 0.3s linear;
 }
 
-.space-object canvas {
+#alienBackdrop canvas {
    display: block;
    width: 100%;
    height: 100%;
 }
 
-.space-object-about {
-   top: 2rem;
-   right: 12%;
-}
-
-.space-object-experience {
-   top: 5rem;
-   right: 8%;
-   width: 160px;
-   height: 160px;
-}
-
-.space-object-projects {
-   top: 7rem;
-   right: 5%;
-   width: 230px;
-   height: 230px;
-   opacity: 0.5;
-}
-
-.space-object-contact {
-   top: 3rem;
-   right: 14%;
-   width: 220px;
-   height: 220px;
-   opacity: 0.58;
-}
-
 @media (max-width: 768px) {
-   .space-object {
-      width: 120px;
-      height: 120px;
-      opacity: 0.38;
-   }
-
-   .space-object-about,
-   .space-object-experience,
-   .space-object-projects,
-   .space-object-contact {
-      top: 4rem;
-      right: -1.5rem;
+   #alienBackdrop {
+      filter: saturate(0.85);
    }
 }
 

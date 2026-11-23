@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./GetInTouch.css";
-import SpaceObject from "../SpaceObject";
 import { LanguageContext } from "../../LanguageContext";
 
 const socials = [
@@ -15,7 +14,6 @@ class Getintouch extends Component {
       const { t } = this.context;
       return (
          <section id="getInTouch" className="page-section">
-            <SpaceObject variant="contact" />
             <div className="section-container contact">
                <h1 className="contact__title" data-aos="fade-up" data-aos-offset="100">
                   {t.contact}

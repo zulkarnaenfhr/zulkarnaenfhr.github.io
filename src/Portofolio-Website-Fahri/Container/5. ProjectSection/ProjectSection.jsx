@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './ProjectSection.css';
-import SpaceObject from '../SpaceObject';
 import { LanguageContext } from '../../LanguageContext';
 
 const websiteProjects = [
@@ -126,7 +125,6 @@ class Projectsection extends Component {
 			<section
 				id="projectSection"
 				className="page-section">
-				<SpaceObject variant="projects" />
 				<div className="section-container">
 					<h1
 						className="sectionTitle"

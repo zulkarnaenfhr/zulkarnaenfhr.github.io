@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./AboutMe.css";
-import SpaceObject from "../SpaceObject";
 import { LanguageContext } from "../../LanguageContext";
 
 const technologies = ["Python", "Java Spring Boot", "Java Spring Batch", "Angular", "Next.js & React", "Node.js", "SQL Databases", "NoSQL Databases"];
@@ -11,7 +10,6 @@ class Aboutme extends Component {
       const { t } = this.context;
       return (
          <section id="aboutMeSection" className="page-section">
-            <SpaceObject variant="about" />
             <div className="section-container">
                <h1 className="sectionTitle" data-aos="fade-up" data-aos-offset="100">
                   / {t.about}
