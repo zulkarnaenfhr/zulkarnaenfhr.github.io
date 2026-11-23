@@ -3,13 +3,16 @@ import { createRoot } from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import Zulkarnaenfhr from './Portofolio-Website-Fahri/Zulkarnaenfhr';
 import { BrowserRouter } from 'react-router-dom';
+import { LanguageProvider } from './Portofolio-Website-Fahri/LanguageContext';
 
 const root = createRoot(document.getElementById('root'));
 
 root.render(
 	<React.StrictMode>
 		<BrowserRouter>
-			<Zulkarnaenfhr />
+			<LanguageProvider>
+				<Zulkarnaenfhr />
+			</LanguageProvider>
 		</BrowserRouter>
 	</React.StrictMode>,
 );

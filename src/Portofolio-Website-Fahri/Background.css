@@ -311,3 +311,164 @@ html {
       transform: translateY(20px);
    }
 }
+
+/* Orbital SpaceCapt background system */
+html,
+body {
+   background: #020814;
+   color: #e7f5f3;
+}
+
+.starsbackground {
+   position: relative;
+   isolation: isolate;
+   min-height: 100vh;
+   overflow: hidden;
+   background:
+      radial-gradient(ellipse at 82% 8%, rgba(18, 100, 122, 0.18), transparent 32%),
+      radial-gradient(ellipse at 18% 52%, rgba(10, 48, 85, 0.2), transparent 38%),
+      linear-gradient(180deg, #020814 0%, #041120 46%, #020814 100%);
+}
+
+.starsbackground::before,
+.starsbackground::after {
+   content: '';
+   position: absolute;
+   inset: 0;
+   pointer-events: none;
+}
+
+.starsbackground::before {
+   z-index: -2;
+   opacity: 0.24;
+   background-image:
+      linear-gradient(rgba(92, 186, 198, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(92, 186, 198, 0.08) 1px, transparent 1px);
+   background-size: 92px 92px;
+   mask-image: linear-gradient(to bottom, black, transparent 38%, black 70%, transparent);
+}
+
+.starsbackground::after {
+   z-index: -1;
+   background:
+      radial-gradient(circle at 50% 28%, transparent 0 12%, rgba(25, 249, 216, 0.05) 38%, transparent 62%),
+      linear-gradient(180deg, transparent 0 78%, rgba(25, 249, 216, 0.04) 92%, transparent 100%);
+}
+
+.starsbackground > *:not(#background) {
+   position: relative;
+   z-index: 2;
+}
+
+#background {
+   position: absolute;
+   inset: 0;
+   z-index: 0;
+   pointer-events: none;
+   opacity: 0.18;
+   mask-image: linear-gradient(to bottom, black, transparent 85%);
+}
+
+#background > div {
+   filter: blur(0.15px);
+}
+
+.cardfahri-container .cardfahri {
+   border-color: rgba(102, 191, 202, 0.18);
+   background: linear-gradient(145deg, rgba(12, 32, 53, 0.78), rgba(4, 15, 30, 0.78));
+   box-shadow: 0 18px 55px rgba(0, 0, 0, 0.22), inset 0 1px rgba(173, 255, 247, 0.06);
+}
+
+.cardfahri-container .cardfahri .cardfahri--dark {
+   background: linear-gradient(145deg, rgba(4, 19, 36, 0.9), rgba(2, 9, 19, 0.9));
+   border-color: rgba(102, 191, 202, 0.14);
+}
+
+.experience,
+#projectSection,
+#getInTouch,
+#aboutMeSection,
+#signatureSection {
+   background: transparent;
+}
+
+#aboutMeSection,
+#experienceSection,
+#projectSection,
+#getInTouch {
+   position: relative;
+   overflow: hidden;
+}
+
+.space-object {
+   position: absolute;
+   z-index: 1;
+   width: 190px;
+   height: 190px;
+   pointer-events: none;
+   opacity: 0.72;
+}
+
+.space-object canvas {
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+
+.aboutMe > .container,
+.experience > .container,
+.project-content,
+#getInTouch > .container {
+   position: relative;
+   z-index: 2;
+}
+
+.space-object-about {
+   top: 7rem;
+   right: 9%;
+}
+
+.space-object-experience {
+   top: 5rem;
+   right: 8%;
+   width: 160px;
+   height: 160px;
+}
+
+.space-object-projects {
+   top: 7rem;
+   right: 5%;
+   width: 230px;
+   height: 230px;
+   opacity: 0.5;
+}
+
+.space-object-contact {
+   top: 3rem;
+   right: 14%;
+   width: 220px;
+   height: 220px;
+   opacity: 0.58;
+}
+
+@media (max-width: 768px) {
+   .space-object {
+      width: 120px;
+      height: 120px;
+      opacity: 0.38;
+   }
+
+   .space-object-about,
+   .space-object-experience,
+   .space-object-projects,
+   .space-object-contact {
+      top: 4rem;
+      right: -1.5rem;
+   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+   #background > div {
+      animation: none !important;
+   }
+}

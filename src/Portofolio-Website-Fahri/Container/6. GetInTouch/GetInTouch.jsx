@@ -1,24 +1,29 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React, { Component } from "react";
 import "./GetInTouch.css";
+import SpaceObject from "../SpaceObject";
+import { LanguageContext } from "../../LanguageContext";
 
 class Getintouch extends Component {
+    static contextType = LanguageContext;
     render() {
+        const { t } = this.context;
         return (
             <section id="getInTouch">
+                <SpaceObject variant="contact" />
                 <div className="container-fluid">
                     <div className="container">
                         <div className="getintouch-section1">
                             <h1 className="getintouchjudul" data-aos="fade-up" data-aos-offset="100">
-                                Get In Touch With Me!
+                                {t.contact}
                             </h1>
                             <p className="getintouchjudul-bawah" data-aos="fade-up" data-aos-offset="100">
-                                Lets Get Conversation Started!
+                                {t.contactSub}
                             </p>
                         </div>
                         <div className="getintouch-section2">
                             <p className="bymail" data-aos="fade-up">
-                                By Email
+                                {t.email}
                             </p>
                             <div className="email">
                                 <p data-aos="fade-up">
@@ -30,7 +35,7 @@ class Getintouch extends Component {
                         </div>
                         <div className="getintouch-section3">
                             <p className="socialmedia" data-aos="fade-up">
-                                Social Media
+                                {t.social}
                             </p>
                             <ul data-aos="fade-up">
                                 <li>

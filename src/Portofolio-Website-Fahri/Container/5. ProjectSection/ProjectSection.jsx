@@ -1,19 +1,24 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React, { Component } from "react";
 import "./ProjectSection.css";
+import SpaceObject from "../SpaceObject";
+import { LanguageContext } from "../../LanguageContext";
 
 class Projectsection extends Component {
+   static contextType = LanguageContext;
    render() {
+      const { t } = this.context;
       return (
          <section id="projectSection">
+               <SpaceObject variant="projects" />
             <div className="container-fluid">
                <div className="container project-content">
                   <h1 className="sectionTitle" data-aos="fade-up" data-aos-offset="100">
-                     / Project{" "}
+                     / {t.projects}{" "}
                   </h1>
                   <div className="projectSection-website">
                      <h1 style={{ color: "#87CEEB" }} className="judulSection judulSectionWebsiteProject" data-aos="fade-up" data-aos-offset="100">
-                        / Website Project
+                        / {t.websiteProjects}
                      </h1>
                      <div className="row">
                         {/* <!-- baris pertama  --> */}

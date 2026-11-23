@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import "./ExperienceSection.css";
+import SpaceObject from "../SpaceObject";
+import { LanguageContext } from "../../LanguageContext";
 
 class Experiencesection extends Component {
+	static contextType = LanguageContext;
    constructor(props) {
       super(props);
 
@@ -33,18 +36,20 @@ class Experiencesection extends Component {
    }
 
    render() {
+      const { t } = this.context;
       return (
          <section id="experienceSection">
             <div className="container-fluid experience">
+				<SpaceObject variant="experience" />
                <div className="container ">
                   <div>
                      <h1 className="sectionTitle" data-aos="fade-up" data-aos-offset="100">
-                        / Experience
+                        / {t.experience}
                      </h1>
                   </div>
                   <div className="">
                      <div className="workingExperience" data-aos="fade-up" data-aos-offset="100">
-                        <h4>/ Working Experience</h4>
+                        <h4>/ {t.working}</h4>
                         <div className="experienceContent">
                            <div className="sectionLeftExperience">
                               <ul>
@@ -200,7 +205,7 @@ class Experiencesection extends Component {
                         </div>
                      </div>
                      <div id="organizationExperience" data-aos="fade-up" data-aos-offset="100">
-                        <h4>/ Organization Experience</h4>
+                        <h4>/ {t.organization}</h4>
                         <div className="experienceContent">
                            <div className="sectionLeftExperience">
                               <ul>

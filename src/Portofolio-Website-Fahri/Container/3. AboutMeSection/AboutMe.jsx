@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import './AboutMe.css';
+import SpaceObject from '../SpaceObject';
+import { LanguageContext } from '../../LanguageContext';
 
 class Aboutme extends Component {
+	static contextType = LanguageContext;
 	constructor(props) {
 		super(props);
 
@@ -15,15 +18,17 @@ class Aboutme extends Component {
 		});
 	}
 	render() {
+		const { t } = this.context;
 		return (
 			<section id="aboutMeSection">
 				<div className="container-fluid aboutMe">
+					<SpaceObject variant="about" />
 					<div className="container">
 						<h1
 							className="sectionTitle"
 							data-aos="fade-up"
 							data-aos-offset="100">
-							/ About me
+							/ {t.about}
 						</h1>
 						<div
 							className="col-10 aboutMeContent"
@@ -63,7 +68,7 @@ class Aboutme extends Component {
 										data-aos="fade-up"
 										data-aos-delay="300"
 										data-aos-offset="100">
-										<div className="technology">Here are some technologies I have been working with:</div>
+						<div className="technology">{t.technologies}</div>
 										<div
 											className="row techlist-content"
 											style={{ marginLeft: '-1.5rem' }}>

@@ -150,7 +150,7 @@ class Zulkarnaenfhr extends Component {
                      >
                         <div id="loadPage">
                            <div className="loadPage-content-container">
-                              <h1 className="loadPage-text">SpaceCapt Technology Industry</h1>
+                           <h1 className="loadPage-text">SPACE CAPT / INITIALIZING</h1>
                            </div>
                         </div>
                      </motion.div>

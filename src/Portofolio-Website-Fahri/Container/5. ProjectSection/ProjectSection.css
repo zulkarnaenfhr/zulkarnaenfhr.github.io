@@ -1,10 +1,17 @@
 #projectSection {
     padding-top: 50px;
+    position: relative;
+    overflow: hidden;
 }
 
 /* css for cardfahris  */
 .cardfahri-container {
-    margin: 30px;
+    display: flex;
+    height: 100%;
+    margin: 15px;
+}
+.projectSection-website .row > [class*="col-"] {
+    display: flex;
 }
 .cardfahri-container .cardfahri {
     font-weight: bold;
@@ -14,14 +21,17 @@
 .cardfahri-container .cardfahri {
     padding: 30px;
     width: 100%;
-    height: 350px;
-    border: 2px solid black;
-    background: rgb(36, 43, 73);
+    min-height: 330px;
+    height: 100%;
+    border: 1px solid rgba(110, 217, 221, 0.2);
+    background: linear-gradient(145deg, rgba(12, 32, 53, 0.82), rgba(4, 15, 30, 0.82));
     text-decoration: none;
     color: silver;
     display: block;
     transition: 0.25s ease;
-    border-radius: 30px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
     transition: all 0.4s ease-in-out;
 }
 .cardfahri-container .cardfahri:hover {
@@ -30,16 +40,21 @@
 }
 .cardfahri-container .cardfahri--display {
     display: block;
-    margin-top: -20px;
+    margin-top: 0;
+    flex: 1;
 }
 .cardfahri-container .cardfahri .cardfahri--display h2 {
     margin: 20px 0;
     font-size: 25px;
+    height: auto !important;
+    min-height: 0 !important;
 }
 .cardfahri-container .cardfahri .cardfahri--display p {
     font-weight: normal;
     line-height: 1.5;
     font-size: 15px;
+    height: auto !important;
+    min-height: 0 !important;
 }
 .cardfahri-container .cardfahri .cardfahri--display p.link {
     margin: 20px 0 0;
@@ -56,8 +71,9 @@
     color: #fde74c;
 }
 .project-link {
-    position: absolute;
-    bottom: 5%;
+    position: static;
+    margin-top: auto;
+    padding-top: 18px;
 }
 .project-link a {
     font-size: 23px;
@@ -91,7 +107,8 @@
         font-weight: 500;
     }
     .cardfahri-container .cardfahri {
-        height: 400px;
+        min-height: 0;
+        height: auto;
     }
 }
 @media only screen and (max-width: 392px) {
@@ -100,7 +117,8 @@
         margin-top: 10px;
     }
     .cardfahri-container .cardfahri {
-        height: 400px;
+        min-height: 0;
+        height: auto;
     }
     .cardfahri-container .cardfahri .cardfahri--display h2 {
         margin: 20px 0;

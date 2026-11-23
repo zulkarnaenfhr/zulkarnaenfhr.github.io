@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import './HomeSection.css';
 import SpaceScene from './SpaceScene';
+import { LanguageContext } from '../../LanguageContext';
 
 class Homesection extends Component {
+	static contextType = LanguageContext;
 	constructor(props) {
 		super(props);
 
@@ -16,67 +18,34 @@ class Homesection extends Component {
 		});
 	}
 	render() {
+		const { t } = this.context;
 		return (
 			<section id="homeSection">
 				<SpaceScene />
 				<div className="container-fluid hai">
 					<div className="container hai-content">
+						<div className="mission-label" data-aos="fade-up" data-aos-delay="1800">{t.homeEyebrow}</div>
 						<div className="nama">
-							{this.state.windowWidth > 768 ? (
-								<h1
-									className="penulisanNama"
-									data-aos-delay="2500"
-									data-aos="fade-up">
-									Hi,{' '}
-									<span
-										id="fahri"
-										style={{ color: 'cadetblue' }}>
-										Your <span className="zulkarnaen">SpaceCapt</span>{' '}
-									</span>{' '}
-									Here :)
-								</h1>
-							) : (
-								<h1
-									className="penulisanNama"
-									data-aos-delay="2500"
-									data-aos="fade-up">
-									Hi,{' '}
-									<span
-										id="fahri"
-										style={{ color: 'cadetblue' }}>
-										Fahri <span className="zulkarnaen">SpaceCapt</span>{' '}
-									</span>{' '}
-									Here :)
-								</h1>
-							)}
-
-							<div
-								data-aos-delay="2500"
-								data-aos="fade-up"
-								className="eye-container">
-								{/* <div className="eye"></div>
-                                <div className="eye2"></div> */}
-								<div className="eye eye-left">
-									<div className="eye-inner"></div>
-								</div>
-								<div className="eye eye2 eye-right">
-									<div className="eye-inner"></div>
-								</div>
-							</div>
+							<h1 className="penulisanNama" data-aos-delay="2000" data-aos="fade-up">
+								{t.homeTitle} <span id="fahri">{t.homeName}</span>
+							</h1>
 						</div>
 						<h1
 							className="bawahNama"
 							data-aos-delay="2750"
 							data-aos="fade-up">
-							I build purposeful digital experiences for a changing world.
+							{t.homeHeadline}
 						</h1>
 						<h2
 							id="bawahnya"
 							className="whoAmI"
 							data-aos-delay="3000"
 							data-aos="fade-up">
-							I’m a confident, thoughtful Fullstack Software Developer who turns complex ideas into reliable, scalable products. I care about strong engineering, clear design, and creating technology that is ready for what comes next.
+							{t.homeDescription}
 						</h2>
+						<div className="mission-status" data-aos="fade-up" data-aos-delay="3250">
+							<span className="status-dot"></span> {t.status}
+						</div>
 					</div>
 				</div>
 			</section>
