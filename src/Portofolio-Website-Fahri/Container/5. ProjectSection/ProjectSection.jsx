@@ -1,487 +1,181 @@
-/* eslint-disable react/jsx-no-target-blank */
-import React, { Component } from "react";
-import "./ProjectSection.css";
-import SpaceObject from "../SpaceObject";
-import { LanguageContext } from "../../LanguageContext";
+import React, { Component } from 'react';
+import './ProjectSection.css';
+import SpaceObject from '../SpaceObject';
+import { LanguageContext } from '../../LanguageContext';
+
+const websiteProjects = [
+	{
+		title: 'Cakelana Company Profile',
+		description: 'Make a company profile website for Cakelana that a startup software house',
+		tech: ['Next.js', 'CSS', 'Node.js', 'Bootstrap', 'AOS', 'Axios', 'Sequelize'],
+		links: [{ type: 'web', label: 'Cakelana Profile', href: 'https://cakelana.vercel.app/' }],
+	},
+	{
+		title: 'Big Sight Company Profile Website',
+		description: 'Make a company profile website on Big Sight products as one of the activities following as a developer in PT Telkom Indonesia',
+		tech: ['Next.js', 'CSS', 'Node.js', 'Bootstrap', 'AOS', 'Axios', 'Sequelize'],
+		links: [{ type: 'web', label: 'Bigsight', href: 'https://bigsight.id/en' }],
+	},
+	{
+		title: 'Photography Portfolio',
+		description: 'Create a website that can be used as a portfolio for photographers',
+		tech: ['Next.js', 'CSS', 'Bootstrap', 'AOS', 'GSAP TweenMax'],
+		links: [{ type: 'web', label: 'Photography Portfolio', href: 'https://prabudizulkarnaen.vercel.app/' }],
+	},
+	{
+		title: 'Gericht Restaurant',
+		description: 'Create a website that can be used to learn website animations.',
+		tech: ['Next.js', 'CSS', 'Bootstrap', 'AOS', 'GSAP TweenMax'],
+		links: [{ type: 'web', label: 'Gericht Restaurant', href: 'https://gericht-restaurant-teal.vercel.app/' }],
+	},
+	{
+		title: 'Indonesian Covid Mapping',
+		description: 'A website that can monitor and map covid cases in each province, monitor daily Indonesia growth cases and also Covid-19 Indonesia news updates',
+		tech: ['React.js', 'HTML', 'CSS', 'JavaScript', 'Covid-19 Gov API'],
+		links: [
+			{ type: 'github', label: 'GitHub Covid Mapping', href: 'https://github.com/zulkarnaenfhr/indonesia-covid-mapping-react' },
+			{ type: 'web', label: 'Website Covid Mapping', href: 'https://indonesia-covid-mapping-react.vercel.app/' },
+		],
+	},
+	{
+		title: 'Little Dessert Landing Page',
+		description: 'Make a landing page website for Little Dessert Sidoarjo',
+		tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'jQuery', 'AOS'],
+		links: [
+			{ type: 'github', label: 'GitHub Little Dessert', href: 'https://github.com/zulkarnaenfhr/little-dessert.github.io' },
+			{ type: 'web', label: 'Website Little Dessert', href: 'https://zulkarnaenfhr.github.io/little-dessert.github.io/' },
+		],
+	},
+];
+
+const aiProjects = [
+	{
+		title: 'Sentiment Analysis of Presidential and Vice Presidential Candidates',
+		description: 'Categorized sentiments into four emotional classes (happy, love, sad, and angry), achieving an F1-score of 0.9510.',
+		tech: ['Python', 'TensorFlow', 'Keras', 'FastText', 're'],
+		links: [],
+	},
+	{
+		title: 'Abusive Indonesian Tweet Classification using CNN',
+		description: 'Abusive tweet classification using Convolutional Neural Network. Accuracy, precision, recall and F1-score of 0.8946 (89.46%).',
+		tech: ['Python', 'TensorFlow', 'Pandas', 'PySastrawi', 're'],
+		links: [
+			{ type: 'github', label: 'GitHub CNN', href: 'https://github.com/zulkarnaenfhr/Abusive-Indonesian-Tweet-Using-Convolutional-Neural-Networks-Method' },
+			{ type: 'colab', label: 'Colab CNN', href: 'https://colab.research.google.com/drive/1x1Io429fR7-a5QjX0-J9oSroOPCpzoLs?usp=sharing' },
+		],
+	},
+	{
+		title: 'Abusive Indonesian Tweet Classification using LSTM',
+		description: 'Abusive tweet classification using Long Short Term Memory. Accuracy, precision, recall and F1-score of 0.8814 (88.14%).',
+		tech: ['Python', 'TensorFlow', 'Pandas', 'PySastrawi', 're'],
+		links: [
+			{ type: 'github', label: 'GitHub LSTM', href: 'https://github.com/zulkarnaenfhr/Abusive-Indonesian-Tweet-Classification-using-Long-Short-Term-Memory-Method' },
+			{ type: 'colab', label: 'Colab LSTM', href: 'https://colab.research.google.com/drive/1-8XYX22Ztd_1fxwUKD0QjtP9L5Y-5lDX?usp=sharing' },
+		],
+	},
+];
+
+const linkIcons = {
+	github: 'fab fa-github',
+	web: 'fas fa-external-link-alt',
+	colab: 'fab fa-python',
+};
+
+const aosByColumn = ['fade-up-right', 'fade-up', 'fade-up-left'];
+
+const ProjectCard = ({ project, index, variant }) => (
+	<div
+		className="project-grid__item"
+		data-aos={aosByColumn[index % 3]}
+		data-aos-offset="200">
+		<article className={`project-card project-card--${variant}`}>
+			<header className="project-card__header">
+				<i
+					className={`project-card__folder ${variant === 'ai' ? 'fas fa-brain' : 'far fa-folder'}`}
+					aria-hidden="true"></i>
+				<div className="project-card__links">
+					{project.links.map((link) => (
+						<a
+							key={link.href}
+							aria-label={link.label}
+							title={link.label}
+							href={link.href}
+							target="_blank"
+							rel="noopener noreferrer">
+							<i className={linkIcons[link.type]}></i>
+						</a>
+					))}
+				</div>
+			</header>
+			<h3 className="project-card__title">{project.title}</h3>
+			<p className="project-card__desc">{project.description}</p>
+			<ul className="project-card__tech">
+				{project.tech.map((tech) => (
+					<li key={tech}>{tech}</li>
+				))}
+			</ul>
+		</article>
+	</div>
+);
 
 class Projectsection extends Component {
-   static contextType = LanguageContext;
-   render() {
-      const { t } = this.context;
-      return (
-         <section id="projectSection">
-               <SpaceObject variant="projects" />
-            <div className="container-fluid">
-               <div className="container project-content">
-                  <h1 className="sectionTitle" data-aos="fade-up" data-aos-offset="100">
-                     / {t.projects}{" "}
-                  </h1>
-                  <div className="projectSection-website">
-                     <h1 style={{ color: "#87CEEB" }} className="judulSection judulSectionWebsiteProject" data-aos="fade-up" data-aos-offset="100">
-                        / {t.websiteProjects}
-                     </h1>
-                     <div className="row">
-                        {/* <!-- baris pertama  --> */}
-                        {/* <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-right" data-aos-offset="300">
-                           <div className="cardfahri-container">
-                              <div className="cardfahri">
-                                 <div className="cardfahri--display">
-                                    <h2
-                                       style={{
-                                          height: "62px",
-                                          display: "flex",
-                                          alignItems: "center",
-                                       }}
-                                    >
-                                       Apply Credit Card Online for BCA's Customers
-                                    </h2>
-                                    <p
-                                       style={{
-                                          height: "114.5px",
-                                       }}
-                                    >
-                                       Developed an Apply Credit Card Online Application for BCA customers, and it's is accessible through the myBca application and BCA's Webform
-                                    </p>
-                                    <p>
-                                       <span style={{ color: "skyblue" }}>Angular.Js</span> and <span style={{ color: "skyblue" }}> Java Spring Boot</span>
-                                    </p>
-                                 </div>
-                                 <div className="project-link">
-                                    <a aria-label="ACCO" href="https://webform.bca.co.id/applycc/" target="_blank">
-                                       <span>
-                                          <i className="fab fa-chrome"></i>
-                                       </span>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div> */}
-                        <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-right" data-aos-offset="300">
-                           <div className="cardfahri-container">
-                              <div className="cardfahri">
-                                 <div className="cardfahri--display">
-                                    <h2
-                                       style={{
-                                          height: "62px",
-                                          display: "flex",
-                                          alignItems: "center",
-                                       }}
-                                    >
-                                       Cakelana Company Profile
-                                    </h2>
-                                    <p
-                                       style={{
-                                          height: "90px",
-                                       }}
-                                    >
-                                       Make a company profile website for Cakelana that a startup software house
-                                    </p>
-                                    <p>
-                                       <span style={{ color: "skyblue" }}>Next.Js</span>, <span style={{ color: "skyblue" }}>CSS</span>,<span style={{ color: "skyblue" }}> Node.Js</span>, using{" "}
-                                       <span style={{ color: "skyblue" }}>Bootstrap</span>, <span style={{ color: "skyblue" }}>Aos-Library</span>, <span style={{ color: "skyblue" }}>Axios</span>,{" "}
-                                       <span style={{ color: "skyblue" }}>Sequelize </span>
-                                       and many more
-                                    </p>
-                                 </div>
-                                 <div className="project-link">
-                                    <a aria-label="Cakelana Profile" href="https://cakelana.vercel.app/" target="_blank">
-                                       <span>
-                                          <i className="fab fa-chrome"></i>
-                                       </span>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up" data-aos-offset="300">
-                           <div className="cardfahri-container">
-                              <div className="cardfahri">
-                                 <div className="cardfahri--display">
-                                    <h2
-                                       style={{
-                                          height: "62px",
-                                          display: "flex",
-                                          alignItems: "center",
-                                       }}
-                                    >
-                                       Big Sight Company Profile Website
-                                    </h2>
-                                    <p
-                                       style={{
-                                          height: "90px",
-                                       }}
-                                    >
-                                       Make a company profile website on Big Sight products as one of the activities following as a developer in PT Telkom Indonesia
-                                    </p>
-                                    <p>
-                                       <span style={{ color: "skyblue" }}>Next.Js</span>, <span style={{ color: "skyblue" }}>CSS</span>,<span style={{ color: "skyblue" }}> Node.Js</span>, using{" "}
-                                       <span style={{ color: "skyblue" }}>Bootstrap</span>, <span style={{ color: "skyblue" }}>Aos-Library</span>, <span style={{ color: "skyblue" }}>Axios</span>,{" "}
-                                       <span style={{ color: "skyblue" }}>Sequelize </span>
-                                       and many more
-                                    </p>
-                                 </div>
-                                 <div className="project-link">
-                                    <a aria-label="Bigsight" href="https://bigsight.id/en" target="_blank">
-                                       <span>
-                                          <i className="fab fa-chrome"></i>
-                                       </span>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-left" data-aos-offset="300">
-                           <div className="cardfahri-container">
-                              <div className="cardfahri">
-                                 <div className="cardfahri--display">
-                                    <h2
-                                       style={{
-                                          height: "62px",
-                                          display: "flex",
-                                          alignItems: "center",
-                                       }}
-                                    >
-                                       Photography Portfolio
-                                    </h2>
-                                    <p
-                                       style={{
-                                          height: "90px",
-                                       }}
-                                    >
-                                       {" "}
-                                       Create a website that can be used as a portfolio for photographers
-                                    </p>
-                                    <p>
-                                       <span style={{ color: "skyblue" }}>Next.Js</span>, <span style={{ color: "skyblue" }}>CSS</span>, using <span style={{ color: "skyblue" }}>Bootstrap</span>,{" "}
-                                       <span style={{ color: "skyblue" }}>Aos-Library</span>, <span style={{ color: "skyblue" }}>GSAP TweenMax</span> and many more
-                                    </p>
-                                 </div>
-                                 <div className="project-link">
-                                    <a aria-label="photography portofolio" href="https://prabudizulkarnaen.vercel.app/" target="_blank">
-                                       <span>
-                                          <i className="fab fa-chrome"></i>
-                                       </span>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        {/* <!-- baris kedua  --> */}
-                        <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-right" data-aos-offset="300">
-                           <div className="cardfahri-container">
-                              <div className="cardfahri">
-                                 <div className="cardfahri--display">
-                                    <h2
-                                       style={{
-                                          height: "62px",
-                                          display: "flex",
-                                          alignItems: "center",
-                                       }}
-                                    >
-                                       Gericht Restaurant
-                                    </h2>
-                                    <p
-                                       style={{
-                                          height: "114.5px",
-                                       }}
-                                    >
-                                       Create a website that can be used to learn website animations.
-                                    </p>
-                                    <p>
-                                       <span style={{ color: "skyblue" }}>Next.Js</span>, <span style={{ color: "skyblue" }}>CSS</span>, using <span style={{ color: "skyblue" }}>Bootstrap</span>,{" "}
-                                       <span style={{ color: "skyblue" }}>Aos-Library</span>, <span style={{ color: "skyblue" }}>GSAP TweenMax</span> and many more
-                                    </p>
-                                 </div>
-                                 <div className="project-link">
-                                    <a aria-label="gericht restaurant" href="https://gericht-restaurant-teal.vercel.app/" target="_blank">
-                                       <span>
-                                          <i className="fab fa-chrome"></i>
-                                       </span>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up" data-aos-offset="300">
-                           <div className="cardfahri-container">
-                              <div className="cardfahri">
-                                 <div className="cardfahri--display">
-                                    <h2
-                                       style={{
-                                          height: "62px",
-                                          display: "flex",
-                                          alignItems: "center",
-                                       }}
-                                    >
-                                       Indonesian Covid Mapping
-                                    </h2>
-                                    <p
-                                       style={{
-                                          height: "114.5px",
-                                       }}
-                                    >
-                                       a website that can monitor and mapping covid cases in each province, monitor daily indonesia growth cases and also covid-19 indonesia news update
-                                    </p>
-                                    <p>
-                                       <span style={{ color: "skyblue" }}>React Js</span>,<span style={{ color: "skyblue" }}> HTML</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> Javascript</span>,
-                                       using
-                                       <span style={{ color: "skyblue" }}> Indonesian government Covid-19 API</span>
-                                    </p>
-                                 </div>
-                                 <div className="project-link">
-                                    <a aria-label="githubCovidMapping" href="https://github.com/zulkarnaenfhr/indonesia-covid-mapping-react" target="_blank">
-                                       <i className="fab fa-github"></i>
-                                    </a>
-                                    <a aria-label="websiteCovidMapping" href="https://indonesia-covid-mapping-react.vercel.app/" target="_blank">
-                                       <span>
-                                          <i className="fab fa-chrome"></i>
-                                       </span>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-left" data-aos-offset="300">
-                           <div className="cardfahri-container">
-                              <div className="cardfahri">
-                                 <div className="cardfahri--display">
-                                    <h2
-                                       style={{
-                                          height: "62px",
-                                          display: "flex",
-                                          alignItems: "center",
-                                       }}
-                                    >
-                                       Little Dessert Landing Page Website
-                                    </h2>
-                                    <p
-                                       style={{
-                                          height: "114.5px",
-                                       }}
-                                    >
-                                       {" "}
-                                       Make a landing page website for <i>Little Dessert Sidoarjo</i>
-                                    </p>
-                                    <p>
-                                       <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>, using{" "}
-                                       <span style={{ color: "skyblue" }}> Bootstrap</span>,<span style={{ color: "skyblue" }}> jQuery</span>,<span style={{ color: "skyblue" }}> Aos-library </span>
-                                       Framework
-                                    </p>
-                                 </div>
-                                 <div className="project-link">
-                                    <a aria-label="githubLittleDessert" href="https://github.com/zulkarnaenfhr/little-dessert.github.io" target="_blank">
-                                       <i className="fab fa-github"></i>
-                                    </a>
-                                    <a aria-label="websiteLittleDessert" href="https://zulkarnaenfhr.github.io/little-dessert.github.io/" target="_blank">
-                                       <span>
-                                          <i className="fab fa-chrome"></i>
-                                       </span>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        {/* <!-- baris ketiga  --> */}
-                        {/* <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-right" data-aos-offset="300">
-                           <div className="cardfahri-container">
-                              <div className="cardfahri">
-                                 <div className="cardfahri--display">
-                                    <h2
-                                       style={{
-                                          height: "62px",
-                                          display: "flex",
-                                          alignItems: "center",
-                                       }}
-                                    >
-                                       Gratio Class
-                                    </h2>
-                                    <p
-                                       style={{
-                                          height: "114.5px",
-                                       }}
-                                    >
-                                       {" "}
-                                       Conduct training on the implement of React JS props and component into
-                                       <i> Gratio Class Website</i>
-                                    </p>
-                                    <p>
-                                       <span style={{ color: "skyblue" }}>React Js</span>,<span style={{ color: "skyblue" }}> Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>,
-                                       using <span style={{ color: "skyblue" }}> Bootstrap</span>,<span style={{ color: "skyblue" }}> jQuery</span>,<span style={{ color: "skyblue" }}> Aos-library </span>
-                                       Framework
-                                    </p>
-                                 </div>
-                                 <div className="project-link">
-                                    <a aria-label="githubGratioClass" href="https://github.com/zulkarnaenfhr/GratioClass" target="_blank">
-                                       <i className="fab fa-github"></i>
-                                    </a>
-                                    <a aria-label="websiteCekBedRS" href="https://gratio-class.vercel.app/" target="_blank">
-                                       <span>
-                                          <i className="fab fa-chrome"></i>
-                                       </span>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up" data-aos-offset="300">
-                           <div className="cardfahri-container">
-                              <div className="cardfahri">
-                                 <div className="cardfahri--display">
-                                    <h2
-                                       style={{
-                                          height: "62px",
-                                          display: "flex",
-                                          alignItems: "center",
-                                       }}
-                                    >
-                                       Little Dessert Landing Page Website
-                                    </h2>
-                                    <p
-                                       style={{
-                                          height: "114.5px",
-                                       }}
-                                    >
-                                       {" "}
-                                       Make a landing page website for <i>Little Dessert Sidoarjo</i>
-                                    </p>
-                                    <p>
-                                       <span style={{ color: "skyblue" }}>Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>, using{" "}
-                                       <span style={{ color: "skyblue" }}> Bootstrap</span>,<span style={{ color: "skyblue" }}> jQuery</span>,<span style={{ color: "skyblue" }}> Aos-library </span>
-                                       Framework
-                                    </p>
-                                 </div>
-                                 <div className="project-link">
-                                    <a aria-label="githubLittleDessert" href="https://github.com/zulkarnaenfhr/little-dessert.github.io" target="_blank">
-                                       <i className="fab fa-github"></i>
-                                    </a>
-                                    <a aria-label="websiteLittleDessert" href="https://zulkarnaenfhr.github.io/little-dessert.github.io/" target="_blank">
-                                       <span>
-                                          <i className="fab fa-chrome"></i>
-                                       </span>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-left" data-aos-offset="300">
-                           <div className="cardfahri-container">
-                              <div className="cardfahri">
-                                 <div className="cardfahri--display">
-                                    <h2
-                                       style={{
-                                          height: "62px",
-                                          display: "flex",
-                                          alignItems: "center",
-                                       }}
-                                    >
-                                       Gratio Class
-                                    </h2>
-                                    <p
-                                       style={{
-                                          height: "114.5px",
-                                       }}
-                                    >
-                                       {" "}
-                                       Conduct training on the implement of React JS props and component into
-                                       <i> Gratio Class Website</i>
-                                    </p>
-                                    <p>
-                                       <span style={{ color: "skyblue" }}>React Js</span>,<span style={{ color: "skyblue" }}> Html</span>,<span style={{ color: "skyblue" }}> CSS</span>,<span style={{ color: "skyblue" }}> JavaScript</span>,
-                                       using <span style={{ color: "skyblue" }}> Bootstrap</span>,<span style={{ color: "skyblue" }}> jQuery</span>,<span style={{ color: "skyblue" }}> Aos-library </span>
-                                       Framework
-                                    </p>
-                                 </div>
-                                 <div className="project-link">
-                                    <a aria-label="githubGratioClass" href="https://github.com/zulkarnaenfhr/GratioClass" target="_blank">
-                                       <i className="fab fa-github"></i>
-                                    </a>
-                                    <a aria-label="websiteCekBedRS" href="https://gratio-class.vercel.app/" target="_blank">
-                                       <span>
-                                          <i className="fab fa-chrome"></i>
-                                       </span>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div> */}
-                     </div>
-                  </div>
-                  <div className="projectSection-AI">
-                     <h1 style={{ color: "#87CEEB" }} className="judulSection" data-aos="fade-up" data-aos-offset="100">
-                        / Artificial Intelligent Project
-                     </h1>
-                     <div className="barispertama row">
-                        <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-right" data-aos-offset="300">
-                           <div className="cardfahri-container">
-                              <div className="cardfahri">
-                                 <div className="cardfahri--display">
-                                    <h2>Sentiment Analysis of Presidential and Vice Presidential Candidates</h2>
-                                    <p>
-                                       The study categorized sentiments into four emotional classes (happy, love, sad, and angry). achieving an F1-score of 0.9510.
-                                    </p>
-                                    <p>
-                                       <span style={{ color: "#19f9d8" }}>python</span>, using <span style={{ color: "#19f9d8" }}>tensorflow</span>, <span style={{ color: "#19f9d8" }}>keras</span>,{" "}
-                                       <span style={{ color: "#19f9d8" }}>fasttext</span>,<span style={{ color: "#19f9d8" }}> re</span> library
-                                    </p>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up" data-aos-offset="300">
-                           <div className="cardfahri-container">
-                              <div className="cardfahri">
-                                 <div className="cardfahri--display">
-                                    <h2>Abusive Indonesian Tweet Classification using CNN Algorithm</h2>
-                                    <p> Abusive Tweet Classification using Convolutional Neural Network. The value of accuracy, precision, recall and f1-score are 0.8946 or 89.46%</p>
-                                    <p>
-                                       <span style={{ color: "#19f9d8" }}>python</span>, using <span style={{ color: "#19f9d8" }}>tensorflow</span>, <span style={{ color: "#19f9d8" }}>pandas</span>,{" "}
-                                       <span style={{ color: "#19f9d8" }}>pySastrawi</span>,<span style={{ color: "#19f9d8" }}> re</span> library
-                                    </p>
-                                 </div>
-                                 <div className="project-link">
-                                    <a aria-label="githubCNNAlgo" href="https://github.com/zulkarnaenfhr/Abusive-Indonesian-Tweet-Using-Convolutional-Neural-Networks-Method" target="_blank">
-                                       <i className="fab fa-github"></i>
-                                    </a>
-                                    <a aria-label="colabCNNAlgo" href="https://colab.research.google.com/drive/1x1Io429fR7-a5QjX0-J9oSroOPCpzoLs?usp=sharing" target="_blank">
-                                       <span>
-                                          <i className="fab fa-python"></i>
-                                       </span>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-12" data-aos="fade-up-left" data-aos-offset="300">
-                           <div className="cardfahri-container">
-                              <div className="cardfahri">
-                                 <div className="cardfahri--display">
-                                    <h2>Abusive Indonesian Tweets Using LSTM Algorithm</h2>
-                                    <p>Abusive Tweet Classification using Long Short Term Memory. The value of accuracy, precision, recall and f1-score are 0.8814 or 88.14%</p>
-                                    <p>
-                                       <span style={{ color: "#19f9d8" }}>python</span>, using <span style={{ color: "#19f9d8" }}>tensorflow</span>, <span style={{ color: "#19f9d8" }}>pandas</span>,{" "}
-                                       <span style={{ color: "#19f9d8" }}>pySastrawi</span>,<span style={{ color: "#19f9d8" }}> re</span> library
-                                    </p>
-                                 </div>
-                                 <div className="project-link">
-                                    <a aria-label="githubLSTMAlgo" href="https://github.com/zulkarnaenfhr/Abusive-Indonesian-Tweet-Classification-using-Long-Short-Term-Memory-Method" target="_blank">
-                                       <i className="fab fa-github"></i>
-                                    </a>
-                                    <a aria-label="colabLSTMAlgo" href="https://colab.research.google.com/drive/1-8XYX22Ztd_1fxwUKD0QjtP9L5Y-5lDX?usp=sharing" target="_blank">
-                                       <span>
-                                          <i className="fab fa-python"></i>
-                                       </span>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-      );
-   }
+	static contextType = LanguageContext;
+	render() {
+		const { t } = this.context;
+		return (
+			<section
+				id="projectSection"
+				className="page-section">
+				<SpaceObject variant="projects" />
+				<div className="section-container">
+					<h1
+						className="sectionTitle"
+						data-aos="fade-up"
+						data-aos-offset="100">
+						/ {t.projects}
+					</h1>
+
+					<div className="project-group">
+						<h2
+							className="section-subtitle"
+							data-aos="fade-up"
+							data-aos-offset="100">
+							/ {t.websiteProjects}
+						</h2>
+						<div className="project-grid">
+							{websiteProjects.map((project, i) => (
+								<ProjectCard
+									key={project.title}
+									project={project}
+									index={i}
+									variant="web"
+								/>
+							))}
+						</div>
+					</div>
+
+					<div className="project-group">
+						<h2
+							className="section-subtitle"
+							data-aos="fade-up"
+							data-aos-offset="100">
+							/ Artificial Intelligence Project
+						</h2>
+						<div className="project-grid">
+							{aiProjects.map((project, i) => (
+								<ProjectCard
+									key={project.title}
+									project={project}
+									index={i}
+									variant="ai"
+								/>
+							))}
+						</div>
+					</div>
+				</div>
+			</section>
+		);
+	}
 }
 
 export default Projectsection;

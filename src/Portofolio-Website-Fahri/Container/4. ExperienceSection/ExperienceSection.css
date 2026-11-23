@@ -1,242 +1,127 @@
-@import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap");
-/* font-family: 'Amiri', serif; */
-
-.load-show-workingExperience {
-    transition: all 1250ms linear;
-    display: block;
-    animation: fade-in 1s;
+.experience-group + .experience-group {
+   margin-top: 64px;
 }
 
-.load-hide-workingExperience {
-    display: none;
-    animation: fade-out 1s;
+.experience-tabs {
+   display: grid;
+   grid-template-columns: 240px minmax(0, 1fr);
+   gap: 40px;
+   align-items: start;
 }
 
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+/* tab list: vertical with an accent indicator on the left */
+.experience-tabs__list {
+   display: flex;
+   flex-direction: column;
+   border-left: 2px solid var(--border);
+}
+.experience-tabs__tab {
+   position: relative;
+   margin-left: -2px;
+   padding: 12px 20px;
+   border: 0;
+   border-left: 2px solid transparent;
+   background: transparent;
+   color: var(--text-muted);
+   font-family: var(--font-mono);
+   font-size: 14px;
+   text-align: left;
+   cursor: pointer;
+   transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+.experience-tabs__tab:hover {
+   color: var(--accent);
+   background: rgba(25, 249, 216, 0.04);
+}
+.experience-tabs__tab.is-active {
+   color: var(--accent);
+   border-left-color: var(--accent);
+   background: rgba(25, 249, 216, 0.06);
 }
 
-@keyframes fade-out {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
+.experience-panel {
+   min-height: 170px;
+   animation: experience-fade 0.45s ease;
+}
+.experience-panel__title {
+   color: var(--heading);
+   font-size: 22px;
+   font-weight: 500;
+   line-height: 1.35;
+   margin: 4px 0 6px;
+}
+.experience-panel__place {
+   color: var(--accent-soft);
+}
+.experience-panel__period {
+   color: var(--text-muted);
+   font-family: var(--font-mono);
+   font-size: 13px;
+   letter-spacing: 0.02em;
+   margin: 0 0 16px;
+}
+.experience-panel__desc {
+   color: var(--text);
+   font-size: 16px;
+   line-height: 1.75;
+   max-width: 640px;
+   margin: 0;
+}
+.experience-panel__link {
+   color: var(--accent-soft);
+   text-decoration: none;
+   border-bottom: 1px solid rgba(135, 206, 235, 0.4);
+}
+.experience-panel__link:hover {
+   color: var(--accent);
+   border-bottom-color: var(--accent);
 }
 
-.experience {
-    padding-top: 50px;
-    width: 100vw;
-    color: white;
-    font-family: 'Amiri', serif;
-    height: fit-content !important;
+@keyframes experience-fade {
+   from {
+      opacity: 0;
+      transform: translateY(6px);
+   }
+   to {
+      opacity: 1;
+      transform: none;
+   }
 }
 
-.experienceContent {
-    display: flex;
+/* tablet / mobile: tabs become a horizontal scrollable strip */
+@media (max-width: 860px) {
+   .experience-tabs {
+      grid-template-columns: 1fr;
+      gap: 24px;
+   }
+   .experience-tabs__list {
+      flex-direction: row;
+      overflow-x: auto;
+      border-left: 0;
+      border-bottom: 2px solid var(--border);
+      scrollbar-width: none;
+   }
+   .experience-tabs__list::-webkit-scrollbar {
+      display: none;
+   }
+   .experience-tabs__tab {
+      flex: 0 0 auto;
+      margin: 0 0 -2px;
+      padding: 10px 16px;
+      border-left: 0;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+   }
+   .experience-tabs__tab.is-active {
+      border-bottom-color: var(--accent);
+   }
+   .experience-panel {
+      min-height: 0;
+   }
+   .experience-panel__title {
+      font-size: 19px;
+   }
+   .experience-panel__desc {
+      font-size: 15px;
+   }
 }
-
-.position {
-    color: #ccd6f6;
-    font-size: 28px;
-}
-
-.name {
-    color: skyblue;
-    font-size: 28px;
-    margin-left: 10px;
-}
-
-.duration {
-    margin-top: -15px;
-    color: silver;
-    font-size: 18px;
-    align-items: center;
-}
-
-.description {
-    margin-top: -5px;
-    color: #fefaf6;
-    width: 80%;
-    font-size: 18px;
-}
-
-.sectionLeftExperience ul li {
-    list-style: none;
-    margin-left: -30px;
-}
-.buttonbawah {
-    margin-top: -15px;
-}
-.experienceButton {
-    text-align: center;
-    width: 250px;
-    height: 40px;
-    background: rgb(13, 20, 47);
-    color: silver;
-    margin-bottom: 10px;
-    background-color: Transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    font-size: 21px;
-    font-weight: 400;
-}
-
-#organizationExperience {
-    padding-top: 30px;
-}
-
-.sectionRightExperience {
-    height: 100px;
-    margin-left: 50px;
-}
-
-.littleDessertSidoarjo-website {
-    color: skyblue;
-    letter-spacing: 1px;
-    font-size: 13px;
-    font-family: "Amiri", serif;
-}
-
-.littleDessertSidoarjo-website:hover {
-    color: #dddad7;
-}
-
-/* time to responsive  */
-@media only screen and (max-width: 1200px) {
-    #organizationExperience {
-        margin-top: 30px;
-    }
-}
-@media only screen and (max-width: 995px) {
-    #organizationExperience {
-        margin-top: 30px;
-    }
-    .experienceButton {
-        font-size: 15px;
-        width: 150%;
-    }
-    .buttonbawah {
-        margin-top: -10px;
-    }
-    .sectionRightExperience {
-        margin-left: 50px;
-    }
-    .position {
-        font-size: 23px;
-    }
-    .name {
-        font-size: 17px;
-    }
-    .duration {
-        font-size: 17px;
-    }
-    .description {
-        width: 100%;
-        font-size: 15px;
-    }
-}
-@media only screen and (max-width: 768px) {
-    #organizationExperience {
-        margin-top: 30px;
-    }
-    .experienceContent {
-        display: block;
-    }
-    .experienceButton {
-        width: 100%;
-    }
-    .buttonbawah {
-        margin-top: -10px;
-    }
-    .sectionRightExperience {
-        margin-left: 0px;
-        margin-top: -20px;
-    }
-    .position {
-        font-size: 23px;
-    }
-    .name {
-        font-size: 17px;
-    }
-    .duration {
-        font-size: 17px;
-    }
-    .description {
-        width: 100%;
-        font-size: 15px;
-    }
-}
-@media only screen and (max-width: 586px) {
-    #organizationExperience {
-        margin-top: 30px;
-    }
-    .experienceContent {
-        display: block;
-    }
-    .experienceButton {
-        width: 100%;
-    }
-    .buttonbawah {
-        margin-top: -17px;
-    }
-    .sectionRightExperience {
-        margin-left: 0;
-        margin-top: -20px;
-    }
-    .position {
-        font-size: 21px;
-    }
-    .name {
-        font-size: 15px;
-    }
-    .duration {
-        font-size: 15px;
-    }
-    .description {
-        width: 100%;
-        font-size: 12px;
-    }
-}
-@media only screen and (max-width: 392px) {
-    .sectionTitle {
-        font-size: 34px;
-        font-weight: 500;
-    }
-    .experienceContent {
-        display: block;
-    }
-    .experienceButton {
-        width: 100%;
-    }
-    .buttonbawah {
-        margin-top: -10px;
-    }
-    .sectionRightExperience {
-        margin-left: 0;
-        margin-top: -20px;
-    }
-    .position {
-        font-size: 21px;
-    }
-    .name {
-        font-size: 15px;
-    }
-    .duration {
-        font-size: 15px;
-    }
-    .description {
-        width: 100%;
-        font-size: 12px;
-    }
-}
-/* end of responsive  */

@@ -1,215 +1,93 @@
-@import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap");
-/* font-family: 'Amiri', serif; */
-
-
 #getInTouch {
-    min-height: 100vh;
-    color: silver;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   min-height: 80vh;
+   display: flex;
+   align-items: center;
 }
 
-.getintouch-section1 {
-    padding-top: 150px;
-    text-align: center;
+.contact {
+   text-align: center;
 }
 
-.getintouchjudul {
-    color: #19f9d8;
-    font-family: "Amiri", serif;
-    font-size: 80px;
+.contact__title {
+   color: var(--accent);
+   font-size: clamp(44px, 7vw, 76px);
+   font-weight: 600;
+   letter-spacing: -0.02em;
+   line-height: 1.05;
+   margin: 0 0 16px;
+}
+.contact__sub {
+   color: var(--text);
+   font-size: 18px;
+   margin: 0 0 56px;
 }
 
-.getintouchjudul-bawah {
-    font-family: "Amiri", serif;
-    font-size: 20px;
+.contact__block + .contact__block {
+   margin-top: 40px;
+}
+.contact__label {
+   color: var(--text-muted);
+   font-family: var(--font-mono);
+   font-size: 13px;
+   letter-spacing: 0.14em;
+   text-transform: uppercase;
+   margin: 0 0 12px;
 }
 
-.getintouch-section2 {
-    padding-top: 50px;
+.contact__email {
+   display: inline-block;
+   color: var(--heading);
+   font-size: clamp(20px, 3.2vw, 34px);
+   font-weight: 500;
+   text-decoration: none;
+   overflow-wrap: anywhere;
+   border-bottom: 1px solid rgba(25, 249, 216, 0.35);
+   padding-bottom: 4px;
+   transition: color 0.25s ease, border-color 0.25s ease;
+}
+.contact__email:hover {
+   color: var(--accent);
+   border-bottom-color: var(--accent);
 }
 
-.getintouch-section2 .bymail {
-    font-family: "Amiri", serif;
-    font-size: 25px;
+.contact__socials {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 12px;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+.contact__socials a {
+   display: inline-flex;
+   align-items: center;
+   gap: 10px;
+   padding: 10px 20px;
+   border: 1px solid var(--border);
+   border-radius: 999px;
+   background: rgba(12, 32, 53, 0.5);
+   color: var(--text);
+   font-size: 15px;
+   text-decoration: none;
+   transition: color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+.contact__socials a:hover {
+   color: var(--accent);
+   border-color: var(--accent);
+   transform: translateY(-2px);
+}
+.contact__socials svg,
+.contact__socials i {
+   font-size: 16px;
 }
 
-.getintouch-section2 .email {
-    margin-top: -20px;
+@media (max-width: 586px) {
+   #getInTouch {
+      min-height: 0;
+   }
+   .contact__sub {
+      font-size: 16px;
+      margin-bottom: 40px;
+   }
 }
-
-.getintouch-section2 .email a {
-    font-family: "Amiri", serif;
-    font-size: 56px;
-    padding-left: 25px;
-    text-decoration: none;
-    color: silver;
-    transition: all 0.4s ease-in-out;
-}
-
-.getintouch-section2 .email a:hover {
-    color: #19f9d8;
-}
-
-.getintouch-section3 {
-    padding-top: 60px;
-}
-
-.getintouch-section3 .socialmedia {
-    font-family: "Amiri", serif;
-    font-size: 25px;
-}
-
-.getintouch-section3 ul {
-    margin-top: -20px;
-    list-style: none;
-    display: flex;
-}
-
-.getintouch-section3 ul li a {
-    margin-right: 50px;
-    text-decoration: none;
-    color: silver;
-    font-family: "Amiri", serif;
-    font-size: 56px;
-    transition: all 0.4s ease-in-out;
-}
-
-.getintouch-section3 ul li a:hover {
-    color: #19f9d8;
-}
-
-/* time to responsive  */
-@media only screen and (max-width: 1400px) {
-    .getintouch-section1 {
-        padding-top: 50px;
-        text-align: center;
-    }
-}
-@media only screen and (max-width: 1200px) {
-}
-@media only screen and (max-width: 992px) {
-    #getInTouch {
-        height: 500px;
-    }
-    .getintouchjudul {
-        font-size: 50px;
-    }
-    .getintouchjudul-bawah {
-        font-size: 15px;
-    }
-    .getintouch-section2 .bymail {
-        font-size: 17px;
-        margin-top: -20px;
-    }
-    .getintouch-section2 .email {
-        margin-top: -10px;
-    }
-    .getintouch-section2 .email a {
-        font-size: 28px;
-    }
-    .getintouch-section3 {
-        padding-top: 10px;
-    }
-    .getintouch-section3 .socialmedia {
-        font-size: 17px;
-    }
-    .getintouch-section3 ul {
-        margin-top: -10px;
-    }
-    .getintouch-section3 ul li a {
-        margin-right: 50px;
-        font-size: 28px;
-    }
-}
-@media only screen and (max-width: 770px) {
-    #getInTouch {
-        height: 490px;
-    }
-    .getintouch-section3 ul li a {
-        margin-right: 20px;
-        font-size: 28px;
-    }
-    .getintouch-section2 {
-        margin-top: -50px;
-    }
-}
-@media only screen and (max-width: 586px) {
-    #getInTouch {
-        display: flex;
-        align-items: center;
-    }
-    .getintouchjudul {
-        font-size: 30px;
-    }
-    .getintouchjudul-bawah {
-        font-size: 11px;
-    }
-    .getintouch-section2 .bymail {
-        font-size: 13px;
-        margin-top: 40px;
-    }
-    .getintouch-section2 .email {
-        margin-top: -10px;
-    }
-    .getintouch-section2 .email a {
-        font-size: 18px;
-    }
-    .getintouch-section3 {
-        padding-top: 10px;
-    }
-    .getintouch-section3 .socialmedia {
-        font-size: 13px;
-    }
-    .getintouch-section3 ul {
-        margin-top: -10px;
-    }
-    .getintouch-section3 ul li a {
-        margin-right: 20px;
-        font-size: 18px;
-    }
-    .getintouch-section2 {
-        padding-top: 12px;
-    }
-}
-@media only screen and (max-width: 392px) {
-    #getInTouch {
-        height: 380px;
-    }
-    .getintouchjudul {
-        font-size: 27px;
-    }
-    .getintouchjudul-bawah {
-        font-size: 10px;
-    }
-    .getintouch-section2 .bymail {
-        font-size: 13px;
-    }
-    .getintouch-section2 .email {
-        margin-top: -10px;
-    }
-    .getintouch-section2 .email a {
-        font-size: 18px;
-    }
-    .getintouch-section3 {
-        padding-top: 10px;
-    }
-    .getintouch-section3 .socialmedia {
-        font-size: 13px;
-    }
-    .getintouch-section3 ul {
-        margin-top: -10px;
-    }
-    .getintouch-section3 ul li a {
-        margin-right: 10px;
-        font-size: 18px;
-    }
-    .getintouch-section2 {
-        padding-top: 12px;
-    }
-    .getintouch-section2 {
-        padding-top: 0px;
-    }
-}
-/* end of responsive  */

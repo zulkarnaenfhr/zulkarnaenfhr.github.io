@@ -3,309 +3,130 @@ import "./ExperienceSection.css";
 import SpaceObject from "../SpaceObject";
 import { LanguageContext } from "../../LanguageContext";
 
+const workingExperience = [
+   {
+      id: "bankCentralAsia",
+      tab: "PT Bank Central Asia",
+      role: "IT Specialist",
+      place: "PT Bank Central Asia",
+      period: "August 2023 - now",
+      description:
+         "Developed an Apply Credit Card Online Application for BCA customers, enabling them to apply for credit cards directly and seamlessly. Currently, this feature is accessible through the myBCA application, enhancing user experience and streamlining the application process.",
+   },
+   {
+      id: "telkomIndonesia",
+      tab: "PT Telkom Indonesia",
+      role: "Developer",
+      place: "Telkom Indonesia",
+      period: "February 2022 - March 2023",
+      description:
+         "Create products that are visible to users, with special emphasis on user interface design, and also Turn well-researched product designs enjoyable app experiences that integrate well with our backend APIs and also work consistently across multiple devices.",
+   },
+   {
+      id: "bhinneka",
+      tab: "Bhinneka",
+      role: "Software Developer",
+      place: "Bhinneka",
+      period: "Agustus 2022 - now",
+      description: "Creating a website that can record all employee activities both in the form of OKR and KPI and several features that support it",
+   },
+   {
+      id: "littleDessertSidoarjo",
+      tab: "Little Dessert",
+      role: "Front-End Developer",
+      place: "Little dessert",
+      period: "September 2021 - January 2022",
+      description: (
+         <>
+            Design and Developed landing page website for{" "}
+            <a className="experience-panel__link" href="https://zulkarnaenfhr.github.io/little-dessert.github.io/" target="_blank" rel="noopener noreferrer">
+               Little Dessert Sidoarjo
+            </a>
+         </>
+      ),
+   },
+];
+
+const organizationExperience = [
+   {
+      id: "UPNVeteranJawaTimur",
+      tab: "UPN Veteran Jawa Timur",
+      role: "Huminfo division",
+      place: "KoLU",
+      period: "December 2020 - December 2022",
+      description: "Responsible for creating harmonious relationships between internal and external parties and also responsible for creating interesting Instagram content.",
+   },
+   {
+      id: "SMAN1Surabaya",
+      tab: "SMAN 1 Surabaya",
+      role: "Vice Leader",
+      place: "OSIS SMAN 1 Surabaya",
+      period: "September 2017 - August 2018",
+      description: "Responsible to arrange and prepare all the duties related to internal and external activities. also creating policy for extracurricular activities",
+   },
+   {
+      id: "SMPN6Sidoarjo",
+      tab: "SMPN 6 Sidoarjo",
+      role: "Head of Art Division",
+      place: "OSIS SMPN 6 Sidoarjo",
+      period: "September 2013 - August 2014",
+      description: "Accommodate all school community activities regarding matters related to artistic activities",
+   },
+];
+
+class ExperienceTabs extends Component {
+   state = { active: this.props.items[0].id };
+
+   render() {
+      const { items, label } = this.props;
+      const current = items.find((item) => item.id === this.state.active);
+      return (
+         <div className="experience-tabs">
+            <div className="experience-tabs__list" role="tablist" aria-label={label}>
+               {items.map((item) => (
+                  <button
+                     key={item.id}
+                     type="button"
+                     role="tab"
+                     aria-selected={item.id === current.id}
+                     className={`experience-tabs__tab${item.id === current.id ? " is-active" : ""}`}
+                     onClick={() => this.setState({ active: item.id })}
+                  >
+                     {item.tab}
+                  </button>
+               ))}
+            </div>
+            <div className="experience-panel" role="tabpanel" key={current.id}>
+               <h3 className="experience-panel__title">
+                  {current.role} <span className="experience-panel__place">@ {current.place}</span>
+               </h3>
+               <p className="experience-panel__period">{current.period}</p>
+               <p className="experience-panel__desc">{current.description}</p>
+            </div>
+         </div>
+      );
+   }
+}
+
 class Experiencesection extends Component {
-	static contextType = LanguageContext;
-   constructor(props) {
-      super(props);
-
-      this.state = {
-         statusWorking: "bankCentralAsia",
-         statusOrganization: "UPNVeteranJawaTimur",
-         innerWidth: 0,
-      };
-      this.handleWorkingChange = this.handleWorkingChange.bind(this);
-      this.handleOrganizationChange = this.handleOrganizationChange.bind(this);
-   }
-
-   handleWorkingChange = (e) => {
-      this.setState({
-         statusWorking: e.target.name,
-      });
-   };
-
-   handleOrganizationChange = (e) => {
-      this.setState({
-         statusOrganization: e.target.name,
-      });
-   };
-
-   componentDidMount() {
-      this.setState({
-         innerWidth: window.innerWidth,
-      });
-   }
+   static contextType = LanguageContext;
 
    render() {
       const { t } = this.context;
       return (
-         <section id="experienceSection">
-            <div className="container-fluid experience">
-				<SpaceObject variant="experience" />
-               <div className="container ">
-                  <div>
-                     <h1 className="sectionTitle" data-aos="fade-up" data-aos-offset="100">
-                        / {t.experience}
-                     </h1>
-                  </div>
-                  <div className="">
-                     <div className="workingExperience" data-aos="fade-up" data-aos-offset="100">
-                        <h4>/ {t.working}</h4>
-                        <div className="experienceContent">
-                           <div className="sectionLeftExperience">
-                              <ul>
-                                 <li>
-                                    <button
-                                       name="bankCentralAsia"
-                                       onClick={this.handleWorkingChange}
-                                       id="buttonBankCentralAsia"
-                                       style={this.state.statusWorking === "bankCentralAsia" ? { color: "#19f9d8" } : { color: "" }}
-                                       className="experienceButton"
-                                    >
-                                       PT Bank Central Asia
-                                    </button>
-                                 </li>
-                                 <li className="buttonbawah">
-                                    <button
-                                       name="telkomIndonesia"
-                                       onClick={this.handleWorkingChange}
-                                       id="buttonTelkomIndonesia"
-                                       style={this.state.statusWorking === "telkomIndonesia" ? { color: "#19f9d8" } : { color: "" }}
-                                       className="experienceButton"
-                                    >
-                                       PT Telkom Indonesia
-                                    </button>
-                                 </li>
-                                 <li className="buttonbawah">
-                                    <button name="bhinneka" onClick={this.handleWorkingChange} id="buttonBhinneka" style={this.state.statusWorking === "bhinneka" ? { color: "#19f9d8" } : { color: "" }} className="experienceButton">
-                                       Bhinneka
-                                    </button>
-                                 </li>
-                                 {/* <li className="buttonbawah">
-                                    <button
-                                       name="cateringBundaMia"
-                                       onClick={this.handleWorkingChange}
-                                       id="buttonCateringBundaMia"
-                                       style={this.state.statusWorking === "cateringBundaMia" ? { color: "#19f9d8" } : { color: "" }}
-                                       className="experienceButton"
-                                    >
-                                       Catering Bunda Mia
-                                    </button>
-                                 </li> */}
-                                 <li className="buttonbawah">
-                                    <button
-                                       name="littleDessertSidoarjo"
-                                       onClick={this.handleWorkingChange}
-                                       id="buttonLittleDessert"
-                                       style={this.state.statusWorking === "littleDessertSidoarjo" ? { color: "#19f9d8" } : { color: "" }}
-                                       className="experienceButton button2"
-                                    >
-                                       Little Dessert
-                                    </button>
-                                 </li>
-                              </ul>
-                           </div>
-
-                           <div id="experience-sectionright" className={this.state.innerWidth > 1000 ? "col-7 sectionRightExperience sectionRightExperienceworking" : "sectionRightExperience sectionRightExperienceworking"}>
-                              <div className={this.state.statusWorking === "bankCentralAsia" ? "load-show-workingExperience" : "load-hide-workingExperience"}>
-                                 <div className="firstExperience">
-                                    <div style={{ display: "flex", alignItems: "center" }}>
-                                       <p id="positionOffice" className="position">
-                                          IT Specialist @
-                                          <span id="nameOffice" className="name">
-                                             PT Bank Central Asia
-                                          </span>
-                                       </p>
-                                    </div>
-                                    <p id="durationOffice" className="duration">
-                                       August 2023 - now
-                                    </p>
-                                    <p id="descriptionOffice" className="description">
-                                       Developed an Apply Credit Card Online Application for BCA customers, enabling them to apply for credit cards directly and seamlessly. Currently, this feature is accessible through the myBCA
-                                       application, enhancing user experience and streamlining the application process.
-                                    </p>
-                                 </div>
-                              </div>
-                              <div className={this.state.statusWorking === "telkomIndonesia" ? "load-show-workingExperience" : "load-hide-workingExperience"}>
-                                 <div className="firstExperience">
-                                    <div style={{ display: "flex", alignItems: "center" }}>
-                                       <p id="positionOffice" className="position">
-                                          Developer @
-                                          <span id="nameOffice" className="name">
-                                             Telkom Indonesia
-                                          </span>
-                                       </p>
-                                    </div>
-                                    <p id="durationOffice" className="duration">
-                                       February 2022 - March 2023
-                                    </p>
-                                    <p id="descriptionOffice" className="description">
-                                       Create products that are visible to users, with special emphasis on user interface design, and also Turn well-researched product designs enjoyable app experiences that integrate well with our backend
-                                       APIs and also work consistently across multiple devices.
-                                    </p>
-                                 </div>
-                              </div>
-                              <div className={this.state.statusWorking === "bhinneka" ? "load-show-workingExperience" : "load-hide-workingExperience"}>
-                                 <div className="firstExperience">
-                                    <div style={{ display: "flex", alignItems: "center" }}>
-                                       <p id="positionOffice" className="position">
-                                          Software Developer @
-                                          <span id="nameOffice" className="name">
-                                             Bhinneka
-                                          </span>
-                                       </p>
-                                    </div>
-                                    <p id="durationOffice" className="duration">
-                                       Agustus 2022 - now
-                                    </p>
-                                    <p id="descriptionOffice" className="description">
-                                       Creating a website that can record all employee activities both in the form of OKR and KPI and several features that support it
-                                    </p>
-                                 </div>
-                              </div>
-                              {/* <div className={this.state.statusWorking === "cateringBundaMia" ? "load-show-workingExperience" : "load-hide-workingExperience"}>
-                                 <div className="firstExperience">
-                                    <div style={{ display: "flex", alignItems: "center" }}>
-                                       <p id="positionOffice" className="position">
-                                          Project Manager @
-                                          <span id="nameOffice" className="name">
-                                             Catering Bunda Mia
-                                          </span>
-                                       </p>
-                                    </div>
-                                    <p id="durationOffice" className="duration">
-                                       May 2018 - January 2022
-                                    </p>
-                                    <p id="descriptionOffice" className="description">
-                                       Planning, executing, monitoring, controlling, and closing out all incoming order for Catering Bunda Mia Sidoarjo.
-                                    </p>
-                                 </div>
-                              </div> */}
-                              <div className={this.state.statusWorking === "littleDessertSidoarjo" ? "load-show-workingExperience" : "load-hide-workingExperience"}>
-                                 <div className="firstExperience">
-                                    <div style={{ display: "flex", alignItems: "center" }}>
-                                       <p id="positionOffice" className="position">
-                                          Front-End Developer @
-                                          <span id="nameOffice" className="name">
-                                             Little dessert
-                                          </span>
-                                       </p>
-                                    </div>
-                                    <p id="durationOffice" className="duration">
-                                       September 2021 - January 2022
-                                    </p>
-                                    <p id="descriptionOffice" className="description">
-                                       Design and Developed landing page website for{" "}
-                                       <a aria-label="littleDesserSidoarjoWebsite" className="littleDessertSidoarjo-website" href="https://zulkarnaenfhr.github.io/little-dessert.github.io/">
-                                          Little Dessert Sidoarjo
-                                       </a>{" "}
-                                    </p>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div id="organizationExperience" data-aos="fade-up" data-aos-offset="100">
-                        <h4>/ {t.organization}</h4>
-                        <div className="experienceContent">
-                           <div className="sectionLeftExperience">
-                              <ul>
-                                 <li>
-                                    <button
-                                       name="UPNVeteranJawaTimur"
-                                       style={this.state.statusOrganization === "UPNVeteranJawaTimur" ? { color: "#19f9d8" } : { color: "" }}
-                                       onClick={this.handleOrganizationChange}
-                                       className="experienceButton"
-                                       id="buttonkuliah"
-                                    >
-                                       UPN Veteran Jawa Timur
-                                    </button>
-                                 </li>
-                                 <li className="buttonbawah">
-                                    <button
-                                       style={this.state.statusOrganization === "SMAN1Surabaya" ? { color: "#19f9d8" } : { color: "" }}
-                                       name="SMAN1Surabaya"
-                                       onClick={this.handleOrganizationChange}
-                                       className="experienceButton"
-                                       id="buttonsma"
-                                    >
-                                       SMAN 1 Surabaya
-                                    </button>
-                                 </li>
-                                 <li className="buttonbawah">
-                                    <button
-                                       style={this.state.statusOrganization === "SMPN6Sidoarjo" ? { color: "#19f9d8" } : { color: "" }}
-                                       name="SMPN6Sidoarjo"
-                                       onClick={this.handleOrganizationChange}
-                                       className="experienceButton"
-                                       id="buttonsmp"
-                                    >
-                                       SMPN 6 Sidoarjo
-                                    </button>
-                                 </li>
-                              </ul>
-                           </div>
-                           <div id="experience-sectionright2" className={this.state.innerWidth > 1000 ? "col-7 sectionRightExperience" : "sectionRightExperience"}>
-                              <div className={this.state.statusOrganization === "UPNVeteranJawaTimur" ? "load-show-workingExperience" : "load-hide-workingExperience"}>
-                                 <div className="firstExperience">
-                                    <div style={{ display: "flex", alignItems: "center" }}>
-                                       <p style={{ display: "none" }}>pembatas biar ga ngaco</p>
-                                       <p id="positionorganization" className="position">
-                                          Huminfo division @
-                                          <span id="nameorganization" className="name">
-                                             KoLU
-                                          </span>
-                                       </p>
-                                    </div>
-                                    <p id="durationorganization" className="duration">
-                                       December 2020 - December 2022
-                                    </p>
-                                    <p id="descriptionorganization" className="description">
-                                       Responsible for creating harmonious relationships between internal and external parties and also responsible for creating interesting Instagram content.
-                                    </p>
-                                 </div>
-                              </div>
-                              <div className={this.state.statusOrganization === "SMAN1Surabaya" ? "load-show-workingExperience" : "load-hide-workingExperience"}>
-                                 <div className="firstExperience">
-                                    <div style={{ display: "flex", alignItems: "center" }}>
-                                       <p style={{ display: "none" }}>pembatas biar ga ngaco</p>
-                                       <p id="positionorganization" className="position">
-                                          Vice Leader @
-                                          <span id="nameorganization" className="name">
-                                             OSIS SMAN 1 Surabaya
-                                          </span>
-                                       </p>
-                                    </div>
-                                    <p id="durationorganization" className="duration">
-                                       September 2017 - August 2018{" "}
-                                    </p>
-                                    <p id="descriptionorganization" className="description">
-                                       Responsible to arrange and prepare all the duties related to internal and external activities. also creating policy for extracurricular activities{" "}
-                                    </p>
-                                 </div>
-                              </div>
-                              <div className={this.state.statusOrganization === "SMPN6Sidoarjo" ? "load-show-workingExperience" : "load-hide-workingExperience"}>
-                                 <div className="firstExperience">
-                                    <div style={{ display: "flex", alignItems: "center" }}>
-                                       <p style={{ display: "none" }}>pembatas biar ga ngaco</p>
-                                       <p id="positionorganization" className="position">
-                                          Head of Art Division @
-                                          <span id="nameorganization" className="name">
-                                             OSIS SMPN 6 Sidoarjo
-                                          </span>
-                                       </p>
-                                    </div>
-                                    <p id="durationorganization" className="duration">
-                                       September 2013 - August 2014{" "}
-                                    </p>
-                                    <p id="descriptionorganization" className="description">
-                                       Accommodate all school community activities regarding matters related to artistic activities{" "}
-                                    </p>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
+         <section id="experienceSection" className="page-section">
+            <SpaceObject variant="experience" />
+            <div className="section-container">
+               <h1 className="sectionTitle" data-aos="fade-up" data-aos-offset="100">
+                  / {t.experience}
+               </h1>
+               <div className="experience-group" data-aos="fade-up" data-aos-offset="100">
+                  <h2 className="section-subtitle">/ {t.working}</h2>
+                  <ExperienceTabs items={workingExperience} label={t.working} />
+               </div>
+               <div className="experience-group" data-aos="fade-up" data-aos-offset="100">
+                  <h2 className="section-subtitle">/ {t.organization}</h2>
+                  <ExperienceTabs items={organizationExperience} label={t.organization} />
                </div>
             </div>
          </section>

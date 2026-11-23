@@ -1,149 +1,71 @@
-@import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap");
-/* font-family: 'Amiri', serif; */
-
-.aboutMe {
-   padding-top: 30px;
+.about-grid {
+   display: grid;
+   grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+   gap: 56px;
+   align-items: start;
 }
 
-.paragraf {
-   text-align: justify;
+.about-text p {
+   font-size: 17px;
+   line-height: 1.75;
+   color: var(--text);
+   margin: 0 0 20px;
 }
-
-.aboutMeContent {
-   margin-top: 30px;
-   color: #c0c0c0;
-}
-
-.imgMe {
-   width: 100%;
-   height: auto;
-   position: relative;
-   z-index: 4;
+.about-text p:last-child {
+   margin-bottom: 0;
 }
 
 .boldAboutMe {
-   color: #19f9d8;
+   color: var(--accent);
+   font-weight: 500;
 }
 
-.aboutMeDescription {
-   font-family: "Amiri", serif;
-   font-size: 17px;
-   text-align: left;
+.about-tech {
+   padding: 28px;
+   border: 1px solid var(--border);
+   border-radius: 18px;
+   background: linear-gradient(145deg, rgba(12, 32, 53, 0.6), rgba(4, 15, 30, 0.6));
 }
-
-.paragraf2 {
-   margin-top: 20px;
-}
-.technology {
-   margin-top: 20px;
-}
-
-.technologylist ul li {
-   list-style: none;
-}
-
-.technologylist ul li:before {
-   content: "▶";
+.about-tech__label {
+   color: var(--heading);
    font-size: 15px;
-   margin-right: 20px;
-   color: #19f9d8;
+   font-weight: 500;
+   line-height: 1.5;
+   margin: 0 0 18px;
+}
+.about-tech__list {
+   display: grid;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+   gap: 12px 16px;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+.about-tech__list li {
+   position: relative;
+   padding-left: 20px;
+   font-family: var(--font-mono);
+   font-size: 13.5px;
+   color: var(--text);
+}
+.about-tech__list li::before {
+   content: "▹";
+   position: absolute;
+   left: 0;
+   color: var(--accent);
 }
 
-/* time to responsive  */
-@media only screen and (max-width: 1400px) {
-   .aboutMeDescription {
-      color: #c0c0c0;
-   }
-   .paragraf {
-      font-size: 20px;
-      width: 120%;
-      text-align: justify;
-   }
-   .technology {
-      width: 120%;
-   }
-   .techlist-content {
-      width: 130%;
+@media (max-width: 1100px) {
+   .about-grid {
+      grid-template-columns: 1fr;
+      gap: 32px;
    }
 }
-@media only screen and (max-width: 995px) {
-   .aboutMeContentLeft {
-      display: none;
+@media (max-width: 586px) {
+   .about-text p {
+      font-size: 16px;
    }
-   .aboutMeDescription {
-      color: #c0c0c0;
-   }
-   .paragraf {
-      font-size: 20px;
-      text-align: justify;
-   }
-   .technology {
-      width: 120%;
-   }
-   .techlist-content {
-      width: 130%;
+   .about-tech {
+      padding: 22px;
    }
 }
-@media only screen and (max-width: 768px) {
-   .aboutMeContentLeft {
-      display: none;
-   }
-   .aboutMeDescription {
-      color: #c0c0c0;
-   }
-   .paragraf {
-      text-align: justify;
-   }
-   .technology {
-      width: 120%;
-   }
-   .techlist-content {
-      width: 130%;
-   }
-   .technologylist ul li:before {
-      margin-right: 10px;
-   }
-}
-@media only screen and (max-width: 586px) {
-   .aboutMeContentLeft {
-      display: none;
-   }
-   .aboutMeDescription {
-      color: #c0c0c0;
-   }
-   .paragraf {
-      font-size: 17px;
-      text-align: justify;
-   }
-   .technology {
-      width: 120%;
-   }
-   .techlist-content {
-      width: 120%;
-   }
-}
-@media only screen and (max-width: 392px) {
-   .aboutMeContentLeft {
-      display: none;
-   }
-   .aboutMeDescription {
-      color: #c0c0c0;
-   }
-   .paragraf {
-      text-align: justify;
-   }
-   .technology {
-      width: 120%;
-   }
-   .techlist-content {
-      width: 140%;
-   }
-   .sectionTitle {
-      font-size: 34px;
-      font-weight: 500;
-   }
-   .aboutMeContent {
-      margin-top: -5px;
-   }
-}
-/* end of responsive  */

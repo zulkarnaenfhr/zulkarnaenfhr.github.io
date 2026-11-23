@@ -1,131 +1,119 @@
-#projectSection {
-    padding-top: 50px;
-    position: relative;
-    overflow: hidden;
+/* group (Website / AI) */
+.project-group + .project-group {
+    margin-top: 64px;
 }
 
-/* css for cardfahris  */
-.cardfahri-container {
-    display: flex;
-    height: 100%;
-    margin: 15px;
+/* grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 24px;
+    align-items: stretch;
 }
-.projectSection-website .row > [class*="col-"] {
+
+.project-grid__item {
     display: flex;
 }
-.cardfahri-container .cardfahri {
-    font-weight: bold;
-    position: relative;
+.project-grid__item > .project-card {
     width: 100%;
 }
-.cardfahri-container .cardfahri {
-    padding: 30px;
-    width: 100%;
-    min-height: 330px;
-    height: 100%;
-    border: 1px solid rgba(110, 217, 221, 0.2);
-    background: linear-gradient(145deg, rgba(12, 32, 53, 0.82), rgba(4, 15, 30, 0.82));
-    text-decoration: none;
-    color: silver;
-    display: block;
-    transition: 0.25s ease;
-    border-radius: 18px;
+
+/* card */
+.project-card {
     display: flex;
     flex-direction: column;
-    transition: all 0.4s ease-in-out;
+    height: 100%;
+    padding: 28px;
+    border-radius: 18px;
+    border: 1px solid rgba(102, 191, 202, 0.18);
+    background: linear-gradient(145deg, rgba(12, 32, 53, 0.78), rgba(4, 15, 30, 0.78));
+    box-shadow: 0 18px 55px rgba(0, 0, 0, 0.22), inset 0 1px rgba(173, 255, 247, 0.06);
+    color: var(--text);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
-.cardfahri-container .cardfahri:hover {
-    transform: translate(-5px, -5px);
+.project-card:hover {
+    transform: translateY(-6px);
     border-color: #5bc0eb;
-}
-.cardfahri-container .cardfahri--display {
-    display: block;
-    margin-top: 0;
-    flex: 1;
-}
-.cardfahri-container .cardfahri .cardfahri--display h2 {
-    margin: 20px 0;
-    font-size: 25px;
-    height: auto !important;
-    min-height: 0 !important;
-}
-.cardfahri-container .cardfahri .cardfahri--display p {
-    font-weight: normal;
-    line-height: 1.5;
-    font-size: 15px;
-    height: auto !important;
-    min-height: 0 !important;
-}
-.cardfahri-container .cardfahri .cardfahri--display p.link {
-    margin: 20px 0 0;
-    font-weight: bold;
-    color: #5bc0eb;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(91, 192, 235, 0.15);
 }
 
-.cardfahri-container .cardfahri .cardfahri--dark {
-    color: white;
-    background-color: black;
-    border-color: black;
+.project-card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    min-height: 32px;
 }
-.cardfahri-container .cardfahri.cardfahri--dark .cardfahri--hover .link {
-    color: #fde74c;
+.project-card__folder {
+    font-size: 30px;
+    color: #19f9d8;
 }
-.project-link {
-    position: static;
-    margin-top: auto;
-    padding-top: 18px;
+.project-card--web .project-card__folder {
+    color: #87ceeb;
 }
-.project-link a {
-    font-size: 23px;
-    padding-right: 15px;
-    color: white;
-    transition: all 0.3s ease-in-out;
+.project-card__links {
+    display: flex;
+    gap: 16px;
 }
-.project-link a:hover {
+.project-card__links a {
+    font-size: 20px;
+    color: #ccd6f6;
+    transition: color 0.2s ease;
+}
+.project-card__links a:hover {
     color: #19f9d8;
 }
 
-/* end of css for cardfahris  */
+.project-card__title {
+    color: #e6f1ff;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.35;
+    margin: 0 0 12px;
+}
+.project-card:hover .project-card__title {
+    color: #87ceeb;
+}
+.project-card__desc {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
 
-/* time to responsive  */
-@media only screen and (max-width: 1400px) {
-    .cardfahri-container .cardfahri .cardfahri--display {
-        display: block;
-    }
+.project-card__tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-@media only screen and (max-width: 762px) {
-    #projectSection {
-        margin-top: 40px;
-    }
+.project-card__tech li {
+    font-size: 12.5px;
+    line-height: 1;
+    padding: 6px 10px;
+    border-radius: 999px;
+    color: #87ceeb;
+    background: rgba(135, 206, 235, 0.08);
+    border: 1px solid rgba(135, 206, 235, 0.2);
 }
+.project-card--ai .project-card__tech li {
+    color: #19f9d8;
+    background: rgba(25, 249, 216, 0.07);
+    border-color: rgba(25, 249, 216, 0.2);
+}
+
+/* responsive */
 @media only screen and (max-width: 586px) {
-    #projectSection {
-        margin-top: 30px;
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
     }
-    .sectionTitle {
-        font-size: 34px;
-        font-weight: 500;
+    .project-card {
+        padding: 22px;
     }
-    .cardfahri-container .cardfahri {
-        min-height: 0;
-        height: auto;
-    }
-}
-@media only screen and (max-width: 392px) {
-    .cardfahri-container {
-        margin: 0px;
-        margin-top: 10px;
-    }
-    .cardfahri-container .cardfahri {
-        min-height: 0;
-        height: auto;
-    }
-    .cardfahri-container .cardfahri .cardfahri--display h2 {
-        margin: 20px 0;
-        font-size: 21px;
-    }
-    .judulSectionWebsiteProject {
-        margin-top: 15px;
+    .project-card__title {
+        font-size: 19px;
     }
 }
-/* end of responsive  */

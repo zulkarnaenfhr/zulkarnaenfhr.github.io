@@ -1,5 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+/* ---------- shared layout tokens ---------- */
+:root {
+   --accent: #19f9d8;
+   --accent-soft: #87ceeb;
+   --text: #c9d4e3;
+   --text-muted: #8a99ad;
+   --heading: #e6f1ff;
+   --border: rgba(102, 191, 202, 0.18);
+   --font-sans: "Space Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+   --font-mono: "DM Mono", ui-monospace, monospace;
+   --section-space: 120px;
+   --container-max: 1080px;
+   --gutter: 24px;
+}
+
+.starsbackground {
+   font-family: var(--font-sans);
+   color: var(--text);
+}
+
+/* every content section below the hero shares the same rhythm */
+.page-section {
+   padding: var(--section-space) 0;
+}
+
+/* one container width for the whole page, leaving room for the fixed side navbar */
+.page-section .section-container,
+#homeSection .hai-content {
+   width: 100%;
+   max-width: var(--container-max);
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: var(--gutter);
+   padding-right: var(--gutter);
+   position: relative;
+   z-index: 2;
+}
+
 .sectionTitle {
-   color: #19f9d8;
+   color: var(--accent);
+   font-family: var(--font-sans);
+   font-size: clamp(32px, 4vw, 44px);
+   font-weight: 600;
+   letter-spacing: -0.01em;
+   line-height: 1.1;
+   margin: 0 0 48px;
+}
+
+.section-subtitle {
+   color: var(--accent-soft);
+   font-family: var(--font-sans);
+   font-size: 22px;
+   font-weight: 500;
+   margin: 0 0 24px;
+}
+
+@media (min-width: 901px) and (max-width: 1500px) {
+   /* keep content clear of the fixed navbar on the right */
+   .page-section .section-container,
+   #homeSection .hai-content {
+      max-width: min(var(--container-max), calc(100vw - 2 * 210px));
+   }
+}
+
+@media (max-width: 768px) {
+   :root {
+      --section-space: 80px;
+      --gutter: 20px;
+   }
+   .sectionTitle {
+      margin-bottom: 32px;
+   }
+   .section-subtitle {
+      font-size: 19px;
+   }
 }
 
 #all-parents-content {
